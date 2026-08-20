@@ -7,11 +7,11 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Side, Sizable as _, Theme, TitleBar, WindowExt as _,
-    badge::Badge,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
+    feedback::badge::Badge,
     h_flex,
-    menu::{AppMenuBar, DropdownMenu as _},
-    scroll::ScrollbarShow,
+    layout::scroll::ScrollbarShow,
+    overlay::menu::{AppMenuBar, DropdownMenu as _},
 };
 
 use crate::{

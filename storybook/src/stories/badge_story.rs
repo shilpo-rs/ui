@@ -3,8 +3,8 @@ use gpui::{
     Styled, Window,
 };
 use shilpo_m3e::{
-    ActiveTheme as _, Icon, IconName, Sizable as _, avatar::Avatar, badge::Badge,
-    dock::PanelControl, v_flex,
+    ActiveTheme as _, Icon, IconName, Sizable as _, data::avatar::Avatar, feedback::badge::Badge,
+    layout::dock::PanelControl, v_flex,
 };
 
 use crate::section;

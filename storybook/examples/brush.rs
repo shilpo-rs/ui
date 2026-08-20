@@ -3,11 +3,11 @@ use std::rc::Rc;
 use gpui::{StyleRefinement, prelude::FluentBuilder, *};
 use shilpo_m3e::{
     ActiveTheme, Colorize as _, ElementExt, IconName, Sizable,
-    button::Button,
-    checkbox::Checkbox,
-    group_box::{GroupBox, GroupBoxVariants as _},
+    controls::button::Button,
+    controls::checkbox::Checkbox,
+    controls::slider::{Slider, SliderState},
     h_flex,
-    slider::{Slider, SliderState},
+    layout::group_box::{GroupBox, GroupBoxVariants as _},
     v_flex,
 };
 use storybook::Assets;

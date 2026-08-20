@@ -3,14 +3,14 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window, prelude::FluentBuilder as _,
 };
-use shilpo_m3e::group_box::{GroupBox, GroupBoxVariants as _};
-use shilpo_m3e::label::Label;
-use shilpo_m3e::tag::Tag;
+use shilpo_m3e::data::label::Label;
+use shilpo_m3e::data::tag::Tag;
+use shilpo_m3e::layout::group_box::{GroupBox, GroupBoxVariants as _};
 use shilpo_m3e::{ActiveTheme, IconName, StyledExt, h_flex};
 use shilpo_m3e::{
     Sizable,
-    button::{Button, ButtonVariants as _},
-    collapsible::Collapsible,
+    controls::button::{Button, ButtonVariants as _},
+    layout::collapsible::Collapsible,
     v_flex,
 };
 

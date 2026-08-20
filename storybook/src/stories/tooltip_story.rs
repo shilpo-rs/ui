@@ -5,14 +5,14 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName,
-    button::{Button, ButtonVariant, ButtonVariants},
-    checkbox::Checkbox,
-    clipboard::Clipboard,
-    dock::PanelControl,
+    controls::button::{Button, ButtonVariant, ButtonVariants},
+    controls::checkbox::Checkbox,
+    controls::radio::Radio,
+    controls::switch::Switch,
+    foundation::clipboard::Clipboard,
     h_flex,
-    radio::Radio,
-    switch::Switch,
-    tooltip::Tooltip,
+    layout::dock::PanelControl,
+    overlay::tooltip::Tooltip,
     v_flex,
 };
 

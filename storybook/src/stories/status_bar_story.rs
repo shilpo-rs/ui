@@ -4,12 +4,12 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _, WindowExt as _,
-    button::{Button, ButtonVariants as _},
-    dock::PanelControl,
+    controls::button::{Button, ButtonVariants as _},
+    feedback::progress::ProgressCircle,
     h_flex,
-    progress::ProgressCircle,
-    separator::Separator,
-    status_bar::StatusBar,
+    layout::dock::PanelControl,
+    layout::separator::Separator,
+    navigation::status_bar::StatusBar,
     v_flex,
 };
 

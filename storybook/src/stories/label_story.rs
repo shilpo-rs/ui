@@ -4,12 +4,11 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, StyledExt,
-    button::{Button, ButtonVariant, ButtonVariants as _},
-    checkbox::Checkbox,
-    green_500, h_flex,
-    input::{Input, InputEvent, InputState},
-    label::{HighlightsMatch, Label},
-    v_flex,
+    controls::button::{Button, ButtonVariant, ButtonVariants as _},
+    controls::checkbox::Checkbox,
+    controls::input::{Input, InputEvent, InputState},
+    data::label::{HighlightsMatch, Label},
+    green_500, h_flex, v_flex,
 };
 
 use crate::section;

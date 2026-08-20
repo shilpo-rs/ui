@@ -14,17 +14,17 @@ use gpui::{
 use serde::{Deserialize, Serialize};
 use shilpo_m3e::{
     ActiveTheme as _, Selectable, Sizable as _, Size, StyleSized as _, StyledExt,
-    button::Button,
-    checkbox::Checkbox,
-    h_flex,
-    input::{Input, InputEvent, InputState},
-    label::Label,
-    menu::{DropdownMenu, PopupMenu},
-    progress::ProgressCircle,
-    table::{
+    controls::button::Button,
+    controls::checkbox::Checkbox,
+    controls::input::{Input, InputEvent, InputState},
+    data::label::Label,
+    data::table::{
         Column, ColumnFixed, ColumnGroup, ColumnSort, DataTable, TableDelegate, TableEvent,
         TableState,
     },
+    feedback::progress::ProgressCircle,
+    h_flex,
+    overlay::menu::{DropdownMenu, PopupMenu},
     v_flex,
 };
 

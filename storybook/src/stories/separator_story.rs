@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, Focusable, IntoElement, ParentElement, Render, Styled,
     Window, px,
 };
-use shilpo_m3e::{ActiveTheme, h_flex, label::Label, separator::Separator, v_flex};
+use shilpo_m3e::{ActiveTheme, data::label::Label, h_flex, layout::separator::Separator, v_flex};
 
 use crate::section;
 

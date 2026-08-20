@@ -5,10 +5,12 @@ use gpui::*;
 use serde::Deserialize;
 use shilpo_m3e::{
     IconName, Root, Sizable,
-    button::{Button, ButtonVariants as _},
-    dock::{ClosePanel, DockArea, DockAreaState, DockEvent, DockItem, DockPlacement, ToggleZoom},
-    menu::DropdownMenu,
-    status_bar::StatusBar,
+    controls::button::{Button, ButtonVariants as _},
+    layout::dock::{
+        ClosePanel, DockArea, DockAreaState, DockEvent, DockItem, DockPlacement, ToggleZoom,
+    },
+    navigation::status_bar::StatusBar,
+    overlay::menu::DropdownMenu,
 };
 use storybook::Assets;
 use storybook::{

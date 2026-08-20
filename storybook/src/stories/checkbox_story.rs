@@ -3,7 +3,8 @@ use gpui::{
     Window, div, px,
 };
 use shilpo_m3e::{
-    ActiveTheme, Disableable as _, Sizable, checkbox::Checkbox, h_flex, text::markdown, v_flex,
+    ActiveTheme, Disableable as _, Sizable, controls::checkbox::Checkbox,
+    foundation::text::markdown, h_flex, v_flex,
 };
 
 use crate::section;

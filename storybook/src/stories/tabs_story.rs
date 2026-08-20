@@ -4,10 +4,12 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Selectable as _, Sizable, Size,
-    button::{Button, ButtonGroup, ButtonVariants as _, IconButton, IconButtonVariants as _},
-    checkbox::Checkbox,
+    controls::button::{
+        Button, ButtonGroup, ButtonVariants as _, IconButton, IconButtonVariants as _,
+    },
+    controls::checkbox::Checkbox,
     h_flex,
-    tab::{Tab, TabBar},
+    navigation::tab::{Tab, TabBar},
     v_flex,
 };
 

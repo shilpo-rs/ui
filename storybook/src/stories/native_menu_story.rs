@@ -8,7 +8,8 @@ use gpui::{
 };
 use serde::Deserialize;
 use shilpo_m3e::{
-    ActiveTheme as _, ElementExt, IconName, button::Button, native_menu::NativeMenu, v_flex,
+    ActiveTheme as _, ElementExt, IconName, controls::button::Button,
+    overlay::native_menu::NativeMenu, v_flex,
 };
 
 use crate::section;

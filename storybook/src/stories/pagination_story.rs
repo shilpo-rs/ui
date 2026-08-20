@@ -4,8 +4,8 @@ use gpui::{
 };
 use shilpo_m3e::{
     Disableable, Selectable as _, Sizable, Size,
-    button::{Button, ButtonGroup},
-    pagination::Pagination,
+    controls::button::{Button, ButtonGroup},
+    navigation::pagination::Pagination,
     v_flex,
 };
 

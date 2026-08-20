@@ -6,12 +6,12 @@ use gpui::{
 use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme, StyledExt, WindowExt,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
+    controls::input::{Input, InputState},
+    data::list::{List, ListDelegate, ListItem, ListState},
     h_flex,
-    input::{Input, InputState},
-    list::{List, ListDelegate, ListItem, ListState},
-    popover::Popover,
-    separator::Separator,
+    layout::separator::Separator,
+    overlay::popover::Popover,
     v_flex,
 };
 
@@ -88,7 +88,7 @@ impl ListDelegate for DropdownListDelegate {
         &mut self,
         _: Option<shilpo_m3e::IndexPath>,
         _: &mut Window,
-        _: &mut Context<shilpo_m3e::list::ListState<Self>>,
+        _: &mut Context<shilpo_m3e::data::list::ListState<Self>>,
     ) {
     }
 

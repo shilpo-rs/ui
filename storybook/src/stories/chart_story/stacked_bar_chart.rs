@@ -5,7 +5,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme,
-    plot::{
+    visualization::plot::{
         AXIS_GAP, AxisText, Grid, IntoPlot, Plot, PlotAxis,
         scale::{Scale, ScaleBand, ScaleLinear, ScaleOrdinal},
         shape::{Bar, Stack, StackSeries},

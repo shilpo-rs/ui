@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, NavigationRail, NavigationRailHeader, NavigationRailItem, NavigationRailMenuButton,
-    Selectable, StyledExt, badge::Badge, h_flex, v_flex,
+    Selectable, StyledExt, feedback::badge::Badge, h_flex, v_flex,
 };
 
 use crate::section;
@@ -42,7 +42,7 @@ impl super::Story for NavigationRailStory {
         Self::view(window, cx)
     }
 
-    fn zoomable() -> Option<shilpo_m3e::dock::PanelControl> {
+    fn zoomable() -> Option<shilpo_m3e::layout::dock::PanelControl> {
         None
     }
 }

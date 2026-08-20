@@ -3,9 +3,9 @@ use gpui::{
     Window, div, px,
 };
 use shilpo_m3e::{
-    ActiveTheme, Sizable, h_flex,
-    radio::{Radio, RadioGroup},
-    v_flex,
+    ActiveTheme, Sizable,
+    controls::radio::{Radio, RadioGroup},
+    h_flex, v_flex,
 };
 
 use crate::section;

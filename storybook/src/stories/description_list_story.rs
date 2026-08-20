@@ -4,14 +4,14 @@ use gpui::{
     ParentElement, Render, Styled, Window,
 };
 use serde::Deserialize;
-use shilpo_m3e::{AxisExt, h_flex, menu::DropdownMenu as _};
+use shilpo_m3e::{AxisExt, h_flex, overlay::menu::DropdownMenu as _};
 use shilpo_m3e::{
     Sizable as _, Size,
-    button::Button,
-    checkbox::Checkbox,
-    description_list::{DescriptionItem, DescriptionList},
-    dock::PanelControl,
-    text::TextView,
+    controls::button::Button,
+    controls::checkbox::Checkbox,
+    data::description_list::{DescriptionItem, DescriptionList},
+    foundation::text::TextView,
+    layout::dock::PanelControl,
     v_flex,
 };
 

@@ -11,12 +11,12 @@ use gpui::{
 use rand::prelude::IndexedRandom as _;
 use shilpo_m3e::{
     ActiveTheme as _, IconName,
-    button::Button,
-    dock::PanelControl,
+    controls::button::Button,
+    data::label::Label,
+    data::list::ListItem,
+    data::tree::{TreeItem, TreeState, tree},
     h_flex,
-    label::Label,
-    list::ListItem,
-    tree::{TreeItem, TreeState, tree},
+    layout::dock::PanelControl,
     v_flex,
 };
 

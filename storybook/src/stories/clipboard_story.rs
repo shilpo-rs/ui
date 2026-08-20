@@ -4,11 +4,10 @@ use gpui::{
 };
 use shilpo_m3e::{
     WindowExt,
-    clipboard::Clipboard,
-    h_flex,
-    input::{Input, InputState},
-    label::Label,
-    v_flex,
+    controls::input::{Input, InputState},
+    data::label::Label,
+    foundation::clipboard::Clipboard,
+    h_flex, v_flex,
 };
 
 use crate::section;

@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext as _, ClickEvent, Context, Entity, InteractiveElement, IntoElement,
     ParentElement as _, Render, Role, Styled, Subscription, Window, div,
 };
-use shilpo_m3e::{button::*, input::*, label::Label, *};
+use shilpo_m3e::{controls::button::*, controls::input::*, data::label::Label, *};
 
 use crate::section;
 
@@ -538,10 +538,10 @@ impl Render for InputStory {
             )
             .child(section("Custom Context Menu").max_w_md().child(
                 Input::new(&self.custom_menu_input).context_menu(|menu, _, _| {
-                    menu.menu("Custom Action", Box::new(input::SelectAll))
+                    menu.menu("Custom Action", Box::new(SelectAll))
                         .separator()
-                        .menu("Copy", Box::new(input::Copy))
-                        .menu("Paste", Box::new(input::Paste))
+                        .menu("Copy", Box::new(Copy))
+                        .menu("Paste", Box::new(Paste))
                 }),
             ))
             .child(

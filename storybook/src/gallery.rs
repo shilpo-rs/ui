@@ -1,13 +1,13 @@
 use gpui::{prelude::*, *};
 use shilpo_m3e::{
     Icon, IconName, Sizable as _,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
+    controls::input::{Input, InputEvent, InputState},
     h_flex,
-    input::{Input, InputEvent, InputState},
-    resizable::{h_resizable, resizable_panel},
-    separator::Separator,
-    sidebar::{Sidebar, SidebarGroup, SidebarMenu, SidebarMenuItem},
-    status_bar::StatusBar,
+    layout::resizable::{h_resizable, resizable_panel},
+    layout::separator::Separator,
+    navigation::sidebar::{Sidebar, SidebarGroup, SidebarMenu, SidebarMenuItem},
+    navigation::status_bar::StatusBar,
     v_flex,
 };
 

@@ -8,13 +8,12 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, IndexPath, Placement, WindowExt,
-    button::{Button, ButtonVariant, ButtonVariants as _},
-    checkbox::Checkbox,
+    controls::button::{Button, ButtonVariant, ButtonVariants as _},
+    controls::checkbox::Checkbox,
+    controls::input::{Input, InputState},
+    data::list::{List, ListDelegate, ListItem, ListState},
     date_picker::{DatePicker, DatePickerState},
-    h_flex,
-    input::{Input, InputState},
-    list::{List, ListDelegate, ListItem, ListState},
-    v_flex,
+    h_flex, v_flex,
 };
 
 use crate::TestAction;

@@ -5,10 +5,9 @@ use gpui::{
 };
 use shilpo_m3e::{
     Disableable as _, Sizable, StyledExt,
-    checkbox::Checkbox,
-    h_flex,
-    input::{InputEvent, OtpInput, OtpState},
-    v_flex,
+    controls::checkbox::Checkbox,
+    controls::input::{InputEvent, OtpInput, OtpState},
+    h_flex, v_flex,
 };
 
 use crate::section;

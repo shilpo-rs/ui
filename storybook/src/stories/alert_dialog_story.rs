@@ -4,8 +4,8 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, StyledExt, WindowExt as _,
-    button::{Button, ButtonVariant, ButtonVariants as _},
-    dialog::{
+    controls::button::{Button, ButtonVariant, ButtonVariants as _},
+    overlay::dialog::{
         AlertDialog, DialogAction, DialogButtonProps, DialogClose, DialogDescription, DialogFooter,
         DialogHeader, DialogTitle,
     },
@@ -107,7 +107,7 @@ impl Render for AlertDialogStory {
                                 .outline()
                                 .label("Show Confirmation")
                                 .on_click(cx.listener(|_, _, window, cx| {
-                                    use shilpo_m3e::dialog::DialogButtonProps;
+                                    use shilpo_m3e::overlay::dialog::DialogButtonProps;
 
                                     window.open_alert_dialog(cx, |alert, _, cx| {
                                         alert

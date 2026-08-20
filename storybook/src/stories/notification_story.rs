@@ -4,11 +4,11 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Theme, WindowExt as _,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
+    feedback::notification::{Notification, NotificationType},
+    foundation::text::markdown,
     h_flex,
-    menu::{DropdownMenu as _, PopupMenuItem},
-    notification::{Notification, NotificationType},
-    text::markdown,
+    overlay::menu::{DropdownMenu as _, PopupMenuItem},
     v_flex,
 };
 

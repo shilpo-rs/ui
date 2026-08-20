@@ -4,9 +4,10 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable,
-    button::{Button, ButtonVariant, ButtonVariants},
-    dock::PanelControl,
-    h_flex, v_flex,
+    controls::button::{Button, ButtonVariant, ButtonVariants},
+    h_flex,
+    layout::dock::PanelControl,
+    v_flex,
 };
 
 use crate::section;

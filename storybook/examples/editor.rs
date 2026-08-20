@@ -16,17 +16,19 @@ use lsp_types::{
 };
 use shilpo_m3e::{
     ActiveTheme, IconName, Sizable, WindowExt,
-    button::{Button, ButtonVariants as _},
-    h_flex,
-    highlighter::{Diagnostic, DiagnosticSeverity, Language, LanguageConfig, LanguageRegistry},
-    input::{
+    controls::button::{Button, ButtonVariants as _},
+    controls::input::{
         self, CodeActionProvider, CompletionProvider, DefinitionProvider, DocumentColorProvider,
         HoverProvider, Input, InputEvent, InputState, Position, Rope, RopeExt, TabSize,
     },
-    list::ListItem,
-    resizable::{h_resizable, resizable_panel},
-    status_bar::StatusBar,
-    tree::{TreeItem, TreeState, tree},
+    data::list::ListItem,
+    data::tree::{TreeItem, TreeState, tree},
+    foundation::highlighter::{
+        Diagnostic, DiagnosticSeverity, Language, LanguageConfig, LanguageRegistry,
+    },
+    h_flex,
+    layout::resizable::{h_resizable, resizable_panel},
+    navigation::status_bar::StatusBar,
     v_flex,
 };
 use storybook::Assets;

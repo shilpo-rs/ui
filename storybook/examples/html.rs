@@ -1,10 +1,10 @@
 use gpui::*;
 use shilpo_m3e::{
     ActiveTheme as _,
-    highlighter::Language,
-    input::{Input, InputState, TabSize},
-    resizable::h_resizable,
-    text::html,
+    controls::input::{Input, InputState, TabSize},
+    foundation::highlighter::Language,
+    foundation::text::html,
+    layout::resizable::h_resizable,
 };
 use storybook::Assets;
 
@@ -30,7 +30,7 @@ impl Example {
 
         let _subscribe = cx.subscribe(
             &input_state,
-            |_, _, _: &shilpo_m3e::input::InputEvent, cx| {
+            |_, _, _: &shilpo_m3e::controls::input::InputEvent, cx| {
                 cx.notify();
             },
         );

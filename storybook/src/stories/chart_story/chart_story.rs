@@ -5,13 +5,14 @@ use gpui::{
 };
 use serde::Deserialize;
 use shilpo_m3e::{
-    ActiveTheme, StyledExt,
-    chart::{AreaChart, BarChart, CandlestickChart, LineChart, PieChart, SankeyChart, SankeyLabel},
-    dock::PanelControl,
-    h_flex,
-    plot::shape::{BarAlignment, SankeyAlign, SankeyLink, SankeyValueScale},
-    separator::Separator,
+    ActiveTheme, StyledExt, h_flex,
+    layout::dock::PanelControl,
+    layout::separator::Separator,
     v_flex,
+    visualization::chart::{
+        AreaChart, BarChart, CandlestickChart, LineChart, PieChart, SankeyChart, SankeyLabel,
+    },
+    visualization::plot::shape::{BarAlignment, SankeyAlign, SankeyLink, SankeyValueScale},
 };
 
 use super::StackedBarChart;

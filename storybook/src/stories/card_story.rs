@@ -4,10 +4,11 @@ use gpui::{
 };
 use shilpo_m3e::{
     Icon, IconName,
-    button::Button,
-    card::{Card, CardHeader},
-    dock::PanelControl,
-    h_flex, v_flex,
+    controls::button::Button,
+    h_flex,
+    layout::card::{Card, CardHeader},
+    layout::dock::PanelControl,
+    v_flex,
 };
 
 use crate::section;

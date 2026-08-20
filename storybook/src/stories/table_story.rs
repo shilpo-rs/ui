@@ -4,13 +4,12 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Selectable as _, Sizable, Size,
-    button::{Button, ButtonGroup},
-    h_flex,
-    table::{
+    controls::button::{Button, ButtonGroup},
+    data::table::{
         Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow,
     },
-    tag::Tag,
-    v_flex,
+    data::tag::Tag,
+    h_flex, v_flex,
 };
 
 use crate::section;

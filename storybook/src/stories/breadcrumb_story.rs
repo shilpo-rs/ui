@@ -3,7 +3,7 @@ use gpui::{
     Styled, Window, prelude::FluentBuilder as _,
 };
 use shilpo_m3e::{
-    breadcrumb::{Breadcrumb, BreadcrumbItem},
+    navigation::breadcrumb::{Breadcrumb, BreadcrumbItem},
     v_flex,
 };
 

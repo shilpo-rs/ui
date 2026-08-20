@@ -12,19 +12,19 @@ use lsp_types::{SemanticToken, SemanticTokenType, SemanticTokens, SemanticTokens
 use regex::{Captures, Regex};
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _,
-    avatar::Avatar,
-    button::{Button, ButtonVariants as _},
-    clipboard::Clipboard,
-    h_flex,
-    highlighter::Language,
-    input::{
+    controls::button::{Button, ButtonVariants as _},
+    controls::input::{
         DocumentRangeSemanticTokensProvider, Input, InputEvent, InputState, Rope, RopeExt, TabSize,
     },
-    resizable::{h_resizable, resizable_panel},
-    status_bar::StatusBar,
-    text::{
+    data::avatar::Avatar,
+    foundation::clipboard::Clipboard,
+    foundation::highlighter::Language,
+    foundation::text::{
         MarkdownNode, MarkdownParseContext, MarkdownPlugin, TextViewStyle, markdown, markdown_ast,
     },
+    h_flex,
+    layout::resizable::{h_resizable, resizable_panel},
+    navigation::status_bar::StatusBar,
     v_flex,
 };
 use storybook::Assets;

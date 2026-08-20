@@ -6,10 +6,10 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Selectable, Sizable, VirtualListScrollHandle,
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
     h_flex,
-    scroll::{ScrollableElement, ScrollbarAxis},
-    separator::Separator,
+    layout::scroll::{ScrollableElement, ScrollbarAxis},
+    layout::separator::Separator,
     v_flex, v_virtual_list,
 };
 

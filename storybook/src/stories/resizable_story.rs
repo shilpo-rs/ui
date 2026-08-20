@@ -4,9 +4,9 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Sizable as _,
-    button::Button,
+    controls::button::Button,
     h_flex,
-    resizable::{ResizableState, h_resizable, resizable_panel, v_resizable},
+    layout::resizable::{ResizableState, h_resizable, resizable_panel, v_resizable},
     v_flex,
 };
 

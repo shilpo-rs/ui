@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Disableable as _, IconName,
-    button::{IconButton, IconButtonSize, IconButtonVariants as _},
+    controls::button::{IconButton, IconButtonSize, IconButtonVariants as _},
     h_flex, v_flex,
 };
 
@@ -237,7 +237,7 @@ impl Render for IconButtonStory {
                         IconButton::new("square")
                             .icon(IconName::Add)
                             .filled_tonal()
-                            .shape(shilpo_m3e::button::IconButtonShape::Square)
+                            .shape(shilpo_m3e::controls::button::IconButtonShape::Square)
                             .into_any_element(),
                         "Square",
                         "override",

@@ -3,8 +3,8 @@ use gpui::{
     Styled, Window,
 };
 use shilpo_m3e::{
-    IconName, button::IconButton, dock::PanelControl, floating_toolbar::FloatingToolbar, h_flex,
-    v_flex,
+    IconName, controls::button::IconButton, h_flex, layout::dock::PanelControl,
+    overlay::floating_toolbar::FloatingToolbar, v_flex,
 };
 
 use crate::section;

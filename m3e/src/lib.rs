@@ -2,126 +2,47 @@ use std::ops::Deref;
 
 use gpui::{App, SharedString};
 
-mod async_util;
-mod element_ext;
-mod event;
-mod focus_trap;
-mod geometry;
-pub mod global_state;
-mod icon;
-mod index_path;
-#[cfg(any(feature = "inspector", debug_assertions))]
-mod inspector;
-#[cfg(all(target_os = "macos", not(test)))]
-mod macos_accessibility;
-mod root;
-mod styled;
-mod time;
-mod title_bar;
-mod virtual_list;
-mod window_border;
-mod window_ext;
+pub mod controls;
+pub mod data;
+pub mod feedback;
+pub mod foundation;
+pub mod layout;
+pub mod navigation;
+pub mod overlay;
+pub mod visualization;
 
-pub(crate) mod actions;
-
-pub mod accordion;
-pub mod alert;
-pub mod animation;
-pub mod avatar;
-pub mod badge;
-pub mod breadcrumb;
-pub mod button;
-pub mod card;
-pub mod carousel;
-pub mod chart;
-pub mod checkbox;
-pub mod chip;
-pub mod clipboard;
-pub mod collapsible;
-pub mod color_picker;
-pub mod combobox;
-pub mod description_list;
-pub mod dialog;
-pub mod dock;
-pub mod floating_toolbar;
-pub mod form;
-pub mod group_box;
-pub mod highlighter;
-pub mod history;
-pub mod hover_card;
-pub mod i18n;
-pub mod input;
-pub mod kbd;
-pub mod label;
-pub mod link;
-pub mod list;
-pub mod menu;
-pub mod motion;
-pub mod native_menu;
-pub mod navigation_rail;
-pub mod notification;
-pub mod pagination;
-pub mod plot;
-pub mod popover;
-pub mod progress;
-pub mod radio;
-pub mod rating;
-pub mod resizable;
-pub mod ripple;
-pub mod scroll;
-pub mod searchable_list;
-pub mod select;
-pub mod separator;
-pub mod setting;
-pub mod shape;
-pub mod sheet;
-pub mod side_panel;
-pub mod sidebar;
-pub mod skeleton;
-pub mod slider;
-pub mod status_bar;
-pub mod stepper;
-pub mod switch;
-pub mod tab;
-pub mod table;
-pub mod tag;
-pub mod text;
-pub mod theme;
-pub mod toggle_button;
-pub mod tooltip;
-pub mod tree;
-
-pub use element_ext::*;
-pub use event::InteractiveElementExt;
-pub use focus_trap::{FocusTrapContainer, FocusTrapElement};
-pub use geometry::*;
-pub use global_state::GlobalState;
-pub use icon::*;
-pub use index_path::IndexPath;
-pub use input::{Rope, RopeExt, RopeLines};
-pub use navigation_rail::{
+pub use controls::input::{Rope, RopeExt, RopeLines};
+pub use foundation::element_ext::*;
+pub use foundation::event::InteractiveElementExt;
+pub use foundation::focus_trap::{FocusTrapContainer, FocusTrapElement};
+pub use foundation::geometry::*;
+pub use foundation::global_state::GlobalState;
+pub use foundation::icon::*;
+pub use foundation::index_path::IndexPath;
+pub use layout::side_panel::{SidePanel, SidePanelPosition};
+pub use navigation::navigation_rail::{
     NavigationRail, NavigationRailArrangement, NavigationRailFooter, NavigationRailHeader,
     NavigationRailItem, NavigationRailMenuButton,
 };
-pub use side_panel::{SidePanel, SidePanelPosition};
 
 pub use crate::Disableable;
-pub mod font;
 
-pub use font::FontFamilyCache;
-pub use i18n::LocaleCatalogue;
+pub use controls::time::{calendar, date_picker};
+pub use foundation::font::FontFamilyCache;
+pub use foundation::i18n::LocaleCatalogue;
 #[cfg(any(feature = "inspector", debug_assertions))]
-pub use inspector::*;
-pub use menu::{ContextMenu, ContextMenuExt, ContextMenuState, PopupMenu, PopupMenuItem};
-pub use root::Root;
+pub use foundation::inspector::*;
+pub use foundation::root::Root;
+pub use foundation::styled::*;
+pub use foundation::theme::*;
+pub use foundation::virtual_list::{
+    VirtualList, VirtualListScrollHandle, h_virtual_list, v_virtual_list,
+};
+pub use foundation::window_border::{WindowBorder, window_border, window_paddings};
+pub use foundation::window_ext::WindowExt;
+pub use navigation::title_bar::*;
+pub use overlay::menu::{ContextMenu, ContextMenuExt, ContextMenuState, PopupMenu, PopupMenuItem};
 pub use shilpo_macros::icon_named;
-pub use styled::*;
-pub use theme::*;
-pub use time::{calendar, date_picker};
-pub use title_bar::*;
-pub use virtual_list::{VirtualList, VirtualListScrollHandle, h_virtual_list, v_virtual_list};
-pub use window_border::{WindowBorder, window_border, window_paddings};
-pub use window_ext::WindowExt;
 
 rust_i18n::i18n!("locales", fallback = "en");
 
@@ -129,28 +50,28 @@ rust_i18n::i18n!("locales", fallback = "en");
 ///
 /// You must initialize the components at your application's entry point.
 pub fn init(cx: &mut App) {
-    theme::init(cx);
-    font::FontFamilyCache::init_global(cx);
-    global_state::init(cx);
+    foundation::theme::init(cx);
+    foundation::font::FontFamilyCache::init_global(cx);
+    foundation::global_state::init(cx);
     #[cfg(any(feature = "inspector", debug_assertions))]
-    inspector::init(cx);
-    root::init(cx);
-    focus_trap::init(cx);
-    color_picker::init(cx);
-    date_picker::init(cx);
-    dock::init(cx);
-    sheet::init(cx);
-    combobox::init(cx);
-    select::init(cx);
-    input::init(cx);
-    list::init(cx);
-    dialog::init(cx);
-    popover::init(cx);
-    menu::init(cx);
-    table::init(cx);
-    text::init(cx);
-    tree::init(cx);
-    tooltip::init(cx);
+    foundation::inspector::init(cx);
+    foundation::root::init(cx);
+    foundation::focus_trap::init(cx);
+    controls::color_picker::init(cx);
+    controls::time::date_picker::init(cx);
+    layout::dock::init(cx);
+    overlay::sheet::init(cx);
+    controls::combobox::init(cx);
+    controls::select::init(cx);
+    controls::input::init(cx);
+    data::list::init(cx);
+    overlay::dialog::init(cx);
+    overlay::popover::init(cx);
+    overlay::menu::init(cx);
+    data::table::init(cx);
+    foundation::text::init(cx);
+    data::tree::init(cx);
+    overlay::tooltip::init(cx);
 }
 
 #[inline]

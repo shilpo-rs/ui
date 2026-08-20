@@ -7,17 +7,17 @@ use gpui::{
 use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, Selectable as _, Side, Sizable,
-    badge::Badge,
-    breadcrumb::{Breadcrumb, BreadcrumbItem},
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
+    controls::switch::Switch,
+    feedback::badge::Badge,
     h_flex,
-    menu::DropdownMenu,
-    separator::Separator,
-    sidebar::{
+    layout::separator::Separator,
+    navigation::breadcrumb::{Breadcrumb, BreadcrumbItem},
+    navigation::sidebar::{
         Sidebar, SidebarCollapsible, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu,
         SidebarMenuItem, SidebarToggleButton,
     },
-    switch::Switch,
+    overlay::menu::DropdownMenu,
     v_flex,
 };
 

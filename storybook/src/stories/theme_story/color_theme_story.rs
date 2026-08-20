@@ -1,8 +1,8 @@
 use gpui::*;
 use shilpo_m3e::{
-    ActiveTheme as _, ThemeColor, h_flex,
-    input::{Input, InputEvent, InputState},
-    v_flex,
+    ActiveTheme as _, ThemeColor,
+    controls::input::{Input, InputEvent, InputState},
+    h_flex, v_flex,
 };
 
 const ROLES: &[(&str, fn(&ThemeColor) -> Hsla)] = &[
