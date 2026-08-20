@@ -9,7 +9,7 @@ use gpui::{
 use super::{button_shared_tokens, icon_button_tokens, shared};
 use crate::{
     ActiveTheme, Disableable, Selectable, Sizable, Size, StyledExt, controls::button::ButtonIcon,
-    progress::ProgressCircle,
+    feedback::progress::ProgressCircle,
 };
 
 #[derive(Clone, Copy, Debug, Default, PartialEq, Eq)]

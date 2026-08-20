@@ -13,7 +13,7 @@ use shilpo_m3e::{
     layout::group_box::{GroupBox, GroupBoxVariants as _},
     h_flex,
     overlay::menu::PopupMenu,
-    notification::Notification,
+    feedback::notification::Notification,
     layout::scroll::{ScrollableElement as _, ScrollbarShow},
     foundation::text::markdown,
     v_flex,

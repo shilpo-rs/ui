@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, NavigationRail, NavigationRailHeader, NavigationRailItem, NavigationRailMenuButton,
-    Selectable, StyledExt, badge::Badge, h_flex, v_flex,
+    Selectable, StyledExt, feedback::badge::Badge, h_flex, v_flex,
 };
 
 use crate::section;

@@ -13,7 +13,7 @@ use super::{
 use crate::controls::button::{Button, ButtonVariants as _};
 use crate::controls::input::clear_button;
 use crate::overlay::native_menu::NativeMenu;
-use crate::progress::ProgressCircle;
+use crate::feedback::progress::ProgressCircle;
 use crate::{ActiveTheme, Colorize, v_flex};
 use crate::{IconName, Size};
 use crate::{Selectable, StyledExt, h_flex};

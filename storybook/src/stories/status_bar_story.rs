@@ -7,7 +7,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     layout::dock::PanelControl,
     h_flex,
-    progress::ProgressCircle,
+    feedback::progress::ProgressCircle,
     layout::separator::Separator,
     navigation::status_bar::StatusBar,
     v_flex,

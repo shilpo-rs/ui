@@ -3,7 +3,7 @@ use gpui::{
     Styled, Window,
 };
 use shilpo_m3e::{
-    ActiveTheme as _, Icon, IconName, Sizable as _, avatar::Avatar, badge::Badge,
+    ActiveTheme as _, Icon, IconName, Sizable as _, avatar::Avatar, feedback::badge::Badge,
     layout::dock::PanelControl, v_flex,
 };
 

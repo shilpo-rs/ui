@@ -6,7 +6,7 @@ use crate::{
     Placement, Root,
     overlay::dialog::{AlertDialog, Dialog},
     controls::input::InputState,
-    notification::Notification,
+    feedback::notification::Notification,
     overlay::sheet::Sheet,
 };
 

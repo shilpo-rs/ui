@@ -15,7 +15,7 @@ use ropey::Rope;
 
 use crate::{
     ActiveTheme, IconName, Selectable, Sizable, TITLE_BAR_HEIGHT,
-    alert::Alert,
+    feedback::alert::Alert,
     controls::button::{Button, ButtonVariants},
     foundation::clipboard::Clipboard,
     description_list::DescriptionList,

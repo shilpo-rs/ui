@@ -20,7 +20,7 @@ use shilpo_m3e::{
     controls::input::{Input, InputEvent, InputState},
     label::Label,
     overlay::menu::{DropdownMenu, PopupMenu},
-    progress::ProgressCircle,
+    feedback::progress::ProgressCircle,
     table::{
         Column, ColumnFixed, ColumnGroup, ColumnSort, DataTable, TableDelegate, TableEvent,
         TableState,

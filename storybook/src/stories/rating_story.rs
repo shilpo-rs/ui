@@ -5,7 +5,7 @@ use shilpo_m3e::{
     ActiveTheme, IconName, Selectable as _, Sizable as _, Size,
     controls::button::{Button, ButtonGroup},
     h_flex,
-    rating::Rating,
+    feedback::rating::Rating,
     v_flex,
 };
 

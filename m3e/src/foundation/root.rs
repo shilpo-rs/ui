@@ -13,7 +13,7 @@ use crate::{
     foundation::focus_trap::FocusTrapManager,
     controls::input::{Copy, InputState},
     overlay::native_menu::FallbackMenuOverlay,
-    notification::{Notification, NotificationList},
+    feedback::notification::{Notification, NotificationList},
     overlay::sheet::Sheet,
     foundation::text::{SelectionScope, TextSelectionController, TextViewState, WindowTextSelection},
     overlay::tooltip::TooltipOverlay,

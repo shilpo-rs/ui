@@ -3,25 +3,20 @@ use std::ops::Deref;
 use gpui::{App, SharedString};
 
 pub mod controls;
+pub mod feedback;
 pub mod foundation;
 pub mod layout;
 pub mod navigation;
 pub mod overlay;
 
-pub mod alert;
 pub mod avatar;
-pub mod badge;
 pub mod chart;
 pub mod description_list;
 pub mod kbd;
 pub mod label;
 pub mod list;
-pub mod notification;
 pub mod plot;
-pub mod progress;
-pub mod rating;
 pub mod searchable_list;
-pub mod skeleton;
 pub mod table;
 pub mod tag;
 pub mod tree;

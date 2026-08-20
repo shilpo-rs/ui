@@ -8,7 +8,7 @@ use shilpo_m3e::{
     ActiveTheme, IconName, Selectable, Sizable, Size,
     controls::button::Button,
     h_flex,
-    progress::{LoadingIndicator, Progress, ProgressCircle},
+    feedback::progress::{LoadingIndicator, Progress, ProgressCircle},
     v_flex,
 };
 

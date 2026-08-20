@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, Selectable as _, Sizable as _, Size,
-    alert::Alert,
+    feedback::alert::Alert,
     controls::button::{Button, ButtonGroup},
     layout::dock::PanelControl,
     foundation::text::markdown,

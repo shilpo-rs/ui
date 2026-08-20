@@ -7,7 +7,7 @@ use gpui::{
 use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, Selectable as _, Side, Sizable,
-    badge::Badge,
+    feedback::badge::Badge,
     navigation::breadcrumb::{Breadcrumb, BreadcrumbItem},
     controls::button::{Button, ButtonGroup},
     h_flex,

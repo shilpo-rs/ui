@@ -7,7 +7,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     h_flex,
     overlay::menu::{DropdownMenu as _, PopupMenuItem},
-    notification::{Notification, NotificationType},
+    feedback::notification::{Notification, NotificationType},
     foundation::text::markdown,
     v_flex,
 };

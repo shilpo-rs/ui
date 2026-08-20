@@ -7,7 +7,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Side, Sizable as _, Theme, TitleBar, WindowExt as _,
-    badge::Badge,
+    feedback::badge::Badge,
     controls::button::{Button, ButtonVariants as _},
     h_flex,
     overlay::menu::{AppMenuBar, DropdownMenu as _},
