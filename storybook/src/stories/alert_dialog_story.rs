@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, StyledExt, WindowExt as _,
-    button::{Button, ButtonVariant, ButtonVariants as _},
+    controls::button::{Button, ButtonVariant, ButtonVariants as _},
     dialog::{
         AlertDialog, DialogAction, DialogButtonProps, DialogClose, DialogDescription, DialogFooter,
         DialogHeader, DialogTitle,

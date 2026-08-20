@@ -4,9 +4,9 @@ use gpui::{
 };
 use shilpo_m3e::{
     WindowExt,
-    clipboard::Clipboard,
+    foundation::clipboard::Clipboard,
     h_flex,
-    input::{Input, InputState},
+    controls::input::{Input, InputState},
     label::Label,
     v_flex,
 };

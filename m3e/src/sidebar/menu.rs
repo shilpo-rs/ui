@@ -8,7 +8,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme as _, Collapsible, Icon, IconName, Sizable as _, StyledExt,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     h_flex,
     menu::{ContextMenuExt, PopupMenu},
     sidebar::SidebarItem,

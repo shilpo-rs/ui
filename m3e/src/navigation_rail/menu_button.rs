@@ -6,7 +6,7 @@ use gpui::{
 };
 
 use crate::{
-    Icon, IconName, StyledExt as _, button::IconButton, foundation::motion::SpringSpec,
+    Icon, IconName, StyledExt as _, controls::button::IconButton, foundation::motion::SpringSpec,
     navigation_rail::motion::spring_progress,
 };
 

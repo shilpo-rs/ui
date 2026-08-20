@@ -4,13 +4,13 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, StyledExt,
-    button::{Button, ButtonVariants as _},
-    checkbox::Checkbox,
+    controls::button::{Button, ButtonVariants as _},
+    controls::checkbox::Checkbox,
     group_box::{GroupBox, GroupBoxVariants as _},
     h_flex,
-    radio::{Radio, RadioGroup},
-    switch::Switch,
-    text::markdown,
+    controls::radio::{Radio, RadioGroup},
+    controls::switch::Switch,
+    foundation::text::markdown,
     v_flex,
 };
 

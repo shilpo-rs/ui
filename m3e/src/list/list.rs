@@ -13,11 +13,11 @@ use instant::Duration;
 use rust_i18n::t;
 
 use crate::foundation::actions::{Cancel, Confirm, SelectDown, SelectUp};
-use crate::input::InputState;
+use crate::controls::input::InputState;
 use crate::list::cache::{MeasuredEntrySize, RowEntry, RowsCache};
 use crate::{
     ActiveTheme, IconName, Size,
-    input::{Input, InputEvent},
+    controls::input::{Input, InputEvent},
     scroll::Scrollbar,
     v_flex,
 };

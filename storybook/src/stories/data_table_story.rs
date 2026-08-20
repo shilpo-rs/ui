@@ -14,10 +14,10 @@ use gpui::{
 use serde::{Deserialize, Serialize};
 use shilpo_m3e::{
     ActiveTheme as _, Selectable, Sizable as _, Size, StyleSized as _, StyledExt,
-    button::Button,
-    checkbox::Checkbox,
+    controls::button::Button,
+    controls::checkbox::Checkbox,
     h_flex,
-    input::{Input, InputEvent, InputState},
+    controls::input::{Input, InputEvent, InputState},
     label::Label,
     menu::{DropdownMenu, PopupMenu},
     progress::ProgressCircle,

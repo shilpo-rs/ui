@@ -1,5 +1,5 @@
 use gpui::{App, AppContext as _, Context, Entity, IntoElement, Render, Styled, Window};
-use shilpo_m3e::{ActiveTheme, input::*};
+use shilpo_m3e::{ActiveTheme, controls::input::*};
 
 const EXAMPLE_CODE: &str = include_str!("./editor_story.rs");
 

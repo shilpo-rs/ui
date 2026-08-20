@@ -298,7 +298,7 @@ impl Element for TextView {
                 this.size_full().vertical_scrollbar(&list_state)
             })
             .relative()
-            .on_action(move |_: &crate::input::Copy, window, cx| {
+            .on_action(move |_: &crate::controls::input::Copy, window, cx| {
                 use crate::WindowExt as _;
                 let text = window.selected_text(cx).trim().to_string();
                 if text.is_empty() {

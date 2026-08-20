@@ -33,7 +33,7 @@ impl SyntaxHighlighter {
 
     pub fn update(
         &mut self,
-        _edit: Option<crate::input::InputEdit>,
+        _edit: Option<crate::controls::input::InputEdit>,
         _text: &ropey::Rope,
         _timeout: Option<Duration>,
     ) -> bool {
@@ -41,7 +41,7 @@ impl SyntaxHighlighter {
         true
     }
 
-    pub fn edit_tree(&mut self, _edit: Option<crate::input::InputEdit>, _text: &ropey::Rope) {
+    pub fn edit_tree(&mut self, _edit: Option<crate::controls::input::InputEdit>, _text: &ropey::Rope) {
         // No-op in WASM
     }
 
@@ -55,7 +55,7 @@ impl SyntaxHighlighter {
         &EMPTY_ROPE
     }
 
-    pub fn tree(&self) -> Option<&crate::input::Tree> {
+    pub fn tree(&self) -> Option<&crate::controls::input::Tree> {
         None
     }
 }

@@ -18,7 +18,7 @@ use super::{TextViewStyle, utils::list_item_prefix};
 use crate::{
     ActiveTheme as _, Icon, IconName, StyledExt, WindowExt as _, h_flex,
     foundation::highlighter::{HighlightTheme, LanguageRegistry, SyntaxHighlighter},
-    input::{InputEdit, Point, RopeExt as _},
+    controls::input::{InputEdit, Point, RopeExt as _},
     scroll::horizontal_scroll_area,
     foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, MarkdownNode,

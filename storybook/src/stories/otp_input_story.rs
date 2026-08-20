@@ -5,9 +5,9 @@ use gpui::{
 };
 use shilpo_m3e::{
     Disableable as _, Sizable, StyledExt,
-    checkbox::Checkbox,
+    controls::checkbox::Checkbox,
     h_flex,
-    input::{InputEvent, OtpInput, OtpState},
+    controls::input::{InputEvent, OtpInput, OtpState},
     v_flex,
 };
 

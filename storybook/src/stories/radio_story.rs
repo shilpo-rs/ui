@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Sizable, h_flex,
-    radio::{Radio, RadioGroup},
+    controls::radio::{Radio, RadioGroup},
     v_flex,
 };
 

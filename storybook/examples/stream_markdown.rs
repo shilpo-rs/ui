@@ -1,8 +1,8 @@
 use gpui::*;
 use shilpo_m3e::{
-    button::Button,
+    controls::button::Button,
     h_flex,
-    text::{TextView, TextViewState},
+    foundation::text::{TextView, TextViewState},
     v_flex,
 };
 use storybook::Assets;

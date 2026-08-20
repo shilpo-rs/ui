@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Disableable, Icon, IconName, Sizable, Size, Theme, ThemeMode,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     group_box::GroupBoxVariant,
     h_flex,
     label::Label,
@@ -12,7 +12,7 @@ use shilpo_m3e::{
         NumberFieldOptions, RenderOptions, SettingField, SettingFieldElement, SettingGroup,
         SettingItem, SettingPage, Settings,
     },
-    text::markdown,
+    foundation::text::markdown,
     v_flex,
 };
 

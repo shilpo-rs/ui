@@ -1,8 +1,8 @@
 use gpui::{prelude::FluentBuilder as _, *};
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, IndexPath, Sizable as _,
-    button::{Button, ButtonVariants as _},
-    combobox::*,
+    controls::button::{Button, ButtonVariants as _},
+    controls::combobox::*,
     h_flex,
     searchable_list::{
         SearchableGroup, SearchableListChange, SearchableListDelegate, SearchableListItem,

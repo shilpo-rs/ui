@@ -5,7 +5,7 @@ use gpui::{
 use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme as _, IconName, Side, StyledExt,
-    button::Button,
+    controls::button::Button,
     h_flex,
     menu::{ContextMenuExt, DropdownMenu as _, PopupMenuItem},
     v_flex,

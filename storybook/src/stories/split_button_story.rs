@@ -5,7 +5,7 @@ use gpui::{
 use serde::Deserialize;
 use shilpo_m3e::{
     Disableable as _, IconName, Selectable as _, Sizable as _, Size,
-    button::{
+    controls::button::{
         Button, ButtonRounded, ButtonVariants as _, SplitButton, SplitButtonShape,
         SplitButtonShapes,
     },

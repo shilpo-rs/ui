@@ -6,7 +6,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Selectable,
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
     h_flex,
     scroll::ScrollableElement,
     v_flex,

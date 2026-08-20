@@ -4,10 +4,10 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Colorize as _, StyledExt, WindowExt,
-    checkbox::Checkbox,
-    clipboard::Clipboard,
+    controls::checkbox::Checkbox,
+    foundation::clipboard::Clipboard,
     h_flex,
-    slider::{Slider, SliderEvent, SliderScale, SliderState, SliderValue},
+    controls::slider::{Slider, SliderEvent, SliderScale, SliderState, SliderValue},
     v_flex,
 };
 

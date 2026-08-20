@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     Icon, IconName,
-    button::Button,
+    controls::button::Button,
     card::{Card, CardHeader},
     dock::PanelControl,
     h_flex, v_flex,

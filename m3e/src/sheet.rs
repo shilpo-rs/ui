@@ -13,7 +13,7 @@ use crate::{
     ActiveTheme, FocusTrapElement as _, IconName, Placement, Sizable, StyledExt as _,
     WindowExt as _,
     foundation::actions::Cancel,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     dialog::overlay_color,
     h_flex,
     scroll::ScrollableElement as _,

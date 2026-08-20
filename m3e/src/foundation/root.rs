@@ -11,7 +11,7 @@ use crate::{
     ActiveTheme, ElementExt, Placement, StyledExt,
     dialog::{ANIMATION_DURATION, Dialog},
     foundation::focus_trap::FocusTrapManager,
-    input::{Copy, InputState},
+    controls::input::{Copy, InputState},
     native_menu::FallbackMenuOverlay,
     notification::{Notification, NotificationList},
     sheet::Sheet,

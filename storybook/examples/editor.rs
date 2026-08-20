@@ -16,10 +16,10 @@ use lsp_types::{
 };
 use shilpo_m3e::{
     ActiveTheme, IconName, Sizable, WindowExt,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     h_flex,
-    highlighter::{Diagnostic, DiagnosticSeverity, Language, LanguageConfig, LanguageRegistry},
-    input::{
+    foundation::highlighter::{Diagnostic, DiagnosticSeverity, Language, LanguageConfig, LanguageRegistry},
+    controls::input::{
         self, CodeActionProvider, CompletionProvider, DefinitionProvider, DocumentColorProvider,
         HoverProvider, Input, InputEvent, InputState, Position, Rope, RopeExt, TabSize,
     },

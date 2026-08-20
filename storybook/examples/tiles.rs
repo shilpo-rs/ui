@@ -9,7 +9,7 @@ use shilpo_m3e::{
         DockArea, DockAreaState, DockEvent, DockItem, Panel, PanelEvent, PanelInfo, PanelRegistry,
         PanelState, PanelView, register_panel,
     },
-    input::{Input, InputState},
+    controls::input::{Input, InputState},
     scroll::ScrollbarShow,
 };
 use storybook::Assets;

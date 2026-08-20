@@ -13,7 +13,7 @@ use crate::{
     ActiveTheme as _, FocusTrapElement as _, IconName, Root, Sizable as _, StyledExt,
     TITLE_BAR_HEIGHT, WindowExt as _,
     foundation::animation::cubic_bezier,
-    button::{Button, ButtonVariant, ButtonVariants as _},
+    controls::button::{Button, ButtonVariant, ButtonVariants as _},
     dialog::{DialogContent, DialogTitle},
     scroll::ScrollableElement as _,
     foundation::text::{SelectionScope, SelectionScopeElement as _},

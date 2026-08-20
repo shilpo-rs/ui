@@ -4,9 +4,9 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Sizable,
-    button::Button,
+    controls::button::Button,
     h_flex,
-    input::{Input, InputEvent, InputState},
+    controls::input::{Input, InputEvent, InputState},
     v_flex,
 };
 

@@ -11,7 +11,7 @@ use gpui::{
 use rand::prelude::IndexedRandom as _;
 use shilpo_m3e::{
     ActiveTheme as _, IconName,
-    button::Button,
+    controls::button::Button,
     dock::PanelControl,
     h_flex,
     label::Label,

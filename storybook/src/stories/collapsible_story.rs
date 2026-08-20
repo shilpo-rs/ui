@@ -9,7 +9,7 @@ use shilpo_m3e::tag::Tag;
 use shilpo_m3e::{ActiveTheme, IconName, StyledExt, h_flex};
 use shilpo_m3e::{
     Sizable,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     collapsible::Collapsible,
     v_flex,
 };

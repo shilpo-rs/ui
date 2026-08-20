@@ -8,14 +8,14 @@ use gpui::{
 use serde::{Deserialize, Serialize};
 use shilpo_m3e::{
     ActiveTheme, IconName, Root, TitleBar, WindowControlsMode, WindowExt,
-    button::Button,
+    controls::button::Button,
     dock::{Panel, PanelControl, PanelEvent, PanelInfo, PanelState, TitleStyle, register_panel},
     group_box::{GroupBox, GroupBoxVariants as _},
     h_flex,
     menu::PopupMenu,
     notification::Notification,
     scroll::{ScrollableElement as _, ScrollbarShow},
-    text::markdown,
+    foundation::text::markdown,
     v_flex,
 };
 

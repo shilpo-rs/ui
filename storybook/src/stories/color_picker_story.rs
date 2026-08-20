@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Colorize, Sizable,
-    color_picker::{ColorPicker, ColorPickerEvent, ColorPickerState},
+    controls::color_picker::{ColorPicker, ColorPickerEvent, ColorPickerState},
     v_flex,
 };
 

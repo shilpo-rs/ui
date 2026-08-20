@@ -9,7 +9,7 @@ use shilpo_m3e::{
     ActiveTheme, Icon, IconName, Selectable as _, Side, Sizable,
     badge::Badge,
     breadcrumb::{Breadcrumb, BreadcrumbItem},
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
     h_flex,
     menu::DropdownMenu,
     separator::Separator,
@@ -17,7 +17,7 @@ use shilpo_m3e::{
         Sidebar, SidebarCollapsible, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu,
         SidebarMenuItem, SidebarToggleButton,
     },
-    switch::Switch,
+    controls::switch::Switch,
     v_flex,
 };
 

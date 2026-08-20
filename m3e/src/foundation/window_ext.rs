@@ -5,7 +5,7 @@ use gpui::{App, ElementId, Entity, Window};
 use crate::{
     Placement, Root,
     dialog::{AlertDialog, Dialog},
-    input::InputState,
+    controls::input::InputState,
     notification::Notification,
     sheet::Sheet,
 };

@@ -10,7 +10,7 @@ use gpui::{
 use crate::foundation::animation::{Transition, ease_in_out_cubic};
 use crate::{
     ActiveTheme, Collapsible, Icon, IconName, Side, Sizable, StyledExt,
-    button::{Button, ButtonVariants},
+    controls::button::{Button, ButtonVariants},
     h_flex,
     scroll::ScrollableElement,
     v_flex,

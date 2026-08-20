@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _, WindowExt as _,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     dock::PanelControl,
     h_flex,
     progress::ProgressCircle,

@@ -4,18 +4,18 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, WindowExt as _,
-    button::{Button, ButtonVariants as _},
-    checkbox::Checkbox,
+    controls::button::{Button, ButtonVariants as _},
+    controls::checkbox::Checkbox,
     date_picker::{DatePicker, DatePickerState},
     dialog::{
         Dialog, DialogAction, DialogClose, DialogDescription, DialogFooter, DialogHeader,
         DialogTitle,
     },
     h_flex,
-    input::{Input, InputState},
-    select::{Select, SelectState},
+    controls::input::{Input, InputState},
+    controls::select::{Select, SelectState},
     table::{Column, DataTable, TableDelegate, TableState},
-    text::{TextView, markdown},
+    foundation::text::{TextView, markdown},
     v_flex,
 };
 

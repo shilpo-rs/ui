@@ -5,9 +5,9 @@ use gpui::{
 use shilpo_m3e::{
     IconName, Selectable as _, Sizable as _, Size,
     alert::Alert,
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
     dock::PanelControl,
-    text::markdown,
+    foundation::text::markdown,
     v_flex,
 };
 

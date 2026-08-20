@@ -7,11 +7,11 @@ use serde::Deserialize;
 use shilpo_m3e::{AxisExt, h_flex, menu::DropdownMenu as _};
 use shilpo_m3e::{
     Sizable as _, Size,
-    button::Button,
-    checkbox::Checkbox,
+    controls::button::Button,
+    controls::checkbox::Checkbox,
     description_list::{DescriptionItem, DescriptionList},
     dock::PanelControl,
-    text::TextView,
+    foundation::text::TextView,
     v_flex,
 };
 

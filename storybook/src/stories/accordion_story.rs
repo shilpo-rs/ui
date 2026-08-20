@@ -5,10 +5,10 @@ use gpui::{
 use shilpo_m3e::{
     IconName, Selectable, Sizable, Size,
     accordion::Accordion,
-    button::{Button, ButtonGroup},
-    checkbox::Checkbox,
+    controls::button::{Button, ButtonGroup},
+    controls::checkbox::Checkbox,
     h_flex,
-    switch::Switch,
+    controls::switch::Switch,
     v_flex,
 };
 

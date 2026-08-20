@@ -13,7 +13,7 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme, WindowExt as _, foundation::global_state::GlobalState, input::Selection,
+    ActiveTheme, WindowExt as _, foundation::global_state::GlobalState, controls::input::Selection,
     foundation::text::TextViewMultiClickKind, foundation::text::node::LinkMark, foundation::text::selection::word_range_at,
 };
 

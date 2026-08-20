@@ -7,7 +7,7 @@ use gpui::{
 
 use crate::{
     IconName, Sizable as _,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
 };
 
 /// An element that provides clipboard copy functionality.

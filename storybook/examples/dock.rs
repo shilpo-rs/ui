@@ -5,7 +5,7 @@ use gpui::*;
 use serde::Deserialize;
 use shilpo_m3e::{
     IconName, Root, Sizable,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     dock::{ClosePanel, DockArea, DockAreaState, DockEvent, DockItem, DockPlacement, ToggleZoom},
     menu::DropdownMenu,
     status_bar::StatusBar,

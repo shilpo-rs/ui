@@ -15,7 +15,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme as _, Edges, Icon, IconName, Sizable as _, StyledExt, TITLE_BAR_HEIGHT,
-    foundation::animation::cubic_bezier, button::Button, h_flex, v_flex,
+    foundation::animation::cubic_bezier, controls::button::Button, h_flex, v_flex,
 };
 
 #[derive(Debug, Clone, Copy, Default)]

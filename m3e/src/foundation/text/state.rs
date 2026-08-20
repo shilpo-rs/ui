@@ -11,7 +11,7 @@ use crate::{
     ActiveTheme, ElementExt,
     foundation::async_util::{Receiver, Sender, unbounded},
     foundation::highlighter::HighlightTheme,
-    input::{self, SelectAll},
+    controls::input::{self, SelectAll},
     scroll::AutoScroll,
     foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, TextViewStyle,

@@ -8,11 +8,11 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, IndexPath, Placement, WindowExt,
-    button::{Button, ButtonVariant, ButtonVariants as _},
-    checkbox::Checkbox,
+    controls::button::{Button, ButtonVariant, ButtonVariants as _},
+    controls::checkbox::Checkbox,
     date_picker::{DatePicker, DatePickerState},
     h_flex,
-    input::{Input, InputState},
+    controls::input::{Input, InputState},
     list::{List, ListDelegate, ListItem, ListState},
     v_flex,
 };

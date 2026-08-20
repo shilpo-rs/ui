@@ -4,8 +4,8 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, Selectable as _, Sizable, Size, StyledExt,
-    button::{Button, ButtonGroup},
-    checkbox::Checkbox,
+    controls::button::{Button, ButtonGroup},
+    controls::checkbox::Checkbox,
     h_flex,
     stepper::{Stepper, StepperItem},
     v_flex,

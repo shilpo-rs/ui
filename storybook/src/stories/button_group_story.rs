@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     Disableable as _, Selectable as _, Sizable as _, Size,
-    button::{Button, ButtonGroup, ButtonGroupMode, ButtonVariants as _},
+    controls::button::{Button, ButtonGroup, ButtonGroupMode, ButtonVariants as _},
     h_flex, v_flex,
 };
 

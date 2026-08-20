@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, Selectable as _, Sizable, Size,
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
     h_flex,
     table::{
         Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow,

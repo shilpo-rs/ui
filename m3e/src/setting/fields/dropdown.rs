@@ -7,7 +7,7 @@ use gpui::{
 
 use crate::{
     AxisExt, Disableable, Sizable, StyledExt,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     menu::{DropdownMenu, PopupMenuItem},
     setting::{
         AnySettingField, RenderOptions,

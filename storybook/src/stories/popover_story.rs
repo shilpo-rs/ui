@@ -6,9 +6,9 @@ use gpui::{
 use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme, StyledExt, WindowExt,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     h_flex,
-    input::{Input, InputState},
+    controls::input::{Input, InputState},
     list::{List, ListDelegate, ListItem, ListState},
     popover::Popover,
     separator::Separator,

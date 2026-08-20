@@ -10,7 +10,7 @@ use sum_tree::{Bias, SeekTarget, SumTree};
 
 use crate::{
     ActiveTheme,
-    input::{Position, RopeExt as _},
+    controls::input::{Position, RopeExt as _},
 };
 
 pub type DiagnosticRelatedInformation = lsp_types::DiagnosticRelatedInformation;
@@ -332,7 +332,7 @@ impl DiagnosticSet {
 
 #[cfg(test)]
 mod tests {
-    use crate::input::Position;
+    use crate::controls::input::Position;
 
     #[test]
     fn test_diagnostic() {

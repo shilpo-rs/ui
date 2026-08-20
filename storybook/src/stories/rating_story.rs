@@ -3,7 +3,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, IconName, Selectable as _, Sizable as _, Size,
-    button::{Button, ButtonGroup},
+    controls::button::{Button, ButtonGroup},
     h_flex,
     rating::Rating,
     v_flex,

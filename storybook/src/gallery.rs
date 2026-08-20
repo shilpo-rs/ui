@@ -1,9 +1,9 @@
 use gpui::{prelude::*, *};
 use shilpo_m3e::{
     Icon, IconName, Sizable as _,
-    button::{Button, ButtonVariants as _},
+    controls::button::{Button, ButtonVariants as _},
     h_flex,
-    input::{Input, InputEvent, InputState},
+    controls::input::{Input, InputEvent, InputState},
     resizable::{h_resizable, resizable_panel},
     separator::Separator,
     sidebar::{Sidebar, SidebarGroup, SidebarMenu, SidebarMenuItem},

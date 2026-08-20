@@ -4,16 +4,16 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, AxisExt, IndexPath, Selectable, Sizable, Size,
-    button::{Button, ButtonGroup},
-    checkbox::Checkbox,
-    color_picker::{ColorPicker, ColorPickerState},
+    controls::button::{Button, ButtonGroup},
+    controls::checkbox::Checkbox,
+    controls::color_picker::{ColorPicker, ColorPickerState},
     date_picker::{DatePicker, DatePickerState},
     form::{field, v_form},
     h_flex,
-    input::{Input, InputState},
-    select::{Select, SelectState},
+    controls::input::{Input, InputState},
+    controls::select::{Select, SelectState},
     separator::Separator,
-    switch::Switch,
+    controls::switch::Switch,
     v_flex,
 };
 

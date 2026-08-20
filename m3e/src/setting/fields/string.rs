@@ -7,7 +7,7 @@ use gpui::{
 
 use crate::{
     AxisExt as _, Sizable, StyledExt,
-    input::{Input, InputEvent, InputState},
+    controls::input::{Input, InputEvent, InputState},
     setting::{
         AnySettingField, RenderOptions,
         fields::{SettingFieldRender, get_value, set_value},

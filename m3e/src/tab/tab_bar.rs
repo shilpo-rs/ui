@@ -11,7 +11,7 @@ use smallvec::SmallVec;
 
 use super::{Tab, TabVariant};
 use crate::foundation::animation::Lerp;
-use crate::button::{Button, ButtonVariants as _};
+use crate::controls::button::{Button, ButtonVariants as _};
 use crate::menu::{DropdownMenu as _, PopupMenuItem};
 use crate::{
     ActiveTheme, ElementExt, Icon, IconName, Selectable, Sizable, Size, StyledExt, h_flex,

@@ -1,7 +1,7 @@
 use gpui::*;
 use shilpo_m3e::{
     ActiveTheme as _, ThemeColor, h_flex,
-    input::{Input, InputEvent, InputState},
+    controls::input::{Input, InputEvent, InputState},
     v_flex,
 };
 

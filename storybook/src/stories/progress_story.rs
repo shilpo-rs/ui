@@ -6,7 +6,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, IconName, Selectable, Sizable, Size,
-    button::Button,
+    controls::button::Button,
     h_flex,
     progress::{LoadingIndicator, Progress, ProgressCircle},
     v_flex,
