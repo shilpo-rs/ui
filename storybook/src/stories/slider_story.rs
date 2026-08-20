@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, Focusable, Hsla, IntoElement, ParentElement, Render,
     SharedString, Styled, Subscription, Window, hsla, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Colorize as _, StyledExt, WindowExt,
     checkbox::Checkbox,
     clipboard::Clipboard,

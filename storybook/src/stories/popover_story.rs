@@ -4,7 +4,7 @@ use gpui::{
     Render, Styled as _, WeakEntity, Window, actions, div, px,
 };
 use serde::Deserialize;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, StyledExt, WindowExt,
     button::{Button, ButtonVariants as _},
     h_flex,
@@ -77,7 +77,7 @@ impl ListDelegate for DropdownListDelegate {
 
     fn render_item(
         &mut self,
-        ix: shilpo_ui::IndexPath,
+        ix: shilpo_m3e::IndexPath,
         _: &mut Window,
         _: &mut Context<ListState<Self>>,
     ) -> Option<Self::Item> {
@@ -86,9 +86,9 @@ impl ListDelegate for DropdownListDelegate {
 
     fn set_selected_index(
         &mut self,
-        _: Option<shilpo_ui::IndexPath>,
+        _: Option<shilpo_m3e::IndexPath>,
         _: &mut Window,
-        _: &mut Context<shilpo_ui::list::ListState<Self>>,
+        _: &mut Context<shilpo_m3e::list::ListState<Self>>,
     ) {
     }
 

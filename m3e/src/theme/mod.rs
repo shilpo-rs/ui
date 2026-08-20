@@ -4,11 +4,13 @@ use crate::{
     highlighter::HighlightTheme, list::ListSettings, notification::NotificationSettings,
     scroll::ScrollbarShow, sheet::SheetSettings,
 };
-pub mod state;
 use std::ops::{Deref, DerefMut};
 use std::sync::Arc;
 
-pub use state::*;
+// The M3 palette/reducer implementation lives in shilpo-theme, not duplicated here; m3e is
+// M3-specific by design (mcu_material_color's dynamic-color schemes are baked into it), so it
+// owns the color math rather than treating it as a shared cross-design-system abstraction.
+pub use shilpo_theme::*;
 
 mod color;
 mod theme_color;

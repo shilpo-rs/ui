@@ -9,7 +9,7 @@ use gpui::{
     Styled, Window, actions, prelude::FluentBuilder as _, px,
 };
 use rand::prelude::IndexedRandom as _;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, IconName,
     button::Button,
     dock::PanelControl,

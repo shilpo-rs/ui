@@ -5,7 +5,7 @@ use gpui::{
     Render, SharedString, Styled, Window, div, prelude::FluentBuilder, px, relative,
 };
 use serde::Deserialize;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Icon, IconName, Selectable as _, Side, Sizable,
     badge::Badge,
     breadcrumb::{Breadcrumb, BreadcrumbItem},

@@ -915,7 +915,7 @@ impl RenderOnce for Tab {
                 let disabled = self.disabled;
                 move |event, _, cx| {
                     // Stop propagation behavior, for works on TitleBar.
-                    // https://github.com/longbridge/shilpo-ui/issues/1836
+                    // https://github.com/longbridge/shilpo-m3e/issues/1836
                     cx.stop_propagation();
                     if !disabled {
                         crate::ripple::RippleState::start_ripple(

@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, InteractiveElement as _, IntoElement,
     ParentElement, Render, SharedString, Styled, Window, div, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Icon, IconName, WindowExt as _,
     button::{Button, ButtonVariants as _},
     checkbox::Checkbox,

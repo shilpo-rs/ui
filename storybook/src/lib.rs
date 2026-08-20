@@ -6,7 +6,7 @@ use gpui::{
     prelude::FluentBuilder as _, px, rems, size,
 };
 use serde::{Deserialize, Serialize};
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, IconName, Root, TitleBar, WindowControlsMode, WindowExt,
     button::Button,
     dock::{Panel, PanelControl, PanelEvent, PanelInfo, PanelState, TitleStyle, register_panel},
@@ -173,7 +173,7 @@ pub fn init(cx: &mut App) {
             .with(tracing_subscriber::fmt::layer())
             .with(
                 tracing_subscriber::EnvFilter::from_default_env()
-                    .add_directive("shilpo_ui=trace".parse().unwrap()),
+                    .add_directive("shilpo_m3e=trace".parse().unwrap()),
             )
             .try_init();
     }
@@ -186,42 +186,17 @@ pub fn init(cx: &mut App) {
             .with(tracing_subscriber::fmt::layer().without_time())
             .with(
                 tracing_subscriber::EnvFilter::from_default_env()
-                    .add_directive("shilpo_ui=trace".parse().unwrap()),
+                    .add_directive("shilpo_m3e=trace".parse().unwrap()),
             )
             .try_init();
     }
 
-    rust_i18n::extend!(shilpo_ui);
-    shilpo_ui::init(cx);
-    *shilpo_ui::Theme::global_mut(cx) = shilpo_ui::Theme::new(0xff6750a4);
+    rust_i18n::extend!(shilpo_m3e);
+    shilpo_m3e::init(cx);
+    *shilpo_m3e::Theme::global_mut(cx) = shilpo_m3e::Theme::new(0xff6750a4);
     AppState::init(cx);
     themes::init(cx);
     stories::init(cx);
-
-    #[cfg(target_os = "linux")]
-    {
-        let theme_client = futures_lite::future::block_on(shilpo_theme_daemon::ThemeClient::new());
-        shilpo_ui::Theme::global_mut(cx).apply_state(&theme_client.current_state());
-        let mut rx = theme_client.subscribe();
-        let theme_client_for_task = theme_client.clone();
-        cx.spawn(async move |cx| {
-            loop {
-                let update = match rx.recv().await {
-                    Ok(update) => update,
-                    Err(tokio::sync::broadcast::error::RecvError::Lagged(_)) => {
-                        theme_client_for_task.current_update()
-                    }
-                    Err(tokio::sync::broadcast::error::RecvError::Closed) => break,
-                };
-                let state = update.state;
-                cx.update(|cx| {
-                    shilpo_ui::Theme::global_mut(cx).apply_state(&state);
-                    cx.refresh_windows();
-                });
-            }
-        })
-        .detach();
-    }
 
     #[cfg(target_os = "linux")]
     {
@@ -771,14 +746,14 @@ impl Render for StoryRoot {
 mod tests {
     #[test]
     fn extends_component_translations_with_story_locales() {
-        rust_i18n::extend!(shilpo_ui);
+        rust_i18n::extend!(shilpo_m3e);
 
         assert_eq!(
-            shilpo_ui::_rust_i18n_try_translate("fr", "Calendar.month.January"),
+            shilpo_m3e::_rust_i18n_try_translate("fr", "Calendar.month.January"),
             Some("Janvier".into())
         );
         assert_eq!(
-            shilpo_ui::_rust_i18n_try_translate("en", "Calendar.month.January"),
+            shilpo_m3e::_rust_i18n_try_translate("en", "Calendar.month.January"),
             Some("January".into())
         );
     }

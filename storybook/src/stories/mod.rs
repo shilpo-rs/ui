@@ -1,5 +1,5 @@
 use gpui::{AnyView, App, AppContext as _, Entity, Hsla, Pixels, Render, Window, px};
-use shilpo_ui::dock::PanelControl;
+use shilpo_m3e::dock::PanelControl;
 
 mod accordion_story;
 mod alert_dialog_story;

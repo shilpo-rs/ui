@@ -3,7 +3,7 @@ use std::{sync::Arc, time::Duration};
 use anyhow::{Context as _, Result};
 use gpui::*;
 use serde::{Deserialize, Serialize};
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Root, Sizable, TitleBar,
     dock::{
         DockArea, DockAreaState, DockEvent, DockItem, Panel, PanelEvent, PanelInfo, PanelRegistry,
@@ -140,7 +140,7 @@ actions!(workspace, [Open, CloseWindow]);
 pub fn init(cx: &mut App) {
     cx.on_action(|_action: &Open, _cx: &mut App| {});
 
-    shilpo_ui::init(cx);
+    shilpo_m3e::init(cx);
     storybook::init(cx);
 }
 
@@ -438,7 +438,7 @@ fn main() {
     let app = gpui_platform::application().with_assets(Assets);
 
     app.run(move |cx| {
-        shilpo_ui::init(cx);
+        shilpo_m3e::init(cx);
         storybook::init(cx);
         ContainerPanel::init(cx);
 

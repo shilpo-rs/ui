@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, Focusable, IntoElement, ParentElement, Render, SharedString,
     Styled, Window,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     WindowExt,
     clipboard::Clipboard,
     h_flex,

@@ -3,7 +3,7 @@ use gpui::{
     ParentElement as _, Render, Styled as _, Window, div, px,
 };
 use serde::Deserialize;
-use shilpo_ui::{
+use shilpo_m3e::{
     Disableable as _, IconName, Selectable as _, Sizable as _, Size,
     button::{
         Button, ButtonRounded, ButtonVariants as _, SplitButton, SplitButtonShape,

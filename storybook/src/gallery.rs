@@ -1,5 +1,5 @@
 use gpui::{prelude::*, *};
-use shilpo_ui::{
+use shilpo_m3e::{
     Icon, IconName, Sizable as _,
     button::{Button, ButtonVariants as _},
     h_flex,

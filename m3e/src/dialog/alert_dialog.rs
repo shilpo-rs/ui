@@ -26,7 +26,7 @@ use crate::{
 /// ## Imperative API (using WindowExt)
 ///
 /// ```ignore
-/// use shilpo_ui::{AlertDialog, alert::AlertVariant};
+/// use shilpo_m3e::{AlertDialog, alert::AlertVariant};
 ///
 /// // Using WindowExt trait
 /// window.open_alert_dialog(cx, |alert, _, _| {
@@ -40,7 +40,7 @@ use crate::{
 /// ## Declarative API (using trigger and content)
 ///
 /// ```ignore
-/// use shilpo_ui::{AlertDialog, DialogHeader, DialogTitle, DialogDescription, DialogFooter};
+/// use shilpo_m3e::{AlertDialog, DialogHeader, DialogTitle, DialogDescription, DialogFooter};
 ///
 /// AlertDialog::new(cx)
 ///     .trigger(Button::new("delete").label("Delete"))

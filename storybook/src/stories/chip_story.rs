@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window,
 };
-use shilpo_ui::{Icon, IconName, chip::Chip, dock::PanelControl, h_flex, v_flex};
+use shilpo_m3e::{Icon, IconName, chip::Chip, dock::PanelControl, h_flex, v_flex};
 
 use crate::section;
 
@@ -170,7 +170,7 @@ impl Render for ChipStory {
                                 .on_dismiss(|_, _, _| {}),
                         )
                         .child(
-                            Chip::input("input-2", "shilpo-ui")
+                            Chip::input("input-2", "shilpo-m3e")
                                 .leading_icon(Icon::new(IconName::Folder))
                                 .on_dismiss(|_, _, _| {}),
                         ),

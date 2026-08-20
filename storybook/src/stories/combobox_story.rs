@@ -1,5 +1,5 @@
 use gpui::{prelude::FluentBuilder as _, *};
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Icon, IconName, IndexPath, Sizable as _,
     button::{Button, ButtonVariants as _},
     combobox::*,
@@ -80,7 +80,7 @@ impl SearchableListItem for Industry {
     }
 
     fn render(&self, _window: &mut gpui::Window, cx: &mut gpui::App) -> impl gpui::IntoElement {
-        use shilpo_ui::ActiveTheme as _;
+        use shilpo_m3e::ActiveTheme as _;
 
         h_flex()
             .w_full()

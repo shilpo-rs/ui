@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Axis, Context, Element, Entity, FocusHandle, Focusable, Global, IntoElement,
     ParentElement as _, Render, SharedString, Styled, Window, prelude::FluentBuilder, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Disableable, Icon, IconName, Sizable, Size, Theme, ThemeMode,
     button::{Button, ButtonVariants as _},
     group_box::GroupBoxVariant,
@@ -485,7 +485,7 @@ impl SettingsStory {
                         "Documentation",
                         SettingField::element(OpenURLSettingField::new(
                             "Rust Docs...",
-                            "https://docs.rs/shilpo-ui"
+                            "https://docs.rs/shilpo-m3e"
                         )),
                     )
                         .description(markdown(

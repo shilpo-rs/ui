@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext as _, Context, Entity, Focusable, IntoElement, ParentElement as _, Render,
     Styled as _, Window, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     Disableable as _, Selectable as _, Sizable as _, Size,
     button::{Button, ButtonGroup, ButtonRounded, ButtonVariant, ButtonVariants as _},
     label::Label,
@@ -263,7 +263,7 @@ impl Render for ButtonStory {
                     .child(
                         Button::new("content-icon-label")
                             .filled()
-                            .icon(shilpo_ui::IconName::Check)
+                            .icon(shilpo_m3e::IconName::Check)
                             .label("Confirmed"),
                     )
                     .child(Button::new("content-text").text().label("Learn more"))

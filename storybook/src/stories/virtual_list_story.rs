@@ -4,7 +4,7 @@ use gpui::{
     App, AppContext, Context, Div, Entity, FocusHandle, Focusable, InteractiveElement, IntoElement,
     ParentElement, Pixels, Render, ScrollStrategy, Size, Styled, Window, div, px, size,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, Selectable, Sizable, VirtualListScrollHandle,
     button::{Button, ButtonGroup},
     h_flex,

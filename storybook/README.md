@@ -1,6 +1,6 @@
 # Shilpo Storybook
 
-An interactive desktop gallery for exploring, testing, and reviewing all UI components built in `shilpo-ui`.
+An interactive desktop gallery for exploring, testing, and reviewing all UI components built in `shilpo-m3e`.
 
 ---
 
@@ -20,16 +20,16 @@ cargo run -p storybook -- switch
 
 ---
 
-## How to Use `shilpo-ui` & Assets in Your Own App
+## How to Use `shilpo-m3e` & Assets in Your Own App
 
-> **Asset Note**: Storybook owns its GPUI asset source and embeds the canonical SVGs from `core/assets/icons/`. Applications using `shilpo-ui` must register their own asset source; the UI crate publishes icon names, not default icon bytes.
+> **Asset Note**: Storybook owns its GPUI asset source and embeds the canonical SVGs from `core/assets/icons/`. Applications using `shilpo-m3e` must register their own asset source; the UI crate publishes icon names, not default icon bytes.
 
 ### 1. Add Dependencies to `Cargo.toml`
 
 ```toml
 [dependencies]
 gpui = { git = "https://github.com/zed-industries/zed" }
-shilpo-ui = { git = "https://github.com/shilpo-rs/shilpo" }
+shilpo-m3e = { git = "https://github.com/shilpo-rs/shilpo" }
 rust-embed = "8"
 ```
 
@@ -63,10 +63,10 @@ impl AssetSource for AppAssets {
 
 ### 3. Generate Custom Icon Types with `icon_named!`
 
-`shilpo-ui` provides the `icon_named!` macro to generate strongly-typed icon enums directly from your local SVG directory:
+`shilpo-m3e` provides the `icon_named!` macro to generate strongly-typed icon enums directly from your local SVG directory:
 
 ```rust,no_run
-use shilpo_ui::icon_named;
+use shilpo_m3e::icon_named;
 
 // Generate `MyIcon` enum from SVG files in "assets/icons"
 icon_named!(MyIcon, "assets/icons");
@@ -76,7 +76,7 @@ icon_named!(MyIcon, "assets/icons");
 
 ```rust,no_run
 use gpui::{App, WindowOptions, px, size};
-use shilpo_ui::{
+use shilpo_m3e::{
     button::Button,
     switch::Switch,
     Icon, ActiveTheme, Root,
@@ -89,7 +89,7 @@ fn main() {
 
     app.run(move |cx| {
         // 2. Initialize Shilpo UI state
-        shilpo_ui::init(cx);
+        shilpo_m3e::init(cx);
         cx.activate(true);
 
         // 3. Open a window wrapped with Shilpo's Root component

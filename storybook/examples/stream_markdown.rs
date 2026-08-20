@@ -1,5 +1,5 @@
 use gpui::*;
-use shilpo_ui::{
+use shilpo_m3e::{
     button::Button,
     h_flex,
     text::{TextView, TextViewState},

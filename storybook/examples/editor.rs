@@ -14,7 +14,7 @@ use lsp_types::{
     CompletionTextEdit, InlineCompletionContext, InlineCompletionItem, InlineCompletionResponse,
     InsertReplaceEdit, InsertTextFormat, TextEdit, WorkspaceEdit,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, IconName, Sizable, WindowExt,
     button::{Button, ButtonVariants as _},
     h_flex,

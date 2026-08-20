@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     Disableable, Selectable as _, Sizable, Size,
     button::{Button, ButtonGroup},
     pagination::Pagination,

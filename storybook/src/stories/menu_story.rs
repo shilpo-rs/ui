@@ -3,7 +3,7 @@ use gpui::{
     ParentElement as _, Render, SharedString, Styled as _, Window, actions, div, px,
 };
 use serde::Deserialize;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, IconName, Side, StyledExt,
     button::Button,
     h_flex,

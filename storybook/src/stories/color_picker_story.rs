@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, Focusable, Hsla, IntoElement, ParentElement as _, Render,
     Styled as _, Subscription, Window, div, prelude::FluentBuilder as _,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, Colorize, Sizable,
     color_picker::{ColorPicker, ColorPickerEvent, ColorPickerState},
     v_flex,

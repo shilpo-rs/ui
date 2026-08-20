@@ -3,7 +3,7 @@ use gpui::{
     ParentElement as _, Render, Styled, Subscription, Window, px,
 };
 use regex::Regex;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Disableable, IconName, Sizable,
     button::{Button, ButtonVariants as _},
     input::{InputEvent, InputState, MaskPattern, NumberInput, NumberInputEvent, StepAction},

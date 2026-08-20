@@ -6,7 +6,7 @@ use gpui::{
     ParentElement, Render, SharedString, Styled, Task, WeakEntity, Window, div,
     prelude::FluentBuilder as _, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, IndexPath, Placement, WindowExt,
     button::{Button, ButtonVariant, ButtonVariants as _},
     checkbox::Checkbox,

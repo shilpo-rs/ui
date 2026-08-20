@@ -4,7 +4,7 @@ use gpui::{
     App, AppContext, Context, Entity, Focusable, IntoElement, ParentElement, Render, Styled, Task,
     Window, div, prelude::FluentBuilder as _,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, IconName, Selectable, Sizable, Size,
     button::Button,
     h_flex,

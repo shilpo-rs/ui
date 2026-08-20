@@ -3,9 +3,13 @@ use std::borrow::Cow;
 use anyhow::anyhow;
 use gpui::{AssetSource, Result, SharedString};
 
+// Vendored copy of just the icons this gallery actually demonstrates, not the full canonical
+// set in shilpo-rs/shilpo's core/assets -- storybook is a demonstration, not a mirror, and
+// (per this library's own design) consumers bring their own icons rather than depend on the
+// canonical source directly.
 #[cfg(not(target_family = "wasm"))]
 #[derive(rust_embed::RustEmbed)]
-#[folder = "../../core/assets"]
+#[folder = "assets"]
 #[include = "icons/**/*.svg"]
 pub struct Assets;
 

@@ -1,9 +1,13 @@
 [package]
 name = "shilpo-theme"
+description = "Material Design 3 color math and theme state, used by shilpo-m3e."
 version = "0.1.0"
 edition.workspace = true
 publish = true
 license = "Apache-2.0"
+homepage = "https://github.com/shilpo-rs/ui"
+repository = "https://github.com/shilpo-rs/ui"
+readme = "README.md"
 
 [[bench]]
 name = "theme"

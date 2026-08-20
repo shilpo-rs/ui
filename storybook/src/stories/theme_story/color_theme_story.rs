@@ -1,5 +1,5 @@
 use gpui::*;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, ThemeColor, h_flex,
     input::{Input, InputEvent, InputState},
     v_flex,

@@ -157,7 +157,7 @@ pub enum SliderScale {
     /// # For example
     ///
     /// ```
-    /// use shilpo_ui::slider::{SliderState, SliderScale};
+    /// use shilpo_m3e::slider::{SliderState, SliderScale};
     ///
     /// let slider = SliderState::new()
     ///     .min(1.0)    // Must be > 0 for logarithmic scale

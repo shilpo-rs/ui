@@ -1,5 +1,5 @@
 use gpui::*;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _,
     highlighter::Language,
     input::{Input, InputState, TabSize},
@@ -30,7 +30,7 @@ impl Example {
 
         let _subscribe = cx.subscribe(
             &input_state,
-            |_, _, _: &shilpo_ui::input::InputEvent, cx| {
+            |_, _, _: &shilpo_m3e::input::InputEvent, cx| {
                 cx.notify();
             },
         );

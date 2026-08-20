@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window, div,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     Icon, IconName,
     button::Button,
     card::{Card, CardHeader},

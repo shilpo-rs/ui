@@ -1,5 +1,5 @@
 use gpui::*;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Selectable, Sizable, WindowExt,
     button::{Button, ButtonVariants as _},
     h_flex,

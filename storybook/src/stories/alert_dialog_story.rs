@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, InteractiveElement as _, IntoElement,
     ParentElement, Render, Styled, Window, div, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Icon, IconName, StyledExt, WindowExt as _,
     button::{Button, ButtonVariant, ButtonVariants as _},
     dialog::{
@@ -107,7 +107,7 @@ impl Render for AlertDialogStory {
                                 .outline()
                                 .label("Show Confirmation")
                                 .on_click(cx.listener(|_, _, window, cx| {
-                                    use shilpo_ui::dialog::DialogButtonProps;
+                                    use shilpo_m3e::dialog::DialogButtonProps;
 
                                     window.open_alert_dialog(cx, |alert, _, cx| {
                                         alert

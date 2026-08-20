@@ -2,7 +2,9 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window, div,
 };
-use shilpo_ui::{ActiveTheme as _, StyledExt as _, carousel::Carousel, dock::PanelControl, v_flex};
+use shilpo_m3e::{
+    ActiveTheme as _, StyledExt as _, carousel::Carousel, dock::PanelControl, v_flex,
+};
 
 use crate::section;
 

@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     IconName, button::IconButton, dock::PanelControl, floating_toolbar::FloatingToolbar, h_flex,
     v_flex,
 };

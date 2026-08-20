@@ -6,7 +6,7 @@ use gpui::{
     IntoElement, ParentElement, Render, RenderOnce, ScrollStrategy, SharedString, Styled,
     Subscription, Task, Window, actions, div, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Icon, IconName, IndexPath, Selectable, Sizable,
     button::Button,
     checkbox::Checkbox,

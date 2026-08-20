@@ -1,12 +1,12 @@
 [package]
-description = "UI components for building fantastic desktop application by using GPUI."
-keywords = ["desktop", "gpui", "shadcn", "ui", "uikit"]
+description = "Material Design 3 (Expressive) components for building desktop applications with GPUI."
+keywords = ["desktop", "gpui", "material", "ui", "uikit"]
 license = "Apache-2.0"
-name = "shilpo-ui"
-documentation = "https://docs.rs/shilpo-ui"
-homepage = "https://github.com/shilpo-rs/shilpo"
-repository = "https://github.com/shilpo-rs/shilpo"
-readme = "../../README.md"
+name = "shilpo-m3e"
+documentation = "https://docs.rs/shilpo-m3e"
+homepage = "https://github.com/shilpo-rs/ui"
+repository = "https://github.com/shilpo-rs/ui"
+readme = "README.md"
 version = "0.1.0"
 publish = true
 edition.workspace = true

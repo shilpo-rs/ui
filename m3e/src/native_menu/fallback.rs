@@ -1,6 +1,6 @@
 //! Fallback popup menu for platforms without an OS-native popup (e.g. Linux).
 //!
-//! It renders shilpo-ui's drawn [`PopupMenu`] through an overlay held by
+//! It renders shilpo-m3e's drawn [`PopupMenu`] through an overlay held by
 //! [`Root`]. Unlike a real native menu it is clipped to the window, but it keeps
 //! the [`super::NativeMenu`] API working on every platform.
 

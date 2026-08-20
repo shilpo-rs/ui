@@ -1,7 +1,7 @@
 use std::rc::Rc;
 
 use gpui::{StyleRefinement, prelude::FluentBuilder, *};
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, Colorize as _, ElementExt, IconName, Sizable,
     button::Button,
     checkbox::Checkbox,

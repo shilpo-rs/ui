@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window, prelude::FluentBuilder as _,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     breadcrumb::{Breadcrumb, BreadcrumbItem},
     v_flex,
 };

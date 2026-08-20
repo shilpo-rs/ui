@@ -3,7 +3,7 @@ use gpui::{
     ParentElement as _, Render, SharedString, Styled, Subscription, Window,
     prelude::FluentBuilder as _, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     Disableable as _, Sizable, StyledExt,
     checkbox::Checkbox,
     h_flex,

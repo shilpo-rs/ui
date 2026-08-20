@@ -7,7 +7,7 @@ use gpui::{
     Point, Render, SharedString, Styled as _, Window, div, px,
 };
 use serde::Deserialize;
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, ElementExt, IconName, button::Button, native_menu::NativeMenu, v_flex,
 };
 

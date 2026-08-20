@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window, div, px,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     IconName, NavigationRail, NavigationRailHeader, NavigationRailItem, NavigationRailMenuButton,
     Selectable, StyledExt, badge::Badge, h_flex, v_flex,
 };
@@ -42,7 +42,7 @@ impl super::Story for NavigationRailStory {
         Self::view(window, cx)
     }
 
-    fn zoomable() -> Option<shilpo_ui::dock::PanelControl> {
+    fn zoomable() -> Option<shilpo_m3e::dock::PanelControl> {
         None
     }
 }

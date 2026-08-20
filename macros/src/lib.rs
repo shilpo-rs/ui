@@ -93,8 +93,8 @@ fn pascal_case(filename: &str) -> String {
 ///   environment variable whose value is the absolute path to the icons directory.
 ///   Use this when the icons live in *another* crate and the path is plumbed
 ///   through cargo's `links` / `DEP_<X>_<KEY>` propagation mechanism. The default
-///   `IconName` enum in `shilpo-ui` uses this pattern to consume icons from
-///   `shilpo-ui-assets` without a sibling-crate reference, which would
+///   `IconName` enum in `shilpo-m3e` uses this pattern to consume icons from
+///   `shilpo-m3e-assets` without a sibling-crate reference, which would
 ///   otherwise break `cargo vendor` and `cargo publish`.
 ///
 /// # Example

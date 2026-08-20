@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement as _,
     Render, Styled as _, Window,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     calendar::{Calendar, CalendarState},
     v_flex,
 };

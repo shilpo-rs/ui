@@ -4,7 +4,7 @@ use gpui::{
     Anchor, App, AppContext as _, Context, Entity, IntoElement, ParentElement as _, Render,
     Styled as _, Window, div, px, relative,
 };
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme, StyledExt, avatar::Avatar, button::Button, h_flex, hover_card::HoverCard, v_flex,
 };
 

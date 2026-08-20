@@ -1,8 +1,8 @@
 use std::cell::Cell;
 
 use gpui::{App, Entity, Menu, MenuItem, SharedString};
-use shilpo_ui::WindowControlsMode;
-use shilpo_ui::{ActiveTheme as _, GlobalState, Theme, ThemeMode, menu::AppMenuBar};
+use shilpo_m3e::WindowControlsMode;
+use shilpo_m3e::{ActiveTheme as _, GlobalState, Theme, ThemeMode, menu::AppMenuBar};
 
 use crate::{
     About, AppState, Open, Quit, SelectLocale, SelectWindowControls, ToggleSearch,
@@ -96,23 +96,23 @@ fn build_menus(title: impl Into<SharedString>, cx: &App) -> Vec<Menu> {
         Menu {
             name: "Edit".into(),
             items: vec![
-                MenuItem::action("Undo", shilpo_ui::input::Undo),
-                MenuItem::action("Redo", shilpo_ui::input::Redo),
+                MenuItem::action("Undo", shilpo_m3e::input::Undo),
+                MenuItem::action("Redo", shilpo_m3e::input::Redo),
                 MenuItem::separator(),
-                MenuItem::action("Cut", shilpo_ui::input::Cut),
-                MenuItem::action("Copy", shilpo_ui::input::Copy),
-                MenuItem::action("Paste", shilpo_ui::input::Paste),
+                MenuItem::action("Cut", shilpo_m3e::input::Cut),
+                MenuItem::action("Copy", shilpo_m3e::input::Copy),
+                MenuItem::action("Paste", shilpo_m3e::input::Paste),
                 MenuItem::separator(),
-                MenuItem::action("Delete", shilpo_ui::input::Delete),
+                MenuItem::action("Delete", shilpo_m3e::input::Delete),
                 MenuItem::action(
                     "Delete Previous Word",
-                    shilpo_ui::input::DeleteToPreviousWordStart,
+                    shilpo_m3e::input::DeleteToPreviousWordStart,
                 ),
-                MenuItem::action("Delete Next Word", shilpo_ui::input::DeleteToNextWordEnd),
+                MenuItem::action("Delete Next Word", shilpo_m3e::input::DeleteToNextWordEnd),
                 MenuItem::separator(),
-                MenuItem::action("Find", shilpo_ui::input::Search),
+                MenuItem::action("Find", shilpo_m3e::input::Search),
                 MenuItem::separator(),
-                MenuItem::action("Select All", shilpo_ui::input::SelectAll),
+                MenuItem::action("Select All", shilpo_m3e::input::SelectAll),
             ],
             disabled: false,
         },

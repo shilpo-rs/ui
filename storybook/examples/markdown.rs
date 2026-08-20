@@ -10,7 +10,7 @@ use std::{
 use gpui::{prelude::FluentBuilder as _, *};
 use lsp_types::{SemanticToken, SemanticTokenType, SemanticTokens, SemanticTokensLegend};
 use regex::{Captures, Regex};
-use shilpo_ui::{
+use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _,
     avatar::Avatar,
     button::{Button, ButtonVariants as _},

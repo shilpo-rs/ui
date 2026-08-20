@@ -1,10 +1,13 @@
 [package]
 name = "shilpo-macros"
-description = "Macros for GPUI Component."
+description = "Procedural macros (icon generation, plot derive) shared by Shilpo UI design systems."
 version = "0.1.0"
 license = "Apache-2.0"
 publish = true
 edition.workspace = true
+homepage = "https://github.com/shilpo-rs/ui"
+repository = "https://github.com/shilpo-rs/ui"
+readme = "README.md"
 
 [lib]
 proc-macro = true
