@@ -10,7 +10,7 @@ use rust_i18n::t;
 use smallvec::SmallVec;
 
 use super::{Tab, TabVariant};
-use crate::animation::Lerp;
+use crate::foundation::animation::Lerp;
 use crate::button::{Button, ButtonVariants as _};
 use crate::menu::{DropdownMenu as _, PopupMenuItem};
 use crate::{
@@ -291,7 +291,7 @@ impl TabBar {
             .with_animation(
                 ElementId::NamedInteger("tab-ind".into(), epoch),
                 Animation::new(Duration::from_millis(250))
-                    .with_easing(crate::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0)),
+                    .with_easing(crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0)),
                 move |el, delta| {
                     let left = Lerp::lerp(&from_left, &to_left, delta);
                     let width = Lerp::lerp(&from_width, &to_width, delta);

@@ -240,7 +240,7 @@ impl RenderOnce for IconButton {
         let focused = focus_handle.is_focused(window);
 
         let ripple_state = window.use_keyed_state(format!("{}-ripple", self.id), cx, |_, _| {
-            crate::ripple::RippleState::new()
+            crate::foundation::ripple::RippleState::new()
         });
         let disabled = self.disabled || self.loading;
         let cursor = self.cursor.or(self.style.mouse_cursor);
@@ -255,7 +255,7 @@ impl RenderOnce for IconButton {
 
         let spring_progress = ripple_state.read(cx).current_spring_progress();
         let active_radii = if spring_progress > 0.0 && !disabled {
-            crate::motion::lerp_corners(
+            crate::foundation::motion::lerp_corners(
                 gpui::Corners::all(radius),
                 gpui::Corners::all(pressed_radius),
                 spring_progress,
@@ -332,7 +332,7 @@ impl RenderOnce for IconButton {
                         return;
                     }
                     cx.stop_propagation();
-                    crate::ripple::RippleState::start_ripple(
+                    crate::foundation::ripple::RippleState::start_ripple(
                         ripple_state.clone(),
                         event.position,
                         cx,
@@ -343,7 +343,7 @@ impl RenderOnce for IconButton {
                 let ripple_state = ripple_state.clone();
                 move |_, _, cx| {
                     if !disabled {
-                        crate::ripple::RippleState::handle_mouse_up(ripple_state.clone(), cx);
+                        crate::foundation::ripple::RippleState::handle_mouse_up(ripple_state.clone(), cx);
                     }
                 }
             })
@@ -397,7 +397,7 @@ impl RenderOnce for IconButton {
                 },
             );
 
-        crate::ripple::RippleElement::new(icon_button_element.into_element(), ripple_state)
+        crate::foundation::ripple::RippleElement::new(icon_button_element.into_element(), ripple_state)
             .corner_radii(active_radii)
             .color(colors.content)
     }

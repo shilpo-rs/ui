@@ -7,7 +7,7 @@ use gpui::{
 };
 use instant::Duration;
 
-use crate::motion::ExpressiveSpring;
+use crate::foundation::motion::ExpressiveSpring;
 use crate::{ActiveTheme, Sizable, Size, StyledExt};
 
 /// A Material Design 3 Expressive morphing star loading indicator.

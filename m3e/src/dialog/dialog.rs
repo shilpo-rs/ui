@@ -12,11 +12,11 @@ use rust_i18n::t;
 use crate::{
     ActiveTheme as _, FocusTrapElement as _, IconName, Root, Sizable as _, StyledExt,
     TITLE_BAR_HEIGHT, WindowExt as _,
-    animation::cubic_bezier,
+    foundation::animation::cubic_bezier,
     button::{Button, ButtonVariant, ButtonVariants as _},
     dialog::{DialogContent, DialogTitle},
     scroll::ScrollableElement as _,
-    text::{SelectionScope, SelectionScopeElement as _},
+    foundation::text::{SelectionScope, SelectionScopeElement as _},
     v_flex,
 };
 
@@ -455,7 +455,7 @@ impl RenderOnce for Dialog {
         let on_ok = self.button_props.on_ok.clone();
         let on_cancel = self.button_props.on_cancel.clone();
 
-        let window_paddings = crate::window_border::window_paddings(window);
+        let window_paddings = crate::foundation::window_border::window_paddings(window);
         let view_size = window.viewport_size()
             - gpui::size(
                 window_paddings.left + window_paddings.right,

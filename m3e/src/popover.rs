@@ -8,7 +8,7 @@ use gpui::{
 };
 
 use crate::{
-    ElementExt, Selectable, StyledExt as _, actions::Cancel, global_state::GlobalState, v_flex,
+    ElementExt, Selectable, StyledExt as _, foundation::actions::Cancel, foundation::global_state::GlobalState, v_flex,
 };
 
 const CONTEXT: &str = "Popover";

@@ -12,12 +12,12 @@ use serde::{Deserialize, Serialize};
 use crate::{
     ActiveTheme, FocusTrapElement as _, IconName, Placement, Sizable, StyledExt as _,
     WindowExt as _,
-    actions::Cancel,
+    foundation::actions::Cancel,
     button::{Button, ButtonVariants as _},
     dialog::overlay_color,
     h_flex,
     scroll::ScrollableElement as _,
-    text::{SelectionScope, SelectionScopeElement as _},
+    foundation::text::{SelectionScope, SelectionScopeElement as _},
     title_bar::TITLE_BAR_HEIGHT,
     v_flex,
 };
@@ -137,7 +137,7 @@ impl Styled for Sheet {
 impl RenderOnce for Sheet {
     fn render(self, window: &mut Window, cx: &mut App) -> impl IntoElement {
         let placement = self.placement;
-        let window_paddings = crate::window_border::window_paddings(window);
+        let window_paddings = crate::foundation::window_border::window_paddings(window);
         let size = window.viewport_size()
             - gpui::size(
                 window_paddings.left + window_paddings.right,

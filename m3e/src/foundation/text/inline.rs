@@ -13,8 +13,8 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme, WindowExt as _, global_state::GlobalState, input::Selection,
-    text::TextViewMultiClickKind, text::node::LinkMark, text::selection::word_range_at,
+    ActiveTheme, WindowExt as _, foundation::global_state::GlobalState, input::Selection,
+    foundation::text::TextViewMultiClickKind, foundation::text::node::LinkMark, foundation::text::selection::word_range_at,
 };
 
 /// A inline element used to render a inline text and support selectable.

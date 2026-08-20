@@ -10,7 +10,7 @@ use crate::{
     Disableable, Icon, Sizable, Size, StyledExt,
     button::{Button, ButtonVariants},
     h_flex,
-    icon::IconName,
+    foundation::icon::IconName,
     menu::{DropdownMenu as _, PopupMenuItem},
 };
 

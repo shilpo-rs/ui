@@ -8,7 +8,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Disableable, Icon, IconName, Side, Sizable, Size, StyledExt,
-    animation::cubic_bezier, h_flex, text::Text, tooltip::ComponentTooltip,
+    foundation::animation::cubic_bezier, h_flex, foundation::text::Text, tooltip::ComponentTooltip,
 };
 
 /// A Switch element that can be toggled on or off.

@@ -288,13 +288,13 @@ impl RenderOnce for SplitButtonTrailingTrigger {
             let current = state.current.clone();
             let active_generation = state.active_generation.clone();
             let animation = Animation::new(Duration::from_millis(250))
-                .with_easing(crate::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0));
+                .with_easing(crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0));
             return button
                 .with_animation(
                     format!("split-button-corner-morph:{generation}"),
                     animation,
                     move |button, delta| {
-                        let corners = crate::motion::lerp_corners(from, to, delta);
+                        let corners = crate::foundation::motion::lerp_corners(from, to, delta);
                         if active_generation.get() == generation {
                             current.set(corners);
                         }

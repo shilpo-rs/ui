@@ -17,7 +17,7 @@ use super::{
 };
 use crate::{
     ActiveTheme, ElementExt, Icon, IconName, h_flex,
-    history::{History, HistoryItem},
+    foundation::history::{History, HistoryItem},
     scroll::{Scrollbar, ScrollbarShow},
     v_flex,
 };

@@ -8,8 +8,8 @@ use html5ever::tendril::TendrilSink;
 use html5ever::{LocalName, ParseOpts, local_name, parse_document};
 use markup5ever_rcdom::{Node, NodeData, RcDom};
 
-use crate::text::document::ParsedDocument;
-use crate::text::node::{
+use crate::foundation::text::document::ParsedDocument;
+use crate::foundation::text::node::{
     self, BlockNode, ImageNode, InlineNode, LinkMark, NodeContext, Paragraph, Table, TableRow,
     TextMark,
 };
@@ -660,7 +660,7 @@ mod tests {
     use gpui::{px, relative};
 
     use super::trim_text;
-    use crate::text::{
+    use crate::foundation::text::{
         document::ParsedDocument,
         node::{BlockNode, ImageNode, InlineNode, NodeContext, Paragraph},
     };

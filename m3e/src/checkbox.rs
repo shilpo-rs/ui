@@ -8,7 +8,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Disableable, FocusableExt, IconName, Selectable, Sizable, Size, StyledExt as _,
-    icon::IconNamed, text::Text, tooltip::ComponentTooltip, v_flex,
+    foundation::icon::IconNamed, foundation::text::Text, tooltip::ComponentTooltip, v_flex,
 };
 
 /// A Checkbox element.

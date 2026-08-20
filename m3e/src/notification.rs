@@ -15,7 +15,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme as _, Edges, Icon, IconName, Sizable as _, StyledExt, TITLE_BAR_HEIGHT,
-    animation::cubic_bezier, button::Button, h_flex, v_flex,
+    foundation::animation::cubic_bezier, button::Button, h_flex, v_flex,
 };
 
 #[derive(Debug, Clone, Copy, Default)]
@@ -700,7 +700,7 @@ mod tests {
     use gpui::{TestAppContext, VisualTestContext};
 
     use super::*;
-    use crate::theme::Theme;
+    use crate::foundation::theme::Theme;
 
     struct FooKind;
     struct BarKind;

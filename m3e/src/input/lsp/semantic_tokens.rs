@@ -6,11 +6,11 @@ use instant::Duration;
 use lsp_types::{Position, SemanticTokens, SemanticTokensLegend};
 use ropey::Rope;
 
-use crate::highlighter::HighlightTheme;
+use crate::foundation::highlighter::HighlightTheme;
 use crate::input::{InputState, Lsp, RopeExt};
 
 /// A provider of semantic highlighting tokens, layered on top of the
-/// built-in tree-sitter [`SyntaxHighlighter`](crate::highlighter::SyntaxHighlighter).
+/// built-in tree-sitter [`SyntaxHighlighter`](crate::foundation::highlighter::SyntaxHighlighter).
 ///
 /// This is the editor counterpart of the LSP
 /// `textDocument/semanticTokens/range` request (and Monaco Editor's
@@ -26,7 +26,7 @@ use crate::input::{InputState, Lsp, RopeExt};
 /// Returned tokens are delta-encoded with a numeric `token_type` that
 /// indexes [`legend`](Self::legend)`.token_types`. The editor resolves each
 /// type *name* against the active
-/// [`HighlightTheme`](crate::highlighter::HighlightTheme) at paint time —
+/// [`HighlightTheme`](crate::foundation::highlighter::HighlightTheme) at paint time —
 /// the same vocabulary the tree-sitter path uses (`"keyword"`, `"comment"`,
 /// `"string"`, …; `"keyword.modifier"` falls back to `"keyword"`). Because
 /// the color is resolved from the name on every paint, theme switches
@@ -38,7 +38,7 @@ pub trait DocumentRangeSemanticTokensProvider {
     /// The legend naming the numeric `token_type` field of the tokens
     /// returned by [`semantic_tokens`](Self::semantic_tokens). Each entry in
     /// [`SemanticTokensLegend::token_types`] is resolved against the active
-    /// [`HighlightTheme`](crate::highlighter::HighlightTheme).
+    /// [`HighlightTheme`](crate::foundation::highlighter::HighlightTheme).
     fn legend(&self) -> SemanticTokensLegend;
 
     /// Fetches semantic tokens for the specified byte range.
@@ -200,7 +200,7 @@ mod tests {
     use lsp_types::{SemanticToken, SemanticTokenType, SemanticTokensLegend};
 
     use super::*;
-    use crate::highlighter::HighlightTheme;
+    use crate::foundation::highlighter::HighlightTheme;
 
     fn legend() -> SemanticTokensLegend {
         SemanticTokensLegend {

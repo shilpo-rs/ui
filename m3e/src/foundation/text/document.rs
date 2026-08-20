@@ -3,7 +3,7 @@ use gpui::{
     Styled as _, Window, div,
 };
 
-use crate::text::node::{BlockNode, NodeContext};
+use crate::foundation::text::node::{BlockNode, NodeContext};
 
 /// The parsed document AST.
 #[derive(Debug, Clone, PartialEq, Default)]

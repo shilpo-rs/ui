@@ -11,7 +11,7 @@ use serde_repr::{Deserialize_repr, Serialize_repr};
 
 use crate::{
     ActiveTheme, ThemeMode,
-    highlighter::{Language, languages},
+    foundation::highlighter::{Language, languages},
 };
 
 pub(super) const HIGHLIGHT_NAMES: [&str; 41] = [
@@ -605,7 +605,7 @@ impl LanguageRegistry {
 
 #[cfg(test)]
 mod tests {
-    use crate::highlighter::LanguageConfig;
+    use crate::foundation::highlighter::LanguageConfig;
 
     #[test]
     fn test_registry() {

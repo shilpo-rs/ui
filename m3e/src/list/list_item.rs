@@ -169,7 +169,7 @@ impl ParentElement for ListItem {
 impl RenderOnce for ListItem {
     fn render(self, window: &mut Window, cx: &mut App) -> impl IntoElement {
         let ripple_state = window.use_keyed_state(format!("{}-ripple", self.id), cx, |_, _| {
-            crate::ripple::RippleState::new()
+            crate::foundation::ripple::RippleState::new()
         });
 
         let is_active = self.confirmed || self.selected || self.secondary_selected;
@@ -208,7 +208,7 @@ impl RenderOnce for ListItem {
                                         has_left = true;
                                         let ripple_state = ripple_state.clone();
                                         this.on_mouse_down(button, move |ev, window, cx| {
-                                            crate::ripple::RippleState::start_ripple(
+                                            crate::foundation::ripple::RippleState::start_ripple(
                                                 ripple_state.clone(),
                                                 ev.position,
                                                 cx,
@@ -224,7 +224,7 @@ impl RenderOnce for ListItem {
                         if !has_left {
                             let ripple_state = ripple_state.clone();
                             this.on_mouse_down(MouseButton::Left, move |ev, _, cx| {
-                                crate::ripple::RippleState::start_ripple(
+                                crate::foundation::ripple::RippleState::start_ripple(
                                     ripple_state.clone(),
                                     ev.position,
                                     cx,
@@ -285,7 +285,7 @@ impl RenderOnce for ListItem {
                 }
             });
 
-        crate::ripple::RippleElement::new(list_item_element.into_element(), ripple_state)
+        crate::foundation::ripple::RippleElement::new(list_item_element.into_element(), ripple_state)
             .corner_radii(gpui::Corners::all(gpui::px(4.)))
             .color(cx.theme().on_surface)
     }

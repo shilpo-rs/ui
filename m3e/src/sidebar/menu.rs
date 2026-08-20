@@ -248,7 +248,7 @@ impl SidebarItem for SidebarMenuItem {
             None
         };
         let ripple_state = window.use_keyed_state(format!("{}-ripple", id), cx, |_, _| {
-            crate::ripple::RippleState::new()
+            crate::foundation::ripple::RippleState::new()
         });
         let handler = self.handler.clone();
         let is_collapsed = self.collapsed;
@@ -392,7 +392,7 @@ impl SidebarItem for SidebarMenuItem {
                         this.on_mouse_down(gpui::MouseButton::Left, {
                             let ripple_state = ripple_state.clone();
                             move |ev, _, cx| {
-                                crate::ripple::RippleState::start_ripple(
+                                crate::foundation::ripple::RippleState::start_ripple(
                                     ripple_state.clone(),
                                     ev.position,
                                     cx,
@@ -401,7 +401,7 @@ impl SidebarItem for SidebarMenuItem {
                         })
                         .on_mouse_up(gpui::MouseButton::Left, {
                             move |_, _, cx| {
-                                crate::ripple::RippleState::handle_mouse_up(
+                                crate::foundation::ripple::RippleState::handle_mouse_up(
                                     ripple_state.clone(),
                                     cx,
                                 );
@@ -450,7 +450,7 @@ impl SidebarItem for SidebarMenuItem {
                             this.into_any_element()
                         };
 
-                        crate::ripple::RippleElement::new(item_element, ripple_state)
+                        crate::foundation::ripple::RippleElement::new(item_element, ripple_state)
                             .corner_radii(corner_radii)
                             .color(ripple_color)
                             .into_any_element()

@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 use gpui::{App, ElementId, Entity, FocusHandle, Global, OwnedMenu};
 
-use crate::text::{SelectionScope, TextViewState};
+use crate::foundation::text::{SelectionScope, TextViewState};
 
 pub(crate) fn init(cx: &mut App) {
     cx.set_global(GlobalState::new());

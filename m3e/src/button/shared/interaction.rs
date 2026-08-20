@@ -1,6 +1,6 @@
 use gpui::{Background, CursorStyle, Hsla};
 
-use crate::theme::Colorize as _;
+use crate::foundation::theme::Colorize as _;
 
 pub(crate) fn state_layer(container: Hsla, role: Hsla, opacity: f32) -> Background {
     if container.a == 0. {

@@ -7,7 +7,7 @@ use gpui::{
     px,
 };
 
-use crate::animation::{Transition, ease_in_out_cubic};
+use crate::foundation::animation::{Transition, ease_in_out_cubic};
 use crate::{
     ActiveTheme, Collapsible, Icon, IconName, Side, Sizable, StyledExt,
     button::{Button, ButtonVariants},

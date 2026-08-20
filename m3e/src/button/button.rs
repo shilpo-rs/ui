@@ -445,7 +445,7 @@ impl RenderOnce for Button {
         let is_focused = focus_handle.is_focused(window);
 
         let ripple_state = window.use_keyed_state(format!("{}-ripple", self.id), cx, |_, _| {
-            crate::ripple::RippleState::new()
+            crate::foundation::ripple::RippleState::new()
         });
 
         let rounding =
@@ -512,7 +512,7 @@ impl RenderOnce for Button {
             button_shape_tokens::resolve_pressed(self.rounded, self.size, Some(dimensions.height));
         let pressed_radii = Corners::all(pressed_rounding);
         let active_radii = if self.pressed_corner_shape && spring_progress > 0.0 && !self.disabled {
-            crate::motion::lerp_corners(radii, pressed_radii, spring_progress)
+            crate::foundation::motion::lerp_corners(radii, pressed_radii, spring_progress)
         } else {
             radii
         };
@@ -710,10 +710,10 @@ impl RenderOnce for Button {
                     window.prevent_default();
 
                     // Pressing a button must not start the window-level text selection.
-                    crate::global_state::GlobalState::suppress_text_selection(cx);
+                    crate::foundation::global_state::GlobalState::suppress_text_selection(cx);
 
                     // Trigger ripple & press hold!
-                    crate::ripple::RippleState::start_ripple(
+                    crate::foundation::ripple::RippleState::start_ripple(
                         ripple_state.clone(),
                         event.position,
                         cx,
@@ -723,7 +723,7 @@ impl RenderOnce for Button {
             .on_mouse_up(gpui::MouseButton::Left, {
                 let ripple_state = ripple_state.clone();
                 move |_, _, cx| {
-                    crate::ripple::RippleState::handle_mouse_up(ripple_state.clone(), cx);
+                    crate::foundation::ripple::RippleState::handle_mouse_up(ripple_state.clone(), cx);
                 }
             })
             .when_some(self.on_click, |this, on_click| {
@@ -811,7 +811,7 @@ impl RenderOnce for Button {
                 |this| this.focus_ring(is_focused, px(0.), window, cx),
             );
 
-        crate::ripple::RippleElement::new(button_element.into_element(), ripple_state)
+        crate::foundation::ripple::RippleElement::new(button_element.into_element(), ripple_state)
             .corner_radii(active_radii)
             .color(normal_style.fg)
     }

@@ -14,7 +14,7 @@ pub(crate) use hover_popover::*;
 
 use crate::{
     ActiveTheme, StyledExt as _,
-    text::{TextView, TextViewStyle},
+    foundation::text::{TextView, TextViewStyle},
 };
 
 pub(crate) enum ContextMenu {

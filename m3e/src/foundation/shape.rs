@@ -2,7 +2,7 @@ use std::f32::consts::TAU;
 
 use gpui::{Path, PathBuilder, Pixels, Point, point, px};
 
-use crate::motion::SpringSpec;
+use crate::foundation::motion::SpringSpec;
 
 /// The 35 predefined Material 3 Expressive shapes.
 ///

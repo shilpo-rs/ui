@@ -1,6 +1,6 @@
 use gpui::SharedString;
 
-use crate::highlighter::LanguageConfig;
+use crate::foundation::highlighter::LanguageConfig;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, enum_iterator::Sequence)]
 pub enum Language {

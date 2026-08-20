@@ -10,8 +10,8 @@ use rust_i18n::t;
 use crate::{
     ActiveTheme, Disableable, ElementExt as _, Icon, IconName, IndexPath, Sizable, Size,
     StyleSized, StyledExt,
-    actions::{Cancel, Confirm, SelectDown, SelectUp},
-    global_state::GlobalState,
+    foundation::actions::{Cancel, Confirm, SelectDown, SelectUp},
+    foundation::global_state::GlobalState,
     h_flex,
     input::{clear_button, input_style},
     list::{List, ListState},

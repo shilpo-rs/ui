@@ -9,7 +9,7 @@ use gpui::{
 
 use crate::{
     Selectable as _, StyledExt,
-    actions::{Confirm, SelectDown, SelectLeft, SelectRight, SelectUp},
+    foundation::actions::{Confirm, SelectDown, SelectLeft, SelectRight, SelectUp},
     list::ListItem,
     menu::{ContextMenuExt as _, PopupMenu},
     scroll::ScrollableElement,

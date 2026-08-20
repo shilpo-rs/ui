@@ -7,7 +7,7 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme, Disableable, Icon, Selectable, StyledExt, h_flex, icon::IconNamed,
+    ActiveTheme, Disableable, Icon, Selectable, StyledExt, h_flex, foundation::icon::IconNamed,
     tooltip::Tooltip, v_flex,
 };
 

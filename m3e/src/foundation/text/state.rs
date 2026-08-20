@@ -9,11 +9,11 @@ use gpui::{
 
 use crate::{
     ActiveTheme, ElementExt,
-    async_util::{Receiver, Sender, unbounded},
-    highlighter::HighlightTheme,
+    foundation::async_util::{Receiver, Sender, unbounded},
+    foundation::highlighter::HighlightTheme,
     input::{self, SelectAll},
     scroll::AutoScroll,
-    text::{
+    foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, TextViewStyle,
         document::ParsedDocument,
         format,
@@ -630,7 +630,7 @@ mod tests {
     use gpui::TestAppContext;
 
     use super::*;
-    use crate::text::MarkdownNode;
+    use crate::foundation::text::MarkdownNode;
 
     #[gpui::test]
     fn set_text_then_push_str_appends_to_replaced_content(cx: &mut TestAppContext) {

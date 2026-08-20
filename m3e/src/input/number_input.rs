@@ -9,7 +9,7 @@ use gpui::{
 };
 
 use super::{Input, InputState, InputVariant, MaskPattern};
-use crate::theme::ActiveTheme;
+use crate::foundation::theme::ActiveTheme;
 use crate::{
     Disableable, IconName, Sizable, Size, StyledExt as _,
     button::{Button, ButtonVariants as _},

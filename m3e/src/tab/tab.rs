@@ -7,7 +7,7 @@ use gpui::{
     SharedString, StatefulInteractiveElement, Styled, Window, div, px, relative,
 };
 
-use crate::animation::{Lerp, ease_in_out_cubic};
+use crate::foundation::animation::{Lerp, ease_in_out_cubic};
 use crate::{
     ActiveTheme, ElementExt as _, Icon, IconName, Selectable, Sizable, Size, StyledExt, h_flex,
 };
@@ -656,7 +656,7 @@ impl Sizable for Tab {
 impl RenderOnce for Tab {
     fn render(self, window: &mut Window, cx: &mut App) -> impl IntoElement {
         let ripple_state = window.use_keyed_state(format!("{}-ripple", self.ix), cx, |_, _| {
-            crate::ripple::RippleState::new()
+            crate::foundation::ripple::RippleState::new()
         });
 
         let mut tab_style = if self.selected {
@@ -918,7 +918,7 @@ impl RenderOnce for Tab {
                     // https://github.com/longbridge/shilpo-m3e/issues/1836
                     cx.stop_propagation();
                     if !disabled {
-                        crate::ripple::RippleState::start_ripple(
+                        crate::foundation::ripple::RippleState::start_ripple(
                             ripple_state.clone(),
                             event.position,
                             cx,
@@ -934,7 +934,7 @@ impl RenderOnce for Tab {
                 })
             });
 
-        crate::ripple::RippleElement::new(tab_element.into_element(), ripple_state)
+        crate::foundation::ripple::RippleElement::new(tab_element.into_element(), ripple_state)
             .corner_radii(gpui::Corners::all(radius))
             .color(tab_style.fg)
     }

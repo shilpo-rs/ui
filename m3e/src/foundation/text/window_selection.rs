@@ -4,9 +4,9 @@ use gpui::{
     MouseUpEvent, Pixels, Point, ScrollWheelEvent, Style, WeakEntity, Window,
 };
 
-use crate::{Root, global_state::GlobalState, scroll::AutoScroll, text::TextViewState};
+use crate::{Root, foundation::global_state::GlobalState, scroll::AutoScroll, foundation::text::TextViewState};
 
-/// The modal layer a selectable [`TextView`](crate::text::TextView) belongs to.
+/// The modal layer a selectable [`TextView`](crate::foundation::text::TextView) belongs to.
 ///
 /// Window text selection is global, but when a modal (Dialog/Sheet) is open the
 /// selection must be confined to that modal so a drag that leaves the modal
@@ -46,7 +46,7 @@ impl<E: IntoElement> SelectionScopeElement for E {}
 /// A layout-transparent wrapper element (created by
 /// [`SelectionScopeElement::selection_scope`]) that marks its subtree with a
 /// [`SelectionScope`] during paint, so selectable
-/// [`TextView`](crate::text::TextView)s painted inside it register under that
+/// [`TextView`](crate::foundation::text::TextView)s painted inside it register under that
 /// scope. It delegates every [`Element`] method to the wrapped element and only
 /// brackets `paint` with a scope push/pop — mirroring the `text_view_state_stack`
 /// idiom in `TextView::paint`.
@@ -857,10 +857,10 @@ mod tests {
     };
 
     use super::{SelectionScope, SelectionScopeElement};
-    use crate::global_state::GlobalState;
+    use crate::foundation::global_state::GlobalState;
     use crate::{
         Placement, Root,
-        text::{TextView, TextViewState},
+        foundation::text::{TextView, TextViewState},
     };
 
     struct ChatTestView {

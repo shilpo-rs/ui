@@ -1,7 +1,7 @@
 use gpui::{App, Global, Hsla, Pixels, SharedString, px};
 
 use crate::{
-    highlighter::HighlightTheme, list::ListSettings, notification::NotificationSettings,
+    foundation::highlighter::HighlightTheme, list::ListSettings, notification::NotificationSettings,
     scroll::ScrollbarShow, sheet::SheetSettings,
 };
 use std::ops::{Deref, DerefMut};

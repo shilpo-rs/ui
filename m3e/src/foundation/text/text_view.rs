@@ -9,11 +9,11 @@ use gpui::{
 
 use crate::StyledExt;
 use crate::scroll::ScrollableElement;
-use crate::text::TextViewFormat;
-use crate::text::markdown_ext::{MarkdownExtensions, MarkdownNode, MarkdownPlugin};
-use crate::text::node::CodeBlock;
-use crate::text::state::TextViewState;
-use crate::{global_state::GlobalState, text::TextViewStyle};
+use crate::foundation::text::TextViewFormat;
+use crate::foundation::text::markdown_ext::{MarkdownExtensions, MarkdownNode, MarkdownPlugin};
+use crate::foundation::text::node::CodeBlock;
+use crate::foundation::text::state::TextViewState;
+use crate::{foundation::global_state::GlobalState, foundation::text::TextViewStyle};
 
 /// Type for code block actions generator function.
 pub(crate) type CodeBlockActionsFn =
@@ -190,7 +190,7 @@ impl TextView {
     where
         F: for<'a> Fn(
                 &markdown::mdast::Node,
-                &crate::text::MarkdownParseContext<'a>,
+                &crate::foundation::text::MarkdownParseContext<'a>,
             ) -> Option<MarkdownNode>
             + Send
             + Sync
@@ -362,7 +362,7 @@ mod tests {
     };
 
     use super::{TextView, TextViewPlugin};
-    use crate::text::TextViewState;
+    use crate::foundation::text::TextViewState;
 
     struct TextViewTestRoot {
         text_view: Entity<TextViewState>,

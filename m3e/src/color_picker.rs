@@ -8,7 +8,7 @@ use rust_i18n::t;
 
 use crate::{
     ActiveTheme as _, Colorize as _, Icon, Selectable, Sizable, Size, StyleSized,
-    actions::Confirm,
+    foundation::actions::Confirm,
     h_flex,
     input::{Input, InputEvent, InputState},
     popover::Popover,

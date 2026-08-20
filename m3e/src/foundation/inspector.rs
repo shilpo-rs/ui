@@ -17,7 +17,7 @@ use crate::{
     ActiveTheme, IconName, Selectable, Sizable, TITLE_BAR_HEIGHT,
     alert::Alert,
     button::{Button, ButtonVariants},
-    clipboard::Clipboard,
+    foundation::clipboard::Clipboard,
     description_list::DescriptionList,
     h_flex,
     input::{CompletionProvider, Input, InputEvent, InputState, RopeExt, TabSize},

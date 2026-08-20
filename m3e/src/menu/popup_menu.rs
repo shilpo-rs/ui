@@ -8,8 +8,8 @@ use gpui::{
 };
 use gpui::{ClickEvent, MouseDownEvent, OwnedMenuItem, Point, Subscription};
 
-use crate::actions::{Cancel, Confirm, SelectDown, SelectUp};
-use crate::actions::{SelectLeft, SelectRight};
+use crate::foundation::actions::{Cancel, Confirm, SelectDown, SelectUp};
+use crate::foundation::actions::{SelectLeft, SelectRight};
 use crate::menu::menu_item::MenuItemElement;
 use crate::scroll::ScrollableElement;
 use crate::{ActiveTheme, ElementExt, Icon, IconName, Sizable as _, h_flex, v_flex};

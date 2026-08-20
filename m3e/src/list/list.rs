@@ -12,7 +12,7 @@ use gpui::{
 use instant::Duration;
 use rust_i18n::t;
 
-use crate::actions::{Cancel, Confirm, SelectDown, SelectUp};
+use crate::foundation::actions::{Cancel, Confirm, SelectDown, SelectUp};
 use crate::input::InputState;
 use crate::list::cache::{MeasuredEntrySize, RowEntry, RowsCache};
 use crate::{

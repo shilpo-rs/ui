@@ -4,8 +4,8 @@ use gpui::SharedString;
 use markdown::mdast::{self, Node};
 
 use crate::{
-    highlighter::HighlightTheme,
-    text::{
+    foundation::highlighter::HighlightTheme,
+    foundation::text::{
         document::ParsedDocument,
         markdown_ext::MarkdownParseContext,
         node::{
@@ -534,7 +534,7 @@ mod tests {
     use gpui::ParentElement;
 
     use super::*;
-    use crate::text::{MarkdownExtensions, MarkdownNode, MarkdownPlugin};
+    use crate::foundation::text::{MarkdownExtensions, MarkdownNode, MarkdownPlugin};
 
     #[test]
     fn test_nested_emphasis_merges_text_marks() {

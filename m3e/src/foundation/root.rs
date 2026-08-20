@@ -10,14 +10,14 @@ use gpui::{
 use crate::{
     ActiveTheme, ElementExt, Placement, StyledExt,
     dialog::{ANIMATION_DURATION, Dialog},
-    focus_trap::FocusTrapManager,
+    foundation::focus_trap::FocusTrapManager,
     input::{Copy, InputState},
     native_menu::FallbackMenuOverlay,
     notification::{Notification, NotificationList},
     sheet::Sheet,
-    text::{SelectionScope, TextSelectionController, TextViewState, WindowTextSelection},
+    foundation::text::{SelectionScope, TextSelectionController, TextViewState, WindowTextSelection},
     tooltip::TooltipOverlay,
-    window_border,
+    foundation::window_border::{self},
 };
 
 actions!(root, [Tab, TabPrev]);
@@ -42,7 +42,7 @@ pub struct Root {
     view: AnyView,
     pub(crate) active_sheet: Option<ActiveSheet>,
     pub(crate) active_dialogs: Vec<ActiveDialog>,
-    pub(super) focused_input: Option<Entity<InputState>>,
+    pub(crate) focused_input: Option<Entity<InputState>>,
     pub notification: Entity<NotificationList>,
     pub(crate) tooltip_overlay: Entity<TooltipOverlay>,
     pub(crate) native_menu_overlay: Entity<FallbackMenuOverlay>,
@@ -97,7 +97,7 @@ impl Root {
     /// Create a new Root view.
     pub fn new(view: impl Into<AnyView>, window: &mut Window, cx: &mut Context<Self>) -> Self {
         #[cfg(all(target_os = "macos", not(test)))]
-        crate::macos_accessibility::install_window_hit_test_forwarder(window);
+        crate::foundation::macos_accessibility::install_window_hit_test_forwarder(window);
 
         Self {
             style: StyleRefinement::default(),
@@ -574,7 +574,7 @@ impl Render for Root {
             .child(self.native_menu_overlay.clone());
 
         if self.bordered {
-            window_border()
+            window_border::window_border()
                 .shadow_size(self.window_shadow_size)
                 .child(inner)
                 .into_any_element()

@@ -33,10 +33,10 @@ use super::{
     number_input::{NumberStep, StepAction},
 };
 use crate::Size;
-use crate::actions::{SelectDown, SelectLeft, SelectRight, SelectUp};
-use crate::highlighter::DiagnosticSet;
+use crate::foundation::actions::{SelectDown, SelectLeft, SelectRight, SelectUp};
+use crate::foundation::highlighter::DiagnosticSet;
 #[cfg(feature = "tree-sitter")]
-use crate::highlighter::LanguageRegistry;
+use crate::foundation::highlighter::LanguageRegistry;
 use crate::input::blink_cursor::CURSOR_WIDTH;
 use crate::input::movement::MoveDirection;
 use crate::input::{
@@ -48,7 +48,7 @@ use crate::input::{
 };
 use crate::native_menu::NativeMenu;
 use crate::scroll::AutoScroll;
-use crate::{Root, history::History};
+use crate::{Root, foundation::history::History};
 
 #[derive(Action, Clone, PartialEq, Eq, Deserialize)]
 #[action(namespace = input, no_json)]
@@ -1697,7 +1697,7 @@ impl InputState {
         window: &mut Window,
         cx: &mut Context<Self>,
     ) {
-        if crate::global_state::GlobalState::global(cx).is_in_deferred_context() {
+        if crate::foundation::global_state::GlobalState::global(cx).is_in_deferred_context() {
             return;
         }
 
@@ -1769,7 +1769,7 @@ impl InputState {
     ) {
         // Input has its own text selection; suppress the window-level text
         // selection (Root) so it does not start a drag from here.
-        crate::global_state::GlobalState::suppress_text_selection(cx);
+        crate::foundation::global_state::GlobalState::suppress_text_selection(cx);
 
         // Clear inline completion on any mouse interaction
         self.clear_inline_completion(cx);
@@ -2775,7 +2775,7 @@ impl InputState {
                     // Compute injection layers in the background to avoid blocking the
                     // main thread with combined-injection parsing (e.g. PHP, HTML+JS/CSS).
                     let injection_layers = if let Some(data) = injection_data {
-                        crate::highlighter::SyntaxHighlighter::compute_injection_layers(
+                        crate::foundation::highlighter::SyntaxHighlighter::compute_injection_layers(
                             data, &new_tree, &text,
                         )
                     } else {
@@ -3166,7 +3166,7 @@ mod tests {
     use gpui::{TestAppContext, VisualTestContext};
 
     use super::*;
-    use crate::theme::Theme;
+    use crate::foundation::theme::Theme;
 
     struct InputView {
         input: Entity<InputState>,
@@ -3208,7 +3208,7 @@ mod tests {
 
     #[gpui::test]
     fn test_highlighting_preserved_after_fold(cx: &mut TestAppContext) {
-        use crate::highlighter::HighlightTheme;
+        use crate::foundation::highlighter::HighlightTheme;
         use crate::input::display_map::FoldRange;
 
         let input_view = InputView::new(cx);

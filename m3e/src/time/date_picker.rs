@@ -12,7 +12,7 @@ use rust_i18n::t;
 use super::calendar::{Calendar, CalendarEvent, CalendarState, Date, Matcher};
 use crate::{
     ActiveTheme, Disableable, Icon, IconName, Sizable, Size, StyleSized as _, StyledExt as _,
-    actions::{Cancel, Confirm},
+    foundation::actions::{Cancel, Confirm},
     button::{Button, ButtonVariants as _},
     h_flex,
     input::{Delete, clear_button, input_style},

@@ -11,7 +11,7 @@ use gpui::{
 use super::*;
 use crate::{
     ActiveTheme, ElementExt, Icon, IconName, StyleSized as _, StyledExt, VirtualListScrollHandle,
-    actions::{
+    foundation::actions::{
         Cancel, SelectDown, SelectFirst, SelectLast, SelectNextColumn, SelectPageDown,
         SelectPageUp, SelectPrevColumn, SelectUp,
     },
@@ -1929,7 +1929,7 @@ where
                         .overflow_hidden()
                         .relative()
                         .child(
-                            crate::virtual_list::virtual_list(
+                            crate::foundation::virtual_list::virtual_list(
                                 view,
                                 row_ix,
                                 Axis::Horizontal,

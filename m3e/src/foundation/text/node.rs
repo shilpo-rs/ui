@@ -17,10 +17,10 @@ use ropey::Rope;
 use super::{TextViewStyle, utils::list_item_prefix};
 use crate::{
     ActiveTheme as _, Icon, IconName, StyledExt, WindowExt as _, h_flex,
-    highlighter::{HighlightTheme, LanguageRegistry, SyntaxHighlighter},
+    foundation::highlighter::{HighlightTheme, LanguageRegistry, SyntaxHighlighter},
     input::{InputEdit, Point, RopeExt as _},
     scroll::horizontal_scroll_area,
-    text::{
+    foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, MarkdownNode,
         document::NodeRenderOptions,
         inline::{Inline, InlineState},
@@ -1792,7 +1792,7 @@ mod tests {
 
         LanguageRegistry::singleton().register(
             lang.as_ref(),
-            &crate::highlighter::LanguageConfig::new(
+            &crate::foundation::highlighter::LanguageConfig::new(
                 lang.clone(),
                 tree_sitter_json::LANGUAGE.into(),
                 vec![],

@@ -11,7 +11,7 @@ use gpui::{
 
 use super::NativeMenuItem;
 use crate::menu::{PopupMenu, PopupMenuItem};
-use crate::root::Root;
+use crate::foundation::root::Root;
 
 /// Overlay held by [`Root`] that renders the active fallback popup menu, if any.
 pub(crate) struct FallbackMenuOverlay {

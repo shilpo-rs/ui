@@ -36,7 +36,7 @@ pub(super) fn list_item_prefix(ix: usize, ordered: bool, depth: usize) -> String
 
 #[cfg(test)]
 mod tests {
-    use crate::text::utils::list_item_prefix;
+    use crate::foundation::text::utils::list_item_prefix;
 
     #[test]
     fn test_list_item_prefix() {

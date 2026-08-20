@@ -7,7 +7,7 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme, AxisExt, FocusableExt as _, Sizable, Size, StyledExt, h_flex, text::Text,
+    ActiveTheme, AxisExt, FocusableExt as _, Sizable, Size, StyledExt, h_flex, foundation::text::Text,
     tooltip::ComponentTooltip, v_flex,
 };
 

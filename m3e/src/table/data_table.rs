@@ -5,7 +5,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Sizable, Size,
-    actions::{
+    foundation::actions::{
         Cancel, SelectDown, SelectFirst, SelectLast, SelectNextColumn, SelectPageDown,
         SelectPageUp, SelectPrevColumn, SelectUp,
     },

@@ -14,7 +14,7 @@ use crate::{
             BoolField, DropdownField, NumberField, ResetHandler, SettingFieldRender, StringField,
         },
     },
-    text::Text,
+    foundation::text::Text,
     v_flex,
 };
 

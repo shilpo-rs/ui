@@ -4,7 +4,7 @@ use gpui::{
     transparent_white,
 };
 
-use crate::{ColorName, Sizable, Size, StyledExt, theme::ActiveTheme as _};
+use crate::{ColorName, Sizable, Size, StyledExt, foundation::theme::ActiveTheme as _};
 
 /// The variant of the Tag.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]

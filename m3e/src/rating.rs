@@ -6,7 +6,7 @@ use gpui::{
 };
 use gpui::{ClickEvent, Hsla, StatefulInteractiveElement};
 
-use crate::theme::ActiveTheme;
+use crate::foundation::theme::ActiveTheme;
 use crate::{Disableable, Icon, IconName, Sizable, Size, StyledExt, h_flex};
 
 /// A simple star Rating element.

@@ -13,7 +13,7 @@ use tree_sitter::{
     InputEdit, ParseOptions, Parser, Point, Query, QueryCursor, StreamingIterator, Tree,
 };
 
-use crate::highlighter::{HighlightTheme, LanguageRegistry};
+use crate::foundation::highlighter::{HighlightTheme, LanguageRegistry};
 
 /// When a node spans more than this many bytes beyond the requested query
 /// range, we recurse into its children instead of querying it directly.

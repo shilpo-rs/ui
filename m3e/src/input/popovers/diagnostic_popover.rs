@@ -6,7 +6,7 @@ use gpui::{
 };
 
 use crate::{
-    highlighter::DiagnosticEntry,
+    foundation::highlighter::DiagnosticEntry,
     input::{
         InputState,
         popovers::{Popover, render_markdown},

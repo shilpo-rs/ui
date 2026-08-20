@@ -4,7 +4,7 @@ use std::cell::RefCell;
 use gpui::Hsla;
 
 use super::ButtonVariant;
-use crate::{ActiveTheme, theme::Colorize};
+use crate::{ActiveTheme, foundation::theme::Colorize};
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub(crate) enum ButtonPaintState {

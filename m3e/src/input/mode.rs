@@ -6,9 +6,9 @@ use gpui::{App, SharedString, Task};
 use ropey::Rope;
 
 use super::display_map::DisplayMap;
-use crate::highlighter::DiagnosticSet;
-use crate::highlighter::LanguageRegistry;
-use crate::highlighter::SyntaxHighlighter;
+use crate::foundation::highlighter::DiagnosticSet;
+use crate::foundation::highlighter::LanguageRegistry;
+use crate::foundation::highlighter::SyntaxHighlighter;
 use crate::input::{InputEdit, RopeExt as _, TabSize};
 
 #[allow(dead_code)]
@@ -348,7 +348,7 @@ mod tests {
 
     use super::replacement_input_edit;
     use crate::{
-        highlighter::DiagnosticSet,
+        foundation::highlighter::DiagnosticSet,
         input::{Point, TabSize, mode::InputMode},
     };
 

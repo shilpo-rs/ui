@@ -103,7 +103,7 @@ impl RippleState {
         if self.is_pressed {
             if let Some(start) = self.press_start_time {
                 let elapsed = start.elapsed().as_secs_f32();
-                return crate::motion::ExpressiveSpring::fast_spatial()
+                return crate::foundation::motion::ExpressiveSpring::fast_spatial()
                     .evaluate(elapsed)
                     .clamp(0.0, 1.0);
             }
@@ -113,7 +113,7 @@ impl RippleState {
         if let Some(rel) = self.release_time {
             let elapsed = rel.elapsed().as_secs_f32();
             if elapsed < 0.3 {
-                let unspring = crate::motion::ExpressiveSpring::fast_spatial().evaluate(elapsed);
+                let unspring = crate::foundation::motion::ExpressiveSpring::fast_spatial().evaluate(elapsed);
                 return (1.0 - unspring).clamp(0.0, 1.0);
             }
         }
@@ -295,7 +295,7 @@ impl<E: Element + 'static> Element for RippleElement<E> {
         };
 
         if !ripples.is_empty() {
-            use crate::theme::ActiveTheme;
+            use crate::foundation::theme::ActiveTheme;
             let base_color = self.color.unwrap_or_else(|| cx.theme().on_surface);
 
             window.with_content_mask(Some(gpui::ContentMask { bounds }), |window| {

@@ -11,7 +11,7 @@ use std::{
 use gpui::{AnyElement, App, IntoElement, SharedString, Window};
 use markdown::{ParseOptions, mdast};
 
-use crate::text::node::Span;
+use crate::foundation::text::node::Span;
 
 static MARKDOWN_EXTENSIONS_REVISION: AtomicU64 = AtomicU64::new(1);
 

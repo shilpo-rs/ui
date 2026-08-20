@@ -2,7 +2,7 @@ use std::{cell::Cell, rc::Rc, time::Duration};
 
 use gpui::{Pixels, px};
 
-use crate::{animation::Lerp as _, motion::SpringSpec};
+use crate::{foundation::animation::Lerp as _, foundation::motion::SpringSpec};
 
 pub(super) const COLLAPSED_WIDTH: Pixels = px(80.);
 pub(super) const EXPANDED_WIDTH: Pixels = px(240.);
