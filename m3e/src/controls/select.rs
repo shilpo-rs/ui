@@ -20,15 +20,14 @@ pub use crate::data::searchable_list::SearchableVec;
 use crate::{
     ActiveTheme, Disableable, ElementExt as _, Icon, IconName, IndexPath, Sizable, Size,
     StyleSized, StyledExt,
-    foundation::actions::{Cancel, Confirm, SelectDown, SelectUp},
-    foundation::global_state::GlobalState,
-    h_flex,
     controls::input::{clear_button, input_style},
     data::list::List,
     data::searchable_list::{
         SearchableListChange, SearchableListDelegate, SearchableListItem, SearchableListState,
     },
-    v_flex,
+    foundation::actions::{Cancel, Confirm, SelectDown, SelectUp},
+    foundation::global_state::GlobalState,
+    h_flex, v_flex,
 };
 
 const CONTEXT: &str = "Select";
@@ -768,8 +767,8 @@ mod tests {
 
     use crate::{
         IndexPath,
-        data::searchable_list::SearchableVec,
         controls::select::{SelectGroup, SelectState},
+        data::searchable_list::SearchableVec,
     };
 
     #[gpui::test]

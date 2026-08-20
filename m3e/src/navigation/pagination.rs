@@ -9,8 +9,8 @@ use rust_i18n::t;
 use crate::{
     Disableable, Icon, Sizable, Size, StyledExt,
     controls::button::{Button, ButtonVariants},
-    h_flex,
     foundation::icon::IconName,
+    h_flex,
     overlay::menu::{DropdownMenu as _, PopupMenuItem},
 };
 

@@ -9,15 +9,17 @@ use gpui::{
 
 use crate::{
     ActiveTheme, ElementExt, Placement, StyledExt,
-    overlay::dialog::{ANIMATION_DURATION, Dialog},
-    foundation::focus_trap::FocusTrapManager,
     controls::input::{Copy, InputState},
-    overlay::native_menu::FallbackMenuOverlay,
     feedback::notification::{Notification, NotificationList},
-    overlay::sheet::Sheet,
-    foundation::text::{SelectionScope, TextSelectionController, TextViewState, WindowTextSelection},
-    overlay::tooltip::TooltipOverlay,
+    foundation::focus_trap::FocusTrapManager,
+    foundation::text::{
+        SelectionScope, TextSelectionController, TextViewState, WindowTextSelection,
+    },
     foundation::window_border::{self},
+    overlay::dialog::{ANIMATION_DURATION, Dialog},
+    overlay::native_menu::FallbackMenuOverlay,
+    overlay::sheet::Sheet,
+    overlay::tooltip::TooltipOverlay,
 };
 
 actions!(root, [Tab, TabPrev]);

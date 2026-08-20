@@ -10,7 +10,9 @@ use gpui::{
 
 use crate::{
     Disableable, Sizable, Size, StyledExt,
-    controls::button::{Button, ButtonGroupMode, ButtonVariant, ButtonVariants, button_group_tokens},
+    controls::button::{
+        Button, ButtonGroupMode, ButtonVariant, ButtonVariants, button_group_tokens,
+    },
 };
 
 /// A ButtonGroup element, to wrap multiple buttons in a group.

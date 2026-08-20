@@ -6,7 +6,9 @@ use regex::Regex;
 use shilpo_m3e::{
     ActiveTheme, Disableable, IconName, Sizable,
     controls::button::{Button, ButtonVariants as _},
-    controls::input::{InputEvent, InputState, MaskPattern, NumberInput, NumberInputEvent, StepAction},
+    controls::input::{
+        InputEvent, InputState, MaskPattern, NumberInput, NumberInputEvent, StepAction,
+    },
     v_flex,
 };
 

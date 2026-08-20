@@ -4,9 +4,9 @@ use gpui::{App, ElementId, Entity, Window};
 
 use crate::{
     Placement, Root,
-    overlay::dialog::{AlertDialog, Dialog},
     controls::input::InputState,
     feedback::notification::Notification,
+    overlay::dialog::{AlertDialog, Dialog},
     overlay::sheet::Sheet,
 };
 

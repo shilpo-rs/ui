@@ -9,13 +9,15 @@ use serde::{Deserialize, Serialize};
 use shilpo_m3e::{
     ActiveTheme, IconName, Root, TitleBar, WindowControlsMode, WindowExt,
     controls::button::Button,
-    layout::dock::{Panel, PanelControl, PanelEvent, PanelInfo, PanelState, TitleStyle, register_panel},
-    layout::group_box::{GroupBox, GroupBoxVariants as _},
-    h_flex,
-    overlay::menu::PopupMenu,
     feedback::notification::Notification,
-    layout::scroll::{ScrollableElement as _, ScrollbarShow},
     foundation::text::markdown,
+    h_flex,
+    layout::dock::{
+        Panel, PanelControl, PanelEvent, PanelInfo, PanelState, TitleStyle, register_panel,
+    },
+    layout::group_box::{GroupBox, GroupBoxVariants as _},
+    layout::scroll::{ScrollableElement as _, ScrollbarShow},
+    overlay::menu::PopupMenu,
     v_flex,
 };
 

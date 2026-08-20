@@ -16,8 +16,8 @@ use crate::{
         SelectPageUp, SelectPrevColumn, SelectUp,
     },
     h_flex,
-    overlay::menu::{ContextMenuExt, PopupMenu},
     layout::scroll::{ScrollableMask, Scrollbar},
+    overlay::menu::{ContextMenuExt, PopupMenu},
     v_flex,
 };
 

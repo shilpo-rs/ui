@@ -4,11 +4,11 @@ use gpui::{
 };
 
 use crate::{
-    StyledExt as _, WindowExt as _,
+    StyledExt as _, WindowExt as _, h_flex,
     overlay::dialog::{
         Dialog, DialogButtonProps, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
     },
-    h_flex, v_flex,
+    v_flex,
 };
 
 /// AlertDialog is a modal dialog that interrupts the user with important content
@@ -130,7 +130,11 @@ impl AlertDialog {
     /// ```
     pub fn content<F>(mut self, builder: F) -> Self
     where
-        F: Fn(crate::overlay::dialog::DialogContent, &mut Window, &mut App) -> crate::overlay::dialog::DialogContent
+        F: Fn(
+                crate::overlay::dialog::DialogContent,
+                &mut Window,
+                &mut App,
+            ) -> crate::overlay::dialog::DialogContent
             + 'static,
     {
         self.base = self.base.content(builder);

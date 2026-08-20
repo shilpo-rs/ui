@@ -1,8 +1,9 @@
 use gpui::{AnyElement, App, Context, IntoElement, ParentElement as _, Styled as _, Task, Window};
 
 use crate::{
-    ActiveTheme as _, Icon, IconName, IndexPath, Selectable, h_flex,
+    ActiveTheme as _, Icon, IconName, IndexPath, Selectable,
     data::list::{ListState, loading::Loading},
+    h_flex,
 };
 
 /// A delegate for the List.

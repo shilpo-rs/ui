@@ -113,7 +113,8 @@ impl RippleState {
         if let Some(rel) = self.release_time {
             let elapsed = rel.elapsed().as_secs_f32();
             if elapsed < 0.3 {
-                let unspring = crate::foundation::motion::ExpressiveSpring::fast_spatial().evaluate(elapsed);
+                let unspring =
+                    crate::foundation::motion::ExpressiveSpring::fast_spatial().evaluate(elapsed);
                 return (1.0 - unspring).clamp(0.0, 1.0);
             }
         }

@@ -4,11 +4,11 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, Selectable, Sizable, Size,
-    layout::accordion::Accordion,
     controls::button::{Button, ButtonGroup},
     controls::checkbox::Checkbox,
-    h_flex,
     controls::switch::Switch,
+    h_flex,
+    layout::accordion::Accordion,
     v_flex,
 };
 

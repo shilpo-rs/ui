@@ -6,9 +6,11 @@ use serde::Deserialize;
 use shilpo_m3e::{
     IconName, Root, Sizable,
     controls::button::{Button, ButtonVariants as _},
-    layout::dock::{ClosePanel, DockArea, DockAreaState, DockEvent, DockItem, DockPlacement, ToggleZoom},
-    overlay::menu::DropdownMenu,
+    layout::dock::{
+        ClosePanel, DockArea, DockAreaState, DockEvent, DockItem, DockPlacement, ToggleZoom,
+    },
     navigation::status_bar::StatusBar,
+    overlay::menu::DropdownMenu,
 };
 use storybook::Assets;
 use storybook::{

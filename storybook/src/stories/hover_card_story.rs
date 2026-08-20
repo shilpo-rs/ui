@@ -5,7 +5,8 @@ use gpui::{
     Styled as _, Window, div, px, relative,
 };
 use shilpo_m3e::{
-    ActiveTheme, StyledExt, data::avatar::Avatar, controls::button::Button, h_flex, overlay::hover_card::HoverCard, v_flex,
+    ActiveTheme, StyledExt, controls::button::Button, data::avatar::Avatar, h_flex,
+    overlay::hover_card::HoverCard, v_flex,
 };
 
 use crate::{Story, section};

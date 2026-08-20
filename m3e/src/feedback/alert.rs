@@ -7,8 +7,9 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme as _, Colorize, Icon, IconName, Sizable, Size, StyledExt, h_flex,
+    ActiveTheme as _, Colorize, Icon, IconName, Sizable, Size, StyledExt,
     foundation::text::{Text, TextViewStyle},
+    h_flex,
 };
 
 /// The variant of the [`Alert`].

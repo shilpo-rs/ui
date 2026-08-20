@@ -13,7 +13,7 @@ pub use line_chart::LineChart;
 pub use pie_chart::PieChart;
 pub use sankey_chart::{SankeyChart, SankeyLabel};
 
-use crate::plot::{
+use crate::visualization::plot::{
     AxisText,
     scale::{Scale, ScaleBand, ScalePoint},
 };

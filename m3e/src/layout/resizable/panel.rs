@@ -12,7 +12,8 @@ use gpui::{
 
 use super::{ResizableState, resizable_panel, resize_handle};
 use crate::{
-    AxisExt, ElementExt, h_flex, layout::resizable::PANEL_MIN_SIZE, foundation::styled::StyledExt as _, v_flex,
+    AxisExt, ElementExt, foundation::styled::StyledExt as _, h_flex,
+    layout::resizable::PANEL_MIN_SIZE, v_flex,
 };
 
 pub enum ResizablePanelEvent {

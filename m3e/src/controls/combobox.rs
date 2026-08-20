@@ -10,16 +10,15 @@ use rust_i18n::t;
 use crate::{
     ActiveTheme, Disableable, ElementExt as _, Icon, IconName, IndexPath, Sizable, Size,
     StyleSized, StyledExt,
-    foundation::actions::{Cancel, Confirm, SelectDown, SelectUp},
-    foundation::global_state::GlobalState,
-    h_flex,
     controls::input::{clear_button, input_style},
     data::list::{List, ListState},
     data::searchable_list::{
         SearchableListAdapter, SearchableListChange, SearchableListDelegate, SearchableListItem,
         SearchableListState,
     },
-    v_flex,
+    foundation::actions::{Cancel, Confirm, SelectDown, SelectUp},
+    foundation::global_state::GlobalState,
+    h_flex, v_flex,
 };
 
 const CONTEXT: &str = "Combobox";

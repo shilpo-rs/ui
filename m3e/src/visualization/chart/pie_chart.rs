@@ -6,7 +6,7 @@ use shilpo_macros::IntoPlot;
 
 use crate::{
     ActiveTheme,
-    plot::{
+    visualization::plot::{
         Plot,
         label::{PlotLabel, TEXT_HEIGHT, TEXT_SIZE, Text},
         polygon,

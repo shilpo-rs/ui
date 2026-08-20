@@ -5,7 +5,7 @@ use gpui::{
     quad, size,
 };
 
-use crate::plot::{StrokeStyle, origin_point};
+use crate::visualization::plot::{StrokeStyle, origin_point};
 
 #[allow(clippy::type_complexity)]
 pub struct Line<T> {

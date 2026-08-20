@@ -12,11 +12,11 @@ use rust_i18n::t;
 use crate::{
     ActiveTheme as _, FocusTrapElement as _, IconName, Root, Sizable as _, StyledExt,
     TITLE_BAR_HEIGHT, WindowExt as _,
-    foundation::animation::cubic_bezier,
     controls::button::{Button, ButtonVariant, ButtonVariants as _},
-    overlay::dialog::{DialogContent, DialogTitle},
-    layout::scroll::ScrollableElement as _,
+    foundation::animation::cubic_bezier,
     foundation::text::{SelectionScope, SelectionScopeElement as _},
+    layout::scroll::ScrollableElement as _,
+    overlay::dialog::{DialogContent, DialogTitle},
     v_flex,
 };
 

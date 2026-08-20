@@ -2,9 +2,8 @@ use gpui::*;
 use shilpo_m3e::{
     ActiveTheme, Selectable, Sizable, WindowExt,
     controls::button::{Button, ButtonVariants as _},
-    h_flex,
     controls::input::{self, Input, InputEvent, InputState, TabSize},
-    v_flex,
+    h_flex, v_flex,
 };
 use storybook::Assets;
 

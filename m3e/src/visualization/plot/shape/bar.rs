@@ -2,7 +2,7 @@ use gpui::{
     App, Background, Bounds, Corners, PaintQuad, Pixels, Point, Size, Window, fill, point, px,
 };
 
-use crate::plot::{
+use crate::visualization::plot::{
     label::{PlotLabel, TEXT_GAP, TEXT_HEIGHT, TEXT_SIZE, Text},
     origin_point,
 };

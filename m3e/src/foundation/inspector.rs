@@ -15,12 +15,12 @@ use ropey::Rope;
 
 use crate::{
     ActiveTheme, IconName, Selectable, Sizable, TITLE_BAR_HEIGHT,
-    feedback::alert::Alert,
     controls::button::{Button, ButtonVariants},
-    foundation::clipboard::Clipboard,
-    data::description_list::DescriptionList,
-    h_flex,
     controls::input::{CompletionProvider, Input, InputEvent, InputState, RopeExt, TabSize},
+    data::description_list::DescriptionList,
+    feedback::alert::Alert,
+    foundation::clipboard::Clipboard,
+    h_flex,
     navigation::link::Link,
     v_flex,
 };

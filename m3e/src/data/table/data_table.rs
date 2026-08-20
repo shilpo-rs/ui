@@ -5,11 +5,11 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Sizable, Size,
+    data::table::{TableDelegate, TableState},
     foundation::actions::{
         Cancel, SelectDown, SelectFirst, SelectLast, SelectNextColumn, SelectPageDown,
         SelectPageUp, SelectPrevColumn, SelectUp,
     },
-    data::table::{TableDelegate, TableState},
 };
 
 const CONTEXT: &'static str = "DataTable";

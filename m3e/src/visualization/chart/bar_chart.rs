@@ -10,7 +10,7 @@ use shilpo_macros::IntoPlot;
 use super::build_band_labels;
 use crate::{
     ActiveTheme,
-    plot::{
+    visualization::plot::{
         AXIS_GAP, AxisLabelSide, Grid, Plot, PlotAxis,
         label::{TEXT_GAP, TEXT_SIZE, Text, measure_text_width},
         scale::{Scale, ScaleBand, ScaleLinear, Sealed},

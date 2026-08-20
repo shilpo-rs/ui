@@ -4,9 +4,8 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme, IconName, Selectable as _, Sizable as _, Size,
     controls::button::{Button, ButtonGroup},
-    h_flex,
     feedback::rating::Rating,
-    v_flex,
+    h_flex, v_flex,
 };
 
 use crate::section;

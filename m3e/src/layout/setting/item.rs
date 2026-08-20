@@ -8,13 +8,13 @@ use gpui::{
 use crate::{
     ActiveTheme as _, AxisExt, StyledExt as _,
     data::label::Label,
+    foundation::text::Text,
     layout::setting::{
         AnySettingField, ElementField, RenderOptions,
         fields::{
             BoolField, DropdownField, NumberField, ResetHandler, SettingFieldRender, StringField,
         },
     },
-    foundation::text::Text,
     v_flex,
 };
 

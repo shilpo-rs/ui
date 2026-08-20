@@ -6,9 +6,10 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme as _, Icon, IconName, Size, h_flex,
-    overlay::menu::PopupMenu,
+    ActiveTheme as _, Icon, IconName, Size,
     data::table::{Column, ColumnGroup, ColumnSort, TableState, loading::Loading},
+    h_flex,
+    overlay::menu::PopupMenu,
 };
 
 /// A delegate trait for providing data and rendering for a table.

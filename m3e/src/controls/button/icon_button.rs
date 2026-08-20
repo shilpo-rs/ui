@@ -343,7 +343,10 @@ impl RenderOnce for IconButton {
                 let ripple_state = ripple_state.clone();
                 move |_, _, cx| {
                     if !disabled {
-                        crate::foundation::ripple::RippleState::handle_mouse_up(ripple_state.clone(), cx);
+                        crate::foundation::ripple::RippleState::handle_mouse_up(
+                            ripple_state.clone(),
+                            cx,
+                        );
                     }
                 }
             })
@@ -397,9 +400,12 @@ impl RenderOnce for IconButton {
                 },
             );
 
-        crate::foundation::ripple::RippleElement::new(icon_button_element.into_element(), ripple_state)
-            .corner_radii(active_radii)
-            .color(colors.content)
+        crate::foundation::ripple::RippleElement::new(
+            icon_button_element.into_element(),
+            ripple_state,
+        )
+        .corner_radii(active_radii)
+        .color(colors.content)
     }
 }
 

@@ -4,9 +4,8 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme as _, StyledExt as _,
+    ActiveTheme as _, StyledExt as _, h_flex,
     overlay::dialog::{CancelDialog, ConfirmDialog},
-    h_flex,
 };
 
 /// Footer section of a dialog, typically contains action buttons.

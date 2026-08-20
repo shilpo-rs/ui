@@ -285,9 +285,12 @@ impl RenderOnce for ListItem {
                 }
             });
 
-        crate::foundation::ripple::RippleElement::new(list_item_element.into_element(), ripple_state)
-            .corner_radii(gpui::Corners::all(gpui::px(4.)))
-            .color(cx.theme().on_surface)
+        crate::foundation::ripple::RippleElement::new(
+            list_item_element.into_element(),
+            ripple_state,
+        )
+        .corner_radii(gpui::Corners::all(gpui::px(4.)))
+        .color(cx.theme().on_surface)
     }
 }
 

@@ -5,11 +5,11 @@ use gpui::{AnyElement, App, IntoElement, ParentElement as _, StyleRefinement, Wi
 use crate::{
     Disableable, Sizable, StyledExt,
     controls::checkbox::Checkbox,
+    controls::switch::Switch,
     layout::setting::{
         AnySettingField, RenderOptions,
         fields::{SettingFieldRender, get_value, set_value},
     },
-    controls::switch::Switch,
 };
 
 pub(crate) struct BoolField {

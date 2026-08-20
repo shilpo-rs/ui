@@ -6,10 +6,9 @@ use shilpo_m3e::{
     IconName, StyledExt,
     controls::button::{Button, ButtonVariant, ButtonVariants as _},
     controls::checkbox::Checkbox,
-    green_500, h_flex,
     controls::input::{Input, InputEvent, InputState},
     data::label::{HighlightsMatch, Label},
-    v_flex,
+    green_500, h_flex, v_flex,
 };
 
 use crate::section;

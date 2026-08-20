@@ -5,10 +5,9 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme, Colorize as _, StyledExt, WindowExt,
     controls::checkbox::Checkbox,
-    foundation::clipboard::Clipboard,
-    h_flex,
     controls::slider::{Slider, SliderEvent, SliderScale, SliderState, SliderValue},
-    v_flex,
+    foundation::clipboard::Clipboard,
+    h_flex, v_flex,
 };
 
 use crate::section;

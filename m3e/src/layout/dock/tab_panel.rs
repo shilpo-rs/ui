@@ -15,10 +15,10 @@ use super::{
 use crate::{
     ActiveTheme, AxisExt, IconName, Placement, Selectable, Sizable,
     controls::button::{Button, ButtonVariants as _},
-    layout::dock::PanelInfo,
     h_flex,
-    overlay::menu::{DropdownMenu, PopupMenu},
+    layout::dock::PanelInfo,
     navigation::tab::{Tab, TabBar},
+    overlay::menu::{DropdownMenu, PopupMenu},
     v_flex,
 };
 

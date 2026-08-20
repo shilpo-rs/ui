@@ -8,11 +8,11 @@ use gpui::{
 };
 
 use crate::StyledExt;
-use crate::layout::scroll::ScrollableElement;
 use crate::foundation::text::TextViewFormat;
 use crate::foundation::text::markdown_ext::{MarkdownExtensions, MarkdownNode, MarkdownPlugin};
 use crate::foundation::text::node::CodeBlock;
 use crate::foundation::text::state::TextViewState;
+use crate::layout::scroll::ScrollableElement;
 use crate::{foundation::global_state::GlobalState, foundation::text::TextViewStyle};
 
 /// Type for code block actions generator function.

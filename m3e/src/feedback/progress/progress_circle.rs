@@ -10,7 +10,7 @@ use gpui::{Bounds, Corners, div, fill};
 use instant::Duration;
 
 use super::ProgressState;
-use crate::plot::shape::{Arc, ArcData};
+use crate::visualization::plot::shape::{Arc, ArcData};
 use crate::{ActiveTheme, Sizable, Size, StyledExt};
 
 #[derive(Clone)]
@@ -287,7 +287,8 @@ impl RenderOnce for ProgressCircle {
         let elapsed = morph.morph_start.elapsed().as_secs_f32();
         let morph_duration = 0.35;
         let morph_progress = (elapsed / morph_duration).clamp(0.0, 1.0);
-        let ease_progress = crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0)(morph_progress);
+        let ease_progress =
+            crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0)(morph_progress);
 
         let wave_factor = if wavy {
             ease_progress
@@ -364,13 +365,15 @@ impl RenderOnce for ProgressCircle {
                                 additional_rotation += std::f32::consts::FRAC_PI_2;
                             } else if delta > step_start {
                                 let progress = (delta - step_start) / 0.05;
-                                let ease_progress =
-                                    crate::foundation::animation::cubic_bezier(0.05, 0.7, 0.1, 1.0)(progress);
+                                let ease_progress = crate::foundation::animation::cubic_bezier(
+                                    0.05, 0.7, 0.1, 1.0,
+                                )(progress);
                                 additional_rotation += ease_progress * std::f32::consts::FRAC_PI_2;
                             }
                         }
 
-                        let sweep_easing = crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0);
+                        let sweep_easing =
+                            crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0);
                         let (start, end) = if delta < 0.5 {
                             let p = delta / 0.5;
                             let sweep = 0.1 + (0.87 - 0.1) * sweep_easing(p);
@@ -407,8 +410,9 @@ impl RenderOnce for ProgressCircle {
                         move |this, delta| {
                             let elapsed = morph_start.elapsed().as_secs_f32();
                             let morph_progress = (elapsed / 0.35).clamp(0.0, 1.0);
-                            let ease =
-                                crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0)(morph_progress);
+                            let ease = crate::foundation::animation::cubic_bezier(
+                                0.2, 0.0, 0.0, 1.0,
+                            )(morph_progress);
                             let wave_factor = if morph_wavy { ease } else { 1.0 - ease };
                             this.child(Self::render_circle(
                                 0.,
@@ -427,7 +431,9 @@ impl RenderOnce for ProgressCircle {
                         "wavy-circle-morph",
                         Animation::new(Duration::from_secs_f32(morph_duration)),
                         move |this, delta| {
-                            let ease = crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0)(delta);
+                            let ease = crate::foundation::animation::cubic_bezier(
+                                0.2, 0.0, 0.0, 1.0,
+                            )(delta);
                             let factor = 1.0 - ease;
                             this.child(Self::render_circle(
                                 0.,

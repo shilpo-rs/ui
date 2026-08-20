@@ -8,7 +8,7 @@ use shilpo_macros::IntoPlot;
 
 use crate::{
     ActiveTheme,
-    plot::{
+    visualization::plot::{
         Plot,
         label::{PlotLabel, TEXT_GAP, TEXT_SIZE, Text, measure_text_width, truncate_text_to_width},
         origin_point,

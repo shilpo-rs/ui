@@ -5,8 +5,9 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable,
     controls::button::{Button, ButtonVariant, ButtonVariants},
+    h_flex,
     layout::dock::PanelControl,
-    h_flex, v_flex,
+    v_flex,
 };
 
 use crate::section;

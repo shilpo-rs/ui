@@ -3,12 +3,11 @@ use shilpo_m3e::{
     ActiveTheme, Icon, IconName, IndexPath, Sizable as _,
     controls::button::{Button, ButtonVariants as _},
     controls::combobox::*,
-    h_flex,
     data::searchable_list::{
         SearchableGroup, SearchableListChange, SearchableListDelegate, SearchableListItem,
         SearchableVec,
     },
-    v_flex, white,
+    h_flex, v_flex, white,
 };
 
 use crate::section;

@@ -12,11 +12,10 @@ use rust_i18n::t;
 use super::calendar::{Calendar, CalendarEvent, CalendarState, Date, Matcher};
 use crate::{
     ActiveTheme, Disableable, Icon, IconName, Sizable, Size, StyleSized as _, StyledExt as _,
-    foundation::actions::{Cancel, Confirm},
     controls::button::{Button, ButtonVariants as _},
-    h_flex,
     controls::input::{Delete, clear_button, input_style},
-    v_flex,
+    foundation::actions::{Cancel, Confirm},
+    h_flex, v_flex,
 };
 
 const CONTEXT: &'static str = "DatePicker";

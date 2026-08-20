@@ -7,8 +7,8 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Selectable,
-    foundation::actions::{Cancel, SelectLeft, SelectRight},
     controls::button::{Button, ButtonVariants},
+    foundation::actions::{Cancel, SelectLeft, SelectRight},
     foundation::global_state::GlobalState,
     h_flex,
     overlay::menu::PopupMenu,

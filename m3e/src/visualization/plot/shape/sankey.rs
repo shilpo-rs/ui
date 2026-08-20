@@ -2,7 +2,7 @@
 
 use gpui::{Path, PathBuilder, Pixels, Point, px};
 
-use crate::plot::origin_point;
+use crate::visualization::plot::origin_point;
 
 /// Vertical offset, as a fraction of node height, applied to stagger runs of
 /// equal-height single-node columns so their otherwise-flat ribbons curve.

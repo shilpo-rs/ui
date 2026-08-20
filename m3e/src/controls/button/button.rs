@@ -723,7 +723,10 @@ impl RenderOnce for Button {
             .on_mouse_up(gpui::MouseButton::Left, {
                 let ripple_state = ripple_state.clone();
                 move |_, _, cx| {
-                    crate::foundation::ripple::RippleState::handle_mouse_up(ripple_state.clone(), cx);
+                    crate::foundation::ripple::RippleState::handle_mouse_up(
+                        ripple_state.clone(),
+                        cx,
+                    );
                 }
             })
             .when_some(self.on_click, |this, on_click| {

@@ -4,10 +4,10 @@ use gpui::{
 };
 use shilpo_m3e::{
     IconName, Selectable as _, Sizable as _, Size,
-    feedback::alert::Alert,
     controls::button::{Button, ButtonGroup},
-    layout::dock::PanelControl,
+    feedback::alert::Alert,
     foundation::text::markdown,
+    layout::dock::PanelControl,
     v_flex,
 };
 

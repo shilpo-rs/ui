@@ -287,8 +287,9 @@ impl RenderOnce for SplitButtonTrailingTrigger {
             let to = if target { open_corners } else { closed_corners };
             let current = state.current.clone();
             let active_generation = state.active_generation.clone();
-            let animation = Animation::new(Duration::from_millis(250))
-                .with_easing(crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0));
+            let animation = Animation::new(Duration::from_millis(250)).with_easing(
+                crate::foundation::animation::cubic_bezier(0.2, 0.0, 0.0, 1.0),
+            );
             return button
                 .with_animation(
                     format!("split-button-corner-morph:{generation}"),
@@ -351,8 +352,11 @@ impl RenderOnce for SplitButton {
         } else {
             self.variant
         };
-        let outer_radius =
-            crate::controls::button::button_shape_tokens::resolve(self.rounded, self.size, Some(height));
+        let outer_radius = crate::controls::button::button_shape_tokens::resolve(
+            self.rounded,
+            self.size,
+            Some(height),
+        );
         let leading_corners = gpui::Corners {
             top_left: outer_radius,
             bottom_left: outer_radius,

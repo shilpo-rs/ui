@@ -5,9 +5,8 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme as _, Sizable,
     controls::button::Button,
-    h_flex,
     controls::input::{Input, InputEvent, InputState},
-    v_flex,
+    h_flex, v_flex,
 };
 
 use crate::section;

@@ -7,8 +7,8 @@ use gpui::{
 };
 
 use crate::{
-    ActiveTheme, AxisExt, FocusableExt as _, Sizable, Size, StyledExt, h_flex, foundation::text::Text,
-    overlay::tooltip::ComponentTooltip, v_flex,
+    ActiveTheme, AxisExt, FocusableExt as _, Sizable, Size, StyledExt, foundation::text::Text,
+    h_flex, overlay::tooltip::ComponentTooltip, v_flex,
 };
 
 /// A Radio element.

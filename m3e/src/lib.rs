@@ -9,10 +9,9 @@ pub mod foundation;
 pub mod layout;
 pub mod navigation;
 pub mod overlay;
+pub mod visualization;
 
-pub mod chart;
-pub mod plot;
-
+pub use controls::input::{Rope, RopeExt, RopeLines};
 pub use foundation::element_ext::*;
 pub use foundation::event::InteractiveElementExt;
 pub use foundation::focus_trap::{FocusTrapContainer, FocusTrapElement};
@@ -20,29 +19,30 @@ pub use foundation::geometry::*;
 pub use foundation::global_state::GlobalState;
 pub use foundation::icon::*;
 pub use foundation::index_path::IndexPath;
-pub use controls::input::{Rope, RopeExt, RopeLines};
+pub use layout::side_panel::{SidePanel, SidePanelPosition};
 pub use navigation::navigation_rail::{
     NavigationRail, NavigationRailArrangement, NavigationRailFooter, NavigationRailHeader,
     NavigationRailItem, NavigationRailMenuButton,
 };
-pub use layout::side_panel::{SidePanel, SidePanelPosition};
 
 pub use crate::Disableable;
 
+pub use controls::time::{calendar, date_picker};
 pub use foundation::font::FontFamilyCache;
 pub use foundation::i18n::LocaleCatalogue;
 #[cfg(any(feature = "inspector", debug_assertions))]
 pub use foundation::inspector::*;
-pub use overlay::menu::{ContextMenu, ContextMenuExt, ContextMenuState, PopupMenu, PopupMenuItem};
 pub use foundation::root::Root;
-pub use shilpo_macros::icon_named;
 pub use foundation::styled::*;
 pub use foundation::theme::*;
-pub use controls::time::{calendar, date_picker};
-pub use navigation::title_bar::*;
-pub use foundation::virtual_list::{VirtualList, VirtualListScrollHandle, h_virtual_list, v_virtual_list};
+pub use foundation::virtual_list::{
+    VirtualList, VirtualListScrollHandle, h_virtual_list, v_virtual_list,
+};
 pub use foundation::window_border::{WindowBorder, window_border, window_paddings};
 pub use foundation::window_ext::WindowExt;
+pub use navigation::title_bar::*;
+pub use overlay::menu::{ContextMenu, ContextMenuExt, ContextMenuState, PopupMenu, PopupMenuItem};
+pub use shilpo_macros::icon_named;
 
 rust_i18n::i18n!("locales", fallback = "en");
 

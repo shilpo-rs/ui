@@ -5,9 +5,9 @@ use shilpo_m3e::{
     ActiveTheme, Colorize as _, ElementExt, IconName, Sizable,
     controls::button::Button,
     controls::checkbox::Checkbox,
-    layout::group_box::{GroupBox, GroupBoxVariants as _},
-    h_flex,
     controls::slider::{Slider, SliderState},
+    h_flex,
+    layout::group_box::{GroupBox, GroupBoxVariants as _},
     v_flex,
 };
 use storybook::Assets;

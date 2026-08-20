@@ -3,7 +3,8 @@ use gpui::{
     Styled, Window, div,
 };
 use shilpo_m3e::{
-    ActiveTheme as _, StyledExt as _, layout::carousel::Carousel, layout::dock::PanelControl, v_flex,
+    ActiveTheme as _, StyledExt as _, layout::carousel::Carousel, layout::dock::PanelControl,
+    v_flex,
 };
 
 use crate::section;

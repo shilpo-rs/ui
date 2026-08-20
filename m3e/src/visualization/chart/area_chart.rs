@@ -10,7 +10,7 @@ use shilpo_macros::IntoPlot;
 use super::build_point_x_labels;
 use crate::{
     ActiveTheme,
-    plot::{
+    visualization::plot::{
         AXIS_GAP, Grid, Plot, PlotAxis, StrokeStyle,
         scale::{Scale, ScaleLinear, ScalePoint, Sealed},
         shape::Area,

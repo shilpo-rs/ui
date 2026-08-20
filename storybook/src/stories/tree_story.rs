@@ -12,11 +12,11 @@ use rand::prelude::IndexedRandom as _;
 use shilpo_m3e::{
     ActiveTheme as _, IconName,
     controls::button::Button,
-    layout::dock::PanelControl,
-    h_flex,
     data::label::Label,
     data::list::ListItem,
     data::tree::{TreeItem, TreeState, tree},
+    h_flex,
+    layout::dock::PanelControl,
     v_flex,
 };
 

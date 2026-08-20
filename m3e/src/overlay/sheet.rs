@@ -12,13 +12,13 @@ use serde::{Deserialize, Serialize};
 use crate::{
     ActiveTheme, FocusTrapElement as _, IconName, Placement, Sizable, StyledExt as _,
     WindowExt as _,
-    foundation::actions::Cancel,
     controls::button::{Button, ButtonVariants as _},
-    overlay::dialog::overlay_color,
+    foundation::actions::Cancel,
+    foundation::text::{SelectionScope, SelectionScopeElement as _},
     h_flex,
     layout::scroll::ScrollableElement as _,
-    foundation::text::{SelectionScope, SelectionScopeElement as _},
     navigation::title_bar::TITLE_BAR_HEIGHT,
+    overlay::dialog::overlay_color,
     v_flex,
 };
 

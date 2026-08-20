@@ -5,10 +5,10 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme, Theme, WindowExt as _,
     controls::button::{Button, ButtonVariants as _},
-    h_flex,
-    overlay::menu::{DropdownMenu as _, PopupMenuItem},
     feedback::notification::{Notification, NotificationType},
     foundation::text::markdown,
+    h_flex,
+    overlay::menu::{DropdownMenu as _, PopupMenuItem},
     v_flex,
 };
 

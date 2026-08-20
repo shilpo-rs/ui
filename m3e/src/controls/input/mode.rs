@@ -6,10 +6,10 @@ use gpui::{App, SharedString, Task};
 use ropey::Rope;
 
 use super::display_map::DisplayMap;
+use crate::controls::input::{InputEdit, RopeExt as _, TabSize};
 use crate::foundation::highlighter::DiagnosticSet;
 use crate::foundation::highlighter::LanguageRegistry;
 use crate::foundation::highlighter::SyntaxHighlighter;
-use crate::controls::input::{InputEdit, RopeExt as _, TabSize};
 
 #[allow(dead_code)]
 pub(super) struct PendingBackgroundParse {
@@ -348,8 +348,8 @@ mod tests {
 
     use super::replacement_input_edit;
     use crate::{
-        foundation::highlighter::DiagnosticSet,
         controls::input::{Point, TabSize, mode::InputMode},
+        foundation::highlighter::DiagnosticSet,
     };
 
     #[test]

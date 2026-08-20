@@ -9,10 +9,10 @@ use gpui::{
 
 use crate::{
     Selectable as _, StyledExt,
-    foundation::actions::{Confirm, SelectDown, SelectLeft, SelectRight, SelectUp},
     data::list::ListItem,
-    overlay::menu::{ContextMenuExt as _, PopupMenu},
+    foundation::actions::{Confirm, SelectDown, SelectLeft, SelectRight, SelectUp},
     layout::scroll::ScrollableElement,
+    overlay::menu::{ContextMenuExt as _, PopupMenu},
 };
 
 const CONTEXT: &str = "Tree";

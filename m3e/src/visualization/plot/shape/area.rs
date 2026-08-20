@@ -2,7 +2,7 @@
 
 use gpui::{Background, Bounds, Path, PathBuilder, Pixels, Point, Window, px};
 
-use crate::plot::{StrokeStyle, origin_point};
+use crate::visualization::plot::{StrokeStyle, origin_point};
 
 #[allow(clippy::type_complexity)]
 pub struct Area<T> {

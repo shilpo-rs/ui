@@ -10,10 +10,9 @@ use shilpo_m3e::{
     ActiveTheme, Icon, IconName, IndexPath, Selectable, Sizable,
     controls::button::Button,
     controls::checkbox::Checkbox,
-    h_flex,
     data::label::Label,
     data::list::{List, ListDelegate, ListEvent, ListItem, ListState},
-    v_flex,
+    h_flex, v_flex,
 };
 
 actions!(list_story, [SelectedCompany]);

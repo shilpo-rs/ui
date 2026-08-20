@@ -16,8 +16,9 @@ use super::{
     DockArea, Panel, PanelEvent, PanelInfo, PanelState, PanelView, StackPanel, TabPanel, TileMeta,
 };
 use crate::{
-    ActiveTheme, ElementExt, Icon, IconName, h_flex,
+    ActiveTheme, ElementExt, Icon, IconName,
     foundation::history::{History, HistoryItem},
+    h_flex,
     layout::scroll::{Scrollbar, ScrollbarShow},
     v_flex,
 };

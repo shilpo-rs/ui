@@ -13,13 +13,15 @@ const MAX_MENU_HEIGHT: Pixels = px(240.);
 const POPOVER_GAP: Pixels = px(4.);
 
 use crate::{
-    ActiveTheme, IndexPath, Selectable, foundation::actions, h_flex,
+    ActiveTheme, IndexPath, Selectable,
     controls::input::{
         self, InputState, RopeExt,
         popovers::{editor_popover, render_markdown},
     },
     data::label::Label,
     data::list::{List, ListDelegate, ListEvent, ListState},
+    foundation::actions,
+    h_flex,
 };
 
 struct ContextMenuDelegate {

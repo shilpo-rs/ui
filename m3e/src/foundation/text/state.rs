@@ -9,16 +9,16 @@ use gpui::{
 
 use crate::{
     ActiveTheme, ElementExt,
+    controls::input::{self, SelectAll},
     foundation::async_util::{Receiver, Sender, unbounded},
     foundation::highlighter::HighlightTheme,
-    controls::input::{self, SelectAll},
-    layout::scroll::AutoScroll,
     foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, TextViewStyle,
         document::ParsedDocument,
         format,
         node::{self, NodeContext},
     },
+    layout::scroll::AutoScroll,
     v_flex,
 };
 

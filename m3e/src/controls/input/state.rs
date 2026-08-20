@@ -33,10 +33,6 @@ use super::{
     number_input::{NumberStep, StepAction},
 };
 use crate::Size;
-use crate::foundation::actions::{SelectDown, SelectLeft, SelectRight, SelectUp};
-use crate::foundation::highlighter::DiagnosticSet;
-#[cfg(feature = "tree-sitter")]
-use crate::foundation::highlighter::LanguageRegistry;
 use crate::controls::input::blink_cursor::CURSOR_WIDTH;
 use crate::controls::input::movement::MoveDirection;
 use crate::controls::input::{
@@ -46,8 +42,12 @@ use crate::controls::input::{
     popovers::{ContextMenu, DiagnosticPopover, HoverPopover},
     search::SearchPanel,
 };
-use crate::overlay::native_menu::NativeMenu;
+use crate::foundation::actions::{SelectDown, SelectLeft, SelectRight, SelectUp};
+use crate::foundation::highlighter::DiagnosticSet;
+#[cfg(feature = "tree-sitter")]
+use crate::foundation::highlighter::LanguageRegistry;
 use crate::layout::scroll::AutoScroll;
+use crate::overlay::native_menu::NativeMenu;
 use crate::{Root, foundation::history::History};
 
 #[derive(Action, Clone, PartialEq, Eq, Deserialize)]
@@ -3208,8 +3208,8 @@ mod tests {
 
     #[gpui::test]
     fn test_highlighting_preserved_after_fold(cx: &mut TestAppContext) {
-        use crate::foundation::highlighter::HighlightTheme;
         use crate::controls::input::display_map::FoldRange;
+        use crate::foundation::highlighter::HighlightTheme;
 
         let input_view = InputView::new(cx);
         let mut cx = VisualTestContext::from_window(input_view.window_handle.into(), cx);
@@ -3250,7 +3250,9 @@ ORDER BY id
         let styles_before: Vec<(Range<usize>, gpui::HighlightStyle)> = cx.update(|_, cx| {
             input.read_with(cx, |state, _| {
                 let mode = &state.mode;
-                if let crate::controls::input::mode::InputMode::CodeEditor { highlighter, .. } = mode {
+                if let crate::controls::input::mode::InputMode::CodeEditor { highlighter, .. } =
+                    mode
+                {
                     let h = highlighter.borrow();
                     if let Some(h) = h.as_ref() {
                         let line_end = state.text.line_end_offset(comment_line);
@@ -3294,7 +3296,9 @@ ORDER BY id
         let styles_after: Vec<(Range<usize>, gpui::HighlightStyle)> = cx.update(|_, cx| {
             input.read_with(cx, |state, _| {
                 let mode = &state.mode;
-                if let crate::controls::input::mode::InputMode::CodeEditor { highlighter, .. } = mode {
+                if let crate::controls::input::mode::InputMode::CodeEditor { highlighter, .. } =
+                    mode
+                {
                     let h = highlighter.borrow();
                     if let Some(h) = h.as_ref() {
                         let line_end = state.text.line_end_offset(comment_line);

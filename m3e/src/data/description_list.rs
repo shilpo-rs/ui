@@ -3,7 +3,7 @@ use gpui::{
     Styled, Window, div, prelude::FluentBuilder as _, px, relative,
 };
 
-use crate::{ActiveTheme as _, AxisExt, Sizable, Size, h_flex, foundation::text::Text, v_flex};
+use crate::{ActiveTheme as _, AxisExt, Sizable, Size, foundation::text::Text, h_flex, v_flex};
 
 /// A description list.
 #[derive(IntoElement)]

@@ -12,9 +12,11 @@ const MAX_MENU_WIDTH: Pixels = px(320.);
 const MAX_MENU_HEIGHT: Pixels = px(480.);
 
 use crate::{
-    ActiveTheme, IndexPath, Selectable, foundation::actions, h_flex,
+    ActiveTheme, IndexPath, Selectable,
     controls::input::{self, InputState, popovers::editor_popover},
     data::list::{List, ListDelegate, ListEvent, ListState},
+    foundation::actions,
+    h_flex,
 };
 
 #[derive(Debug, Clone)]

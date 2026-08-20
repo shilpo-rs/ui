@@ -4,7 +4,10 @@ use gpui::{
     MouseUpEvent, Pixels, Point, ScrollWheelEvent, Style, WeakEntity, Window,
 };
 
-use crate::{Root, foundation::global_state::GlobalState, layout::scroll::AutoScroll, foundation::text::TextViewState};
+use crate::{
+    Root, foundation::global_state::GlobalState, foundation::text::TextViewState,
+    layout::scroll::AutoScroll,
+};
 
 /// The modal layer a selectable [`TextView`](crate::foundation::text::TextView) belongs to.
 ///

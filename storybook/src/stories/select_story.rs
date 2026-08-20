@@ -1,7 +1,10 @@
 use gpui::*;
 use itertools::Itertools as _;
 use serde::{Deserialize, Serialize};
-use shilpo_m3e::{controls::button::*, controls::checkbox::*, controls::input::*, controls::select::*, layout::separator::*, *};
+use shilpo_m3e::{
+    controls::button::*, controls::checkbox::*, controls::input::*, controls::select::*,
+    layout::separator::*, *,
+};
 
 use crate::section;
 

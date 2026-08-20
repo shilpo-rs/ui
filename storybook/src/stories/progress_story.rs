@@ -7,9 +7,8 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme, IconName, Selectable, Sizable, Size,
     controls::button::Button,
-    h_flex,
     feedback::progress::{LoadingIndicator, Progress, ProgressCircle},
-    v_flex,
+    h_flex, v_flex,
 };
 
 use crate::section;

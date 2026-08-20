@@ -1,7 +1,7 @@
 use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, Render, Styled as _, Window, px,
 };
-use shilpo_m3e::{layout::dock::PanelControl, foundation::text::markdown};
+use shilpo_m3e::{foundation::text::markdown, layout::dock::PanelControl};
 
 use crate::Story;
 

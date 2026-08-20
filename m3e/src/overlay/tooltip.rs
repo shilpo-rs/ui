@@ -9,11 +9,11 @@ use gpui::{
 
 use crate::{
     ActiveTheme, StyledExt,
-    foundation::animation::{Transition, ease_in_out_cubic, ease_out_cubic},
-    h_flex,
     data::kbd::Kbd,
+    foundation::animation::{Transition, ease_in_out_cubic, ease_out_cubic},
     foundation::root::Root,
     foundation::text::Text,
+    h_flex,
 };
 
 pub(crate) fn init(_cx: &mut App) {

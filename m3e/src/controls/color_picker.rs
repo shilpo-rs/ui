@@ -8,13 +8,13 @@ use rust_i18n::t;
 
 use crate::{
     ActiveTheme as _, Colorize as _, Icon, Selectable, Sizable, Size, StyleSized,
+    controls::input::{Input, InputEvent, InputState},
+    controls::slider::{Slider, SliderEvent, SliderState},
     foundation::actions::Confirm,
     h_flex,
-    controls::input::{Input, InputEvent, InputState},
-    overlay::popover::Popover,
     layout::separator::Separator,
-    controls::slider::{Slider, SliderEvent, SliderState},
     navigation::tab::{Tab, TabBar},
+    overlay::popover::Popover,
     overlay::tooltip::{ManagedTooltipExt as _, Tooltip},
     v_flex,
 };

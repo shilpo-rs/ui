@@ -12,13 +12,12 @@ use rust_i18n::t;
 use crate::{
     ActiveTheme, Disableable, ElementExt, IconName, Selectable, Sizable,
     controls::button::{Button, ButtonVariants},
-    h_flex,
     controls::input::{
         Enter, Escape, IndentInline, Input, InputEvent, InputState, RopeExt as _, Search,
         movement::MoveDirection,
     },
     data::label::Label,
-    v_flex,
+    h_flex, v_flex,
 };
 
 const CONTEXT: &'static str = "SearchPanel";

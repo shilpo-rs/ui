@@ -16,16 +16,17 @@ use ropey::Rope;
 
 use super::{TextViewStyle, utils::list_item_prefix};
 use crate::{
-    ActiveTheme as _, Icon, IconName, StyledExt, WindowExt as _, h_flex,
-    foundation::highlighter::{HighlightTheme, LanguageRegistry, SyntaxHighlighter},
+    ActiveTheme as _, Icon, IconName, StyledExt, WindowExt as _,
     controls::input::{InputEdit, Point, RopeExt as _},
-    layout::scroll::horizontal_scroll_area,
+    foundation::highlighter::{HighlightTheme, LanguageRegistry, SyntaxHighlighter},
     foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, MarkdownNode,
         document::NodeRenderOptions,
         inline::{Inline, InlineState},
         inline_flow::{InlineFlow, InlineFlowItem},
     },
+    h_flex,
+    layout::scroll::horizontal_scroll_area,
     overlay::tooltip::Tooltip,
     v_flex,
 };

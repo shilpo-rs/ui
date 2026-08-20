@@ -41,7 +41,11 @@ impl SyntaxHighlighter {
         true
     }
 
-    pub fn edit_tree(&mut self, _edit: Option<crate::controls::input::InputEdit>, _text: &ropey::Rope) {
+    pub fn edit_tree(
+        &mut self,
+        _edit: Option<crate::controls::input::InputEdit>,
+        _text: &ropey::Rope,
+    ) {
         // No-op in WASM
     }
 

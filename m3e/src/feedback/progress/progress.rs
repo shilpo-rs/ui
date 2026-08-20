@@ -327,7 +327,8 @@ impl RenderOnce for Progress {
                         Animation::new(Duration::from_millis(1750)).repeat(),
                         move |this, delta| {
                             let time_ms = delta * 1750.0;
-                            let ease = crate::foundation::animation::cubic_bezier(0.3, 0.0, 0.8, 0.15);
+                            let ease =
+                                crate::foundation::animation::cubic_bezier(0.3, 0.0, 0.8, 0.15);
 
                             // Line 1:
                             let l1_head = if time_ms < 1000.0 {

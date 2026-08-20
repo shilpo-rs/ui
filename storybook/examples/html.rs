@@ -1,10 +1,10 @@
 use gpui::*;
 use shilpo_m3e::{
     ActiveTheme as _,
-    foundation::highlighter::Language,
     controls::input::{Input, InputState, TabSize},
-    layout::resizable::h_resizable,
+    foundation::highlighter::Language,
     foundation::text::html,
+    layout::resizable::h_resizable,
 };
 use storybook::Assets;
 

@@ -5,14 +5,14 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme, Disableable, Icon, IconName, Sizable, Size, Theme, ThemeMode,
     controls::button::{Button, ButtonVariants as _},
-    layout::group_box::GroupBoxVariant,
-    h_flex,
     data::label::Label,
+    foundation::text::markdown,
+    h_flex,
+    layout::group_box::GroupBoxVariant,
     layout::setting::{
         NumberFieldOptions, RenderOptions, SettingField, SettingFieldElement, SettingGroup,
         SettingItem, SettingPage, Settings,
     },
-    foundation::text::markdown,
     v_flex,
 };
 

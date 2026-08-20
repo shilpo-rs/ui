@@ -6,8 +6,8 @@ use instant::Duration;
 use lsp_types::{Position, SemanticTokens, SemanticTokensLegend};
 use ropey::Rope;
 
-use crate::foundation::highlighter::HighlightTheme;
 use crate::controls::input::{InputState, Lsp, RopeExt};
+use crate::foundation::highlighter::HighlightTheme;
 
 /// A provider of semantic highlighting tokens, layered on top of the
 /// built-in tree-sitter [`SyntaxHighlighter`](crate::foundation::highlighter::SyntaxHighlighter).

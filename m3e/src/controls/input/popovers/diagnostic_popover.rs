@@ -6,11 +6,11 @@ use gpui::{
 };
 
 use crate::{
-    foundation::highlighter::DiagnosticEntry,
     controls::input::{
         InputState,
         popovers::{Popover, render_markdown},
     },
+    foundation::highlighter::DiagnosticEntry,
 };
 
 pub struct DiagnosticPopover {
