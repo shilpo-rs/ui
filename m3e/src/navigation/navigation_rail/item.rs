@@ -8,7 +8,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Disableable, Icon, Selectable, StyledExt, h_flex, foundation::icon::IconNamed,
-    tooltip::Tooltip, v_flex,
+    overlay::tooltip::Tooltip, v_flex,
 };
 
 /// An individual destination item within a [`NavigationRail`](super::NavigationRail).

@@ -12,7 +12,7 @@ use shilpo_m3e::{
     layout::dock::{Panel, PanelControl, PanelEvent, PanelInfo, PanelState, TitleStyle, register_panel},
     layout::group_box::{GroupBox, GroupBoxVariants as _},
     h_flex,
-    menu::PopupMenu,
+    overlay::menu::PopupMenu,
     notification::Notification,
     layout::scroll::{ScrollableElement as _, ScrollbarShow},
     foundation::text::markdown,

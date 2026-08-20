@@ -11,7 +11,7 @@ use crate::{
     controls::button::{Button, ButtonVariants},
     foundation::global_state::GlobalState,
     h_flex,
-    menu::PopupMenu,
+    overlay::menu::PopupMenu,
 };
 
 const CONTEXT: &str = "AppMenuBar";

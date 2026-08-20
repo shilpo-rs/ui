@@ -10,7 +10,7 @@ use crate::{
     ActiveTheme as _, Collapsible, Icon, IconName, Sizable as _, StyledExt,
     controls::button::{Button, ButtonVariants as _},
     h_flex,
-    menu::{ContextMenuExt, PopupMenu},
+    overlay::menu::{ContextMenuExt, PopupMenu},
     navigation::sidebar::SidebarItem,
     v_flex,
 };

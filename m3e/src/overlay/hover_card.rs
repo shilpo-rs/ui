@@ -7,7 +7,7 @@ use gpui::{
 };
 use instant::Duration;
 
-use crate::{ElementExt, StyledExt as _, popover::Popover};
+use crate::{ElementExt, StyledExt as _, overlay::popover::Popover};
 
 /// A hover card element that displays content when hovering over a trigger element.
 ///

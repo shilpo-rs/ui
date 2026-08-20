@@ -5,7 +5,7 @@ use gpui::{
 
 use crate::{
     StyledExt as _, WindowExt as _,
-    dialog::{
+    overlay::dialog::{
         Dialog, DialogButtonProps, DialogDescription, DialogFooter, DialogHeader, DialogTitle,
     },
     h_flex, v_flex,
@@ -130,7 +130,7 @@ impl AlertDialog {
     /// ```
     pub fn content<F>(mut self, builder: F) -> Self
     where
-        F: Fn(crate::dialog::DialogContent, &mut Window, &mut App) -> crate::dialog::DialogContent
+        F: Fn(crate::overlay::dialog::DialogContent, &mut Window, &mut App) -> crate::overlay::dialog::DialogContent
             + 'static,
     {
         self.base = self.base.content(builder);

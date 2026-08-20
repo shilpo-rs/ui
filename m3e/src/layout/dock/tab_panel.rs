@@ -17,7 +17,7 @@ use crate::{
     controls::button::{Button, ButtonVariants as _},
     layout::dock::PanelInfo,
     h_flex,
-    menu::{DropdownMenu, PopupMenu},
+    overlay::menu::{DropdownMenu, PopupMenu},
     navigation::tab::{Tab, TabBar},
     v_flex,
 };

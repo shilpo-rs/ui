@@ -19,7 +19,7 @@ use crate::{
     StyleSized, StyledExt,
     controls::button::ButtonIcon,
     h_flex,
-    tooltip::{ManagedTooltipExt as _, Tooltip},
+    overlay::tooltip::{ManagedTooltipExt as _, Tooltip},
 };
 
 #[derive(Default, Clone, Copy)]

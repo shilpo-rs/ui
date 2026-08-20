@@ -10,7 +10,7 @@ use shilpo_m3e::{
     badge::Badge,
     controls::button::{Button, ButtonVariants as _},
     h_flex,
-    menu::{AppMenuBar, DropdownMenu as _},
+    overlay::menu::{AppMenuBar, DropdownMenu as _},
     layout::scroll::ScrollbarShow,
 };
 

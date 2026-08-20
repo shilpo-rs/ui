@@ -3,7 +3,7 @@ use gpui::{
     prelude::FluentBuilder as _,
 };
 
-use crate::{ActiveTheme as _, Collapsible, Selectable, h_flex, menu::DropdownMenu};
+use crate::{ActiveTheme as _, Collapsible, Selectable, h_flex, overlay::menu::DropdownMenu};
 
 /// Footer for the [`super::Sidebar`].
 #[derive(IntoElement)]

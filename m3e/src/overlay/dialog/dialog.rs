@@ -14,7 +14,7 @@ use crate::{
     TITLE_BAR_HEIGHT, WindowExt as _,
     foundation::animation::cubic_bezier,
     controls::button::{Button, ButtonVariant, ButtonVariants as _},
-    dialog::{DialogContent, DialogTitle},
+    overlay::dialog::{DialogContent, DialogTitle},
     layout::scroll::ScrollableElement as _,
     foundation::text::{SelectionScope, SelectionScopeElement as _},
     v_flex,

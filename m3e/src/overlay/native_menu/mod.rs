@@ -1,6 +1,6 @@
 //! A menu rendered natively by the operating system.
 //!
-//! Unlike [`crate::menu::PopupMenu`], which is drawn by GPUI and therefore
+//! Unlike [`crate::overlay::menu::PopupMenu`], which is drawn by GPUI and therefore
 //! clipped to the window bounds, [`NativeMenu`] is rendered by the OS. It can
 //! extend beyond the window — useful for small windows where a GPUI-drawn popup
 //! menu would otherwise be cut off.
@@ -138,7 +138,7 @@ impl NativeMenu {
 
     /// Add Menu Item with Icon and disabled state.
     ///
-    /// Alias for [`Self::menu_with_icon_disabled`], matching [`crate::menu::PopupMenu`].
+    /// Alias for [`Self::menu_with_icon_disabled`], matching [`crate::overlay::menu::PopupMenu`].
     pub fn menu_with_icon_and_disabled(
         self,
         label: impl Into<SharedString>,

@@ -2,7 +2,7 @@ use gpui::{App, Global, Hsla, Pixels, SharedString, px};
 
 use crate::{
     foundation::highlighter::HighlightTheme, list::ListSettings, notification::NotificationSettings,
-    layout::scroll::ScrollbarShow, sheet::SheetSettings,
+    layout::scroll::ScrollbarShow, overlay::sheet::SheetSettings,
 };
 use std::ops::{Deref, DerefMut};
 use std::sync::Arc;

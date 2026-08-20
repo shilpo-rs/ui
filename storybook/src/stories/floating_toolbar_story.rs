@@ -3,7 +3,7 @@ use gpui::{
     Styled, Window,
 };
 use shilpo_m3e::{
-    IconName, controls::button::IconButton, layout::dock::PanelControl, floating_toolbar::FloatingToolbar, h_flex,
+    IconName, controls::button::IconButton, layout::dock::PanelControl, overlay::floating_toolbar::FloatingToolbar, h_flex,
     v_flex,
 };
 

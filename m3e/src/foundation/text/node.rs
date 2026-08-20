@@ -26,7 +26,7 @@ use crate::{
         inline::{Inline, InlineState},
         inline_flow::{InlineFlow, InlineFlowItem},
     },
-    tooltip::Tooltip,
+    overlay::tooltip::Tooltip,
     v_flex,
 };
 

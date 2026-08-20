@@ -12,7 +12,7 @@ use shilpo_m3e::{
     h_flex,
     controls::radio::Radio,
     controls::switch::Switch,
-    tooltip::Tooltip,
+    overlay::tooltip::Tooltip,
     v_flex,
 };
 

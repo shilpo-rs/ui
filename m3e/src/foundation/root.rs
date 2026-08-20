@@ -9,14 +9,14 @@ use gpui::{
 
 use crate::{
     ActiveTheme, ElementExt, Placement, StyledExt,
-    dialog::{ANIMATION_DURATION, Dialog},
+    overlay::dialog::{ANIMATION_DURATION, Dialog},
     foundation::focus_trap::FocusTrapManager,
     controls::input::{Copy, InputState},
-    native_menu::FallbackMenuOverlay,
+    overlay::native_menu::FallbackMenuOverlay,
     notification::{Notification, NotificationList},
-    sheet::Sheet,
+    overlay::sheet::Sheet,
     foundation::text::{SelectionScope, TextSelectionController, TextViewState, WindowTextSelection},
-    tooltip::TooltipOverlay,
+    overlay::tooltip::TooltipOverlay,
     foundation::window_border::{self},
 };
 

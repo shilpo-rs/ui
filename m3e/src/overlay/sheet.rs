@@ -14,7 +14,7 @@ use crate::{
     WindowExt as _,
     foundation::actions::Cancel,
     controls::button::{Button, ButtonVariants as _},
-    dialog::overlay_color,
+    overlay::dialog::overlay_color,
     h_flex,
     layout::scroll::ScrollableElement as _,
     foundation::text::{SelectionScope, SelectionScopeElement as _},

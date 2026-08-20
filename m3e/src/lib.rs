@@ -6,31 +6,24 @@ pub mod controls;
 pub mod foundation;
 pub mod layout;
 pub mod navigation;
+pub mod overlay;
 
 pub mod alert;
 pub mod avatar;
 pub mod badge;
 pub mod chart;
 pub mod description_list;
-pub mod dialog;
-pub mod floating_toolbar;
-pub mod hover_card;
 pub mod kbd;
 pub mod label;
 pub mod list;
-pub mod menu;
-pub mod native_menu;
 pub mod notification;
 pub mod plot;
-pub mod popover;
 pub mod progress;
 pub mod rating;
 pub mod searchable_list;
-pub mod sheet;
 pub mod skeleton;
 pub mod table;
 pub mod tag;
-pub mod tooltip;
 pub mod tree;
 
 pub use foundation::element_ext::*;
@@ -53,7 +46,7 @@ pub use foundation::font::FontFamilyCache;
 pub use foundation::i18n::LocaleCatalogue;
 #[cfg(any(feature = "inspector", debug_assertions))]
 pub use foundation::inspector::*;
-pub use menu::{ContextMenu, ContextMenuExt, ContextMenuState, PopupMenu, PopupMenuItem};
+pub use overlay::menu::{ContextMenu, ContextMenuExt, ContextMenuState, PopupMenu, PopupMenuItem};
 pub use foundation::root::Root;
 pub use shilpo_macros::icon_named;
 pub use foundation::styled::*;
@@ -80,18 +73,18 @@ pub fn init(cx: &mut App) {
     controls::color_picker::init(cx);
     controls::time::date_picker::init(cx);
     layout::dock::init(cx);
-    sheet::init(cx);
+    overlay::sheet::init(cx);
     controls::combobox::init(cx);
     controls::select::init(cx);
     controls::input::init(cx);
     list::init(cx);
-    dialog::init(cx);
-    popover::init(cx);
-    menu::init(cx);
+    overlay::dialog::init(cx);
+    overlay::popover::init(cx);
+    overlay::menu::init(cx);
     table::init(cx);
     foundation::text::init(cx);
     tree::init(cx);
-    tooltip::init(cx);
+    overlay::tooltip::init(cx);
 }
 
 #[inline]

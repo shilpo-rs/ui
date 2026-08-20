@@ -46,7 +46,7 @@ use crate::controls::input::{
     popovers::{ContextMenu, DiagnosticPopover, HoverPopover},
     search::SearchPanel,
 };
-use crate::native_menu::NativeMenu;
+use crate::overlay::native_menu::NativeMenu;
 use crate::layout::scroll::AutoScroll;
 use crate::{Root, foundation::history::History};
 

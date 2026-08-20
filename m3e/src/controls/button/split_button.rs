@@ -12,8 +12,8 @@ use super::{
 };
 use crate::{
     Disableable, Selectable, Sizable, Size, StyledExt as _,
-    menu::{DropdownMenu, PopupMenu},
-    tooltip::ComponentTooltip,
+    overlay::menu::{DropdownMenu, PopupMenu},
+    overlay::tooltip::ComponentTooltip,
 };
 
 #[derive(IntoElement)]

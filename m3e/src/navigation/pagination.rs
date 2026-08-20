@@ -11,7 +11,7 @@ use crate::{
     controls::button::{Button, ButtonVariants},
     h_flex,
     foundation::icon::IconName,
-    menu::{DropdownMenu as _, PopupMenuItem},
+    overlay::menu::{DropdownMenu as _, PopupMenuItem},
 };
 
 /// Pagination with page navigation, next and previous links.

@@ -4,10 +4,10 @@ use gpui::{App, ElementId, Entity, Window};
 
 use crate::{
     Placement, Root,
-    dialog::{AlertDialog, Dialog},
+    overlay::dialog::{AlertDialog, Dialog},
     controls::input::InputState,
     notification::Notification,
-    sheet::Sheet,
+    overlay::sheet::Sheet,
 };
 
 /// Extension trait for [`Window`] to add dialog, sheet .. functionality.

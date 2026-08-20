@@ -7,7 +7,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     controls::checkbox::Checkbox,
     date_picker::{DatePicker, DatePickerState},
-    dialog::{
+    overlay::dialog::{
         Dialog, DialogAction, DialogClose, DialogDescription, DialogFooter, DialogHeader,
         DialogTitle,
     },

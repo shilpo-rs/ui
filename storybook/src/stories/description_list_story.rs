@@ -4,7 +4,7 @@ use gpui::{
     ParentElement, Render, Styled, Window,
 };
 use serde::Deserialize;
-use shilpo_m3e::{AxisExt, h_flex, menu::DropdownMenu as _};
+use shilpo_m3e::{AxisExt, h_flex, overlay::menu::DropdownMenu as _};
 use shilpo_m3e::{
     Sizable as _, Size,
     controls::button::Button,

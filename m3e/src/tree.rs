@@ -11,7 +11,7 @@ use crate::{
     Selectable as _, StyledExt,
     foundation::actions::{Confirm, SelectDown, SelectLeft, SelectRight, SelectUp},
     list::ListItem,
-    menu::{ContextMenuExt as _, PopupMenu},
+    overlay::menu::{ContextMenuExt as _, PopupMenu},
     layout::scroll::ScrollableElement,
 };
 

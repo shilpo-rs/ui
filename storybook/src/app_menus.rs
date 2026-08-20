@@ -2,7 +2,7 @@ use std::cell::Cell;
 
 use gpui::{App, Entity, Menu, MenuItem, SharedString};
 use shilpo_m3e::WindowControlsMode;
-use shilpo_m3e::{ActiveTheme as _, GlobalState, Theme, ThemeMode, menu::AppMenuBar};
+use shilpo_m3e::{ActiveTheme as _, GlobalState, Theme, ThemeMode, overlay::menu::AppMenuBar};
 
 use crate::{
     About, AppState, Open, Quit, SelectLocale, SelectWindowControls, ToggleSearch,

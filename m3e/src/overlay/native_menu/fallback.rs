@@ -10,7 +10,7 @@ use gpui::{
 };
 
 use super::NativeMenuItem;
-use crate::menu::{PopupMenu, PopupMenuItem};
+use crate::overlay::menu::{PopupMenu, PopupMenuItem};
 use crate::foundation::root::Root;
 
 /// Overlay held by [`Root`] that renders the active fallback popup menu, if any.

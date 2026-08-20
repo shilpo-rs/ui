@@ -7,7 +7,7 @@ use gpui::{
     Subscription, Window, anchored, deferred, div, prelude::FluentBuilder, px,
 };
 
-use crate::menu::PopupMenu;
+use crate::overlay::menu::PopupMenu;
 
 /// A extension trait for adding a context menu to an element.
 pub trait ContextMenuExt: InteractiveElement + ParentElement + Styled {

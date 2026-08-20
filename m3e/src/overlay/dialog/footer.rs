@@ -5,7 +5,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme as _, StyledExt as _,
-    dialog::{CancelDialog, ConfirmDialog},
+    overlay::dialog::{CancelDialog, ConfirmDialog},
     h_flex,
 };
 

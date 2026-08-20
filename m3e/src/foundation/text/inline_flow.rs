@@ -15,7 +15,7 @@ use super::{
     inline::{Inline, InlineState},
     node::LinkMark,
 };
-use crate::{WindowExt as _, tooltip::Tooltip};
+use crate::{WindowExt as _, overlay::tooltip::Tooltip};
 
 const IMAGE_LEN: usize = 1;
 

@@ -6,7 +6,7 @@ use shilpo_m3e::{
     ActiveTheme, Theme, WindowExt as _,
     controls::button::{Button, ButtonVariants as _},
     h_flex,
-    menu::{DropdownMenu as _, PopupMenuItem},
+    overlay::menu::{DropdownMenu as _, PopupMenuItem},
     notification::{Notification, NotificationType},
     foundation::text::markdown,
     v_flex,

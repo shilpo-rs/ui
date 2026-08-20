@@ -11,11 +11,11 @@ use crate::{
     foundation::actions::Confirm,
     h_flex,
     controls::input::{Input, InputEvent, InputState},
-    popover::Popover,
+    overlay::popover::Popover,
     layout::separator::Separator,
     controls::slider::{Slider, SliderEvent, SliderState},
     navigation::tab::{Tab, TabBar},
-    tooltip::{ManagedTooltipExt as _, Tooltip},
+    overlay::tooltip::{ManagedTooltipExt as _, Tooltip},
     v_flex,
 };
 
