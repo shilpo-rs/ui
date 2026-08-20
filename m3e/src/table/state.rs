@@ -17,7 +17,7 @@ use crate::{
     },
     h_flex,
     menu::{ContextMenuExt, PopupMenu},
-    scroll::{ScrollableMask, Scrollbar},
+    layout::scroll::{ScrollableMask, Scrollbar},
     v_flex,
 };
 

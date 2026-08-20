@@ -6,7 +6,7 @@ use shilpo_m3e::{
     IconName, Selectable as _, Sizable as _, Size,
     alert::Alert,
     controls::button::{Button, ButtonGroup},
-    dock::PanelControl,
+    layout::dock::PanelControl,
     foundation::text::markdown,
     v_flex,
 };

@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, FocusHandle, Focusable, IntoElement, ParentElement, Render,
     Styled, Window,
 };
-use shilpo_m3e::{Icon, IconName, controls::chip::Chip, dock::PanelControl, h_flex, v_flex};
+use shilpo_m3e::{Icon, IconName, controls::chip::Chip, layout::dock::PanelControl, h_flex, v_flex};
 
 use crate::section;
 

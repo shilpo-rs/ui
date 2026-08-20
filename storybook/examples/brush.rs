@@ -5,7 +5,7 @@ use shilpo_m3e::{
     ActiveTheme, Colorize as _, ElementExt, IconName, Sizable,
     controls::button::Button,
     controls::checkbox::Checkbox,
-    group_box::{GroupBox, GroupBoxVariants as _},
+    layout::group_box::{GroupBox, GroupBoxVariants as _},
     h_flex,
     controls::slider::{Slider, SliderState},
     v_flex,

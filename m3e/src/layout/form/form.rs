@@ -5,7 +5,7 @@ use gpui::{
 
 use crate::{
     Sizable, Size,
-    form::{Field, FieldProps},
+    layout::form::{Field, FieldProps},
     v_flex,
 };
 

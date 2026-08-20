@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _, avatar::Avatar, badge::Badge,
-    dock::PanelControl, v_flex,
+    layout::dock::PanelControl, v_flex,
 };
 
 use crate::section;

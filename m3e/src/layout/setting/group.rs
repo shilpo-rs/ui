@@ -5,9 +5,9 @@ use gpui::{
 
 use crate::{
     ActiveTheme, StyledExt,
-    group_box::{GroupBox, GroupBoxVariants},
+    layout::group_box::{GroupBox, GroupBoxVariants},
     label::Label,
-    setting::{RenderOptions, SettingItem},
+    layout::setting::{RenderOptions, SettingItem},
     v_flex,
 };
 

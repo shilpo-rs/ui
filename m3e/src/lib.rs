@@ -4,22 +4,16 @@ use gpui::{App, SharedString};
 
 pub mod controls;
 pub mod foundation;
+pub mod layout;
 pub mod navigation;
 
-pub mod accordion;
 pub mod alert;
 pub mod avatar;
 pub mod badge;
-pub mod card;
-pub mod carousel;
 pub mod chart;
-pub mod collapsible;
 pub mod description_list;
 pub mod dialog;
-pub mod dock;
 pub mod floating_toolbar;
-pub mod form;
-pub mod group_box;
 pub mod hover_card;
 pub mod kbd;
 pub mod label;
@@ -31,13 +25,8 @@ pub mod plot;
 pub mod popover;
 pub mod progress;
 pub mod rating;
-pub mod resizable;
-pub mod scroll;
 pub mod searchable_list;
-pub mod separator;
-pub mod setting;
 pub mod sheet;
-pub mod side_panel;
 pub mod skeleton;
 pub mod table;
 pub mod tag;
@@ -56,7 +45,7 @@ pub use navigation::navigation_rail::{
     NavigationRail, NavigationRailArrangement, NavigationRailFooter, NavigationRailHeader,
     NavigationRailItem, NavigationRailMenuButton,
 };
-pub use side_panel::{SidePanel, SidePanelPosition};
+pub use layout::side_panel::{SidePanel, SidePanelPosition};
 
 pub use crate::Disableable;
 
@@ -90,7 +79,7 @@ pub fn init(cx: &mut App) {
     foundation::focus_trap::init(cx);
     controls::color_picker::init(cx);
     controls::time::date_picker::init(cx);
-    dock::init(cx);
+    layout::dock::init(cx);
     sheet::init(cx);
     controls::combobox::init(cx);
     controls::select::init(cx);

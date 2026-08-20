@@ -12,7 +12,7 @@ use serde::{Deserialize, Serialize};
 use super::{DockArea, DockItem, PanelView, TabPanel};
 use crate::{
     StyledExt,
-    resizable::{PANEL_MIN_SIZE, resize_handle},
+    layout::resizable::{PANEL_MIN_SIZE, resize_handle},
 };
 
 #[derive(Clone)]

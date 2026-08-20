@@ -2,11 +2,11 @@ use std::rc::Rc;
 
 use gpui::{AnyElement, App, IntoElement, StyleRefinement, Window};
 
-use crate::setting::{AnySettingField, RenderOptions, fields::SettingFieldRender};
+use crate::layout::setting::{AnySettingField, RenderOptions, fields::SettingFieldRender};
 
 /// A trait for rendering custom setting field elements.
 ///
-/// For [`crate::setting::SettingField::element`] method.
+/// For [`crate::layout::setting::SettingField::element`] method.
 pub trait SettingFieldElement {
     type Element: IntoElement + 'static;
 

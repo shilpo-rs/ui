@@ -47,7 +47,7 @@ use crate::controls::input::{
     search::SearchPanel,
 };
 use crate::native_menu::NativeMenu;
-use crate::scroll::AutoScroll;
+use crate::layout::scroll::AutoScroll;
 use crate::{Root, foundation::history::History};
 
 #[derive(Action, Clone, PartialEq, Eq, Deserialize)]

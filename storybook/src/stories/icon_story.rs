@@ -5,7 +5,7 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable,
     controls::button::{Button, ButtonVariant, ButtonVariants},
-    dock::PanelControl,
+    layout::dock::PanelControl,
     h_flex, v_flex,
 };
 

@@ -8,7 +8,7 @@ use shilpo_m3e::{
     ActiveTheme as _, Selectable,
     controls::button::{Button, ButtonGroup},
     h_flex,
-    scroll::ScrollableElement,
+    layout::scroll::ScrollableElement,
     v_flex,
 };
 

@@ -20,7 +20,7 @@ use crate::{
     ActiveTheme as _, Colorize, IconName, Root, Selectable, Sizable as _,
     controls::button::{Button, ButtonVariants as _},
     controls::input::{RopeExt as _, blink_cursor::CURSOR_WIDTH, display_map::LineLayout},
-    scroll::Scrollbar,
+    layout::scroll::Scrollbar,
 };
 
 const BOTTOM_MARGIN_ROWS: usize = 3;

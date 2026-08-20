@@ -16,7 +16,7 @@ use crate::{
     controls::button::{Button, ButtonVariants as _},
     dialog::overlay_color,
     h_flex,
-    scroll::ScrollableElement as _,
+    layout::scroll::ScrollableElement as _,
     foundation::text::{SelectionScope, SelectionScopeElement as _},
     navigation::title_bar::TITLE_BAR_HEIGHT,
     v_flex,

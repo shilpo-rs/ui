@@ -19,7 +19,7 @@ use crate::{
     ActiveTheme as _, Icon, IconName, StyledExt, WindowExt as _, h_flex,
     foundation::highlighter::{HighlightTheme, LanguageRegistry, SyntaxHighlighter},
     controls::input::{InputEdit, Point, RopeExt as _},
-    scroll::horizontal_scroll_area,
+    layout::scroll::horizontal_scroll_area,
     foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, MarkdownNode,
         document::NodeRenderOptions,

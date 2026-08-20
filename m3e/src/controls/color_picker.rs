@@ -12,7 +12,7 @@ use crate::{
     h_flex,
     controls::input::{Input, InputEvent, InputState},
     popover::Popover,
-    separator::Separator,
+    layout::separator::Separator,
     controls::slider::{Slider, SliderEvent, SliderState},
     navigation::tab::{Tab, TabBar},
     tooltip::{ManagedTooltipExt as _, Tooltip},

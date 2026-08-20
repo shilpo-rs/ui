@@ -10,7 +10,7 @@ use shilpo_m3e::{
     controls::button::Button,
     controls::checkbox::Checkbox,
     description_list::{DescriptionItem, DescriptionList},
-    dock::PanelControl,
+    layout::dock::PanelControl,
     foundation::text::TextView,
     v_flex,
 };

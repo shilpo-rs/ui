@@ -12,7 +12,7 @@ use rand::prelude::IndexedRandom as _;
 use shilpo_m3e::{
     ActiveTheme as _, IconName,
     controls::button::Button,
-    dock::PanelControl,
+    layout::dock::PanelControl,
     h_flex,
     label::Label,
     list::ListItem,

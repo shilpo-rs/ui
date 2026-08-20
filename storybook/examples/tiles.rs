@@ -5,12 +5,12 @@ use gpui::*;
 use serde::{Deserialize, Serialize};
 use shilpo_m3e::{
     ActiveTheme, Root, Sizable, TitleBar,
-    dock::{
+    layout::dock::{
         DockArea, DockAreaState, DockEvent, DockItem, Panel, PanelEvent, PanelInfo, PanelRegistry,
         PanelState, PanelView, register_panel,
     },
     controls::input::{Input, InputState},
-    scroll::ScrollbarShow,
+    layout::scroll::ScrollbarShow,
 };
 use storybook::Assets;
 use storybook::{ButtonStory, IconStory, StoryContainer};

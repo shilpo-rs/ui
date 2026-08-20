@@ -6,7 +6,7 @@ use shilpo_m3e::{
     ActiveTheme as _, StyledExt,
     controls::button::{Button, ButtonVariants as _},
     controls::checkbox::Checkbox,
-    group_box::{GroupBox, GroupBoxVariants as _},
+    layout::group_box::{GroupBox, GroupBoxVariants as _},
     h_flex,
     controls::radio::{Radio, RadioGroup},
     controls::switch::Switch,

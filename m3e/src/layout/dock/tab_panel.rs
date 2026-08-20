@@ -15,7 +15,7 @@ use super::{
 use crate::{
     ActiveTheme, AxisExt, IconName, Placement, Selectable, Sizable,
     controls::button::{Button, ButtonVariants as _},
-    dock::PanelInfo,
+    layout::dock::PanelInfo,
     h_flex,
     menu::{DropdownMenu, PopupMenu},
     navigation::tab::{Tab, TabBar},

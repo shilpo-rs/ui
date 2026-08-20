@@ -7,10 +7,10 @@ use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme, StyledExt,
     chart::{AreaChart, BarChart, CandlestickChart, LineChart, PieChart, SankeyChart, SankeyLabel},
-    dock::PanelControl,
+    layout::dock::PanelControl,
     h_flex,
     plot::shape::{BarAlignment, SankeyAlign, SankeyLink, SankeyValueScale},
-    separator::Separator,
+    layout::separator::Separator,
     v_flex,
 };
 

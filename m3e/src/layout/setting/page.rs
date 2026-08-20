@@ -12,8 +12,8 @@ use crate::{
     controls::button::{Button, ButtonVariants},
     h_flex,
     label::Label,
-    scroll::ScrollableElement,
-    setting::{RenderOptions, SettingGroup, settings::SettingsState},
+    layout::scroll::ScrollableElement,
+    layout::setting::{RenderOptions, SettingGroup, settings::SettingsState},
     v_flex,
 };
 

@@ -12,7 +12,7 @@ use crate::{
     foundation::async_util::{Receiver, Sender, unbounded},
     foundation::highlighter::HighlightTheme,
     controls::input::{self, SelectAll},
-    scroll::AutoScroll,
+    layout::scroll::AutoScroll,
     foundation::text::{
         CodeBlockActionsFn, MarkdownExtensions, TextViewStyle,
         document::ParsedDocument,

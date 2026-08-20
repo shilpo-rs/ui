@@ -5,8 +5,8 @@ use gpui::{
 use shilpo_m3e::{
     Icon, IconName,
     controls::button::Button,
-    card::{Card, CardHeader},
-    dock::PanelControl,
+    layout::card::{Card, CardHeader},
+    layout::dock::PanelControl,
     h_flex, v_flex,
 };
 

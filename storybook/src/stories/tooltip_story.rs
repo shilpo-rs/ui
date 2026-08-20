@@ -8,7 +8,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariant, ButtonVariants},
     controls::checkbox::Checkbox,
     foundation::clipboard::Clipboard,
-    dock::PanelControl,
+    layout::dock::PanelControl,
     h_flex,
     controls::radio::Radio,
     controls::switch::Switch,

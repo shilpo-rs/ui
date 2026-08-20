@@ -7,7 +7,7 @@ use gpui::{
 use rust_i18n::t;
 
 use super::{DockArea, PanelInfo, PanelState, invalid_panel::InvalidPanel};
-use crate::{controls::button::Button, dock::TabPanel, menu::PopupMenu};
+use crate::{controls::button::Button, layout::dock::TabPanel, menu::PopupMenu};
 
 pub enum PanelEvent {
     ZoomIn,

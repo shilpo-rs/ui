@@ -18,7 +18,7 @@ use crate::list::cache::{MeasuredEntrySize, RowEntry, RowsCache};
 use crate::{
     ActiveTheme, IconName, Size,
     controls::input::{Input, InputEvent},
-    scroll::Scrollbar,
+    layout::scroll::Scrollbar,
     v_flex,
 };
 use crate::{Icon, IndexPath, Selectable, Sizable, StyledExt};

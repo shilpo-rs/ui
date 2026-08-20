@@ -5,10 +5,10 @@ use gpui::{
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _, WindowExt as _,
     controls::button::{Button, ButtonVariants as _},
-    dock::PanelControl,
+    layout::dock::PanelControl,
     h_flex,
     progress::ProgressCircle,
-    separator::Separator,
+    layout::separator::Separator,
     navigation::status_bar::StatusBar,
     v_flex,
 };

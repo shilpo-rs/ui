@@ -12,7 +12,7 @@ use crate::{
     foundation::actions::{Confirm, SelectDown, SelectLeft, SelectRight, SelectUp},
     list::ListItem,
     menu::{ContextMenuExt as _, PopupMenu},
-    scroll::ScrollableElement,
+    layout::scroll::ScrollableElement,
 };
 
 const CONTEXT: &str = "Tree";

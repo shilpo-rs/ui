@@ -12,7 +12,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonGroup},
     h_flex,
     menu::DropdownMenu,
-    separator::Separator,
+    layout::separator::Separator,
     navigation::sidebar::{
         Sidebar, SidebarCollapsible, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu,
         SidebarMenuItem, SidebarToggleButton,

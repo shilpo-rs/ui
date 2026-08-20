@@ -20,7 +20,7 @@ use shilpo_m3e::{
     controls::input::{
         DocumentRangeSemanticTokensProvider, Input, InputEvent, InputState, Rope, RopeExt, TabSize,
     },
-    resizable::{h_resizable, resizable_panel},
+    layout::resizable::{h_resizable, resizable_panel},
     navigation::status_bar::StatusBar,
     foundation::text::{
         MarkdownNode, MarkdownParseContext, MarkdownPlugin, TextViewStyle, markdown, markdown_ast,

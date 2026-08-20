@@ -8,11 +8,11 @@ use shilpo_m3e::{
     controls::checkbox::Checkbox,
     controls::color_picker::{ColorPicker, ColorPickerState},
     date_picker::{DatePicker, DatePickerState},
-    form::{field, v_form},
+    layout::form::{field, v_form},
     h_flex,
     controls::input::{Input, InputState},
     controls::select::{Select, SelectState},
-    separator::Separator,
+    layout::separator::Separator,
     controls::switch::Switch,
     v_flex,
 };

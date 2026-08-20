@@ -15,7 +15,7 @@ pub use number::NumberFieldOptions;
 pub(crate) use number::*;
 pub(crate) use string::*;
 
-use crate::setting::RenderOptions;
+use crate::layout::setting::RenderOptions;
 
 /// Custom reset behavior for a setting field or item.
 ///

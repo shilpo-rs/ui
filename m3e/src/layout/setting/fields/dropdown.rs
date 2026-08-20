@@ -9,7 +9,7 @@ use crate::{
     AxisExt, Disableable, Sizable, StyledExt,
     controls::button::{Button, ButtonVariants as _},
     menu::{DropdownMenu, PopupMenuItem},
-    setting::{
+    layout::setting::{
         AnySettingField, RenderOptions,
         fields::{SettingFieldRender, get_value, set_value},
     },

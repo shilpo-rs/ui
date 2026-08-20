@@ -3,7 +3,7 @@ use shilpo_m3e::{
     ActiveTheme as _,
     foundation::highlighter::Language,
     controls::input::{Input, InputState, TabSize},
-    resizable::h_resizable,
+    layout::resizable::h_resizable,
     foundation::text::html,
 };
 use storybook::Assets;

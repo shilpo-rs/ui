@@ -9,10 +9,10 @@ use rust_i18n::t;
 
 use crate::{
     IconName, Sizable, Size, StyledExt,
-    group_box::GroupBoxVariant,
+    layout::group_box::GroupBoxVariant,
     controls::input::{Input, InputState},
-    resizable::{h_resizable, resizable_panel},
-    setting::{SettingGroup, SettingPage},
+    layout::resizable::{h_resizable, resizable_panel},
+    layout::setting::{SettingGroup, SettingPage},
     navigation::sidebar::{Sidebar, SidebarMenu, SidebarMenuItem},
 };
 

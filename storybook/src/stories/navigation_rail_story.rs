@@ -42,7 +42,7 @@ impl super::Story for NavigationRailStory {
         Self::view(window, cx)
     }
 
-    fn zoomable() -> Option<shilpo_m3e::dock::PanelControl> {
+    fn zoomable() -> Option<shilpo_m3e::layout::dock::PanelControl> {
         None
     }
 }

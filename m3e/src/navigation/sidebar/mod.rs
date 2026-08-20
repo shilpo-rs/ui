@@ -12,7 +12,7 @@ use crate::{
     ActiveTheme, Collapsible, Icon, IconName, Side, Sizable, StyledExt,
     controls::button::{Button, ButtonVariants},
     h_flex,
-    scroll::ScrollableElement,
+    layout::scroll::ScrollableElement,
     v_flex,
 };
 

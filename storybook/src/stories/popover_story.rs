@@ -11,7 +11,7 @@ use shilpo_m3e::{
     controls::input::{Input, InputState},
     list::{List, ListDelegate, ListItem, ListState},
     popover::Popover,
-    separator::Separator,
+    layout::separator::Separator,
     v_flex,
 };
 

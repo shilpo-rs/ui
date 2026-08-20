@@ -5,7 +5,7 @@ use gpui::{
 };
 
 use crate::ActiveTheme;
-use crate::scroll::ScrollableElement;
+use crate::layout::scroll::ScrollableElement;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SidePanelPosition {

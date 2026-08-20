@@ -11,7 +11,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     h_flex,
     menu::{AppMenuBar, DropdownMenu as _},
-    scroll::ScrollbarShow,
+    layout::scroll::ScrollbarShow,
 };
 
 use crate::{

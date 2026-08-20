@@ -6,7 +6,7 @@ use gpui::{
     StatefulInteractiveElement, Styled as _, Window, div, prelude::FluentBuilder as _, px,
 };
 
-use crate::{AxisExt as _, dock::DockPlacement};
+use crate::{AxisExt as _, layout::dock::DockPlacement};
 
 pub(crate) const HANDLE_PADDING: Pixels = px(4.);
 pub(crate) const HANDLE_SIZE: Pixels = px(1.);

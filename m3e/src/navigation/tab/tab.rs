@@ -71,7 +71,7 @@ impl TabVariant {
         }
     }
 
-    /// Default px(12) to match panel px_3, See [`crate::dock::TabPanel`]
+    /// Default px(12) to match panel px_3, See [`crate::layout::dock::TabPanel`]
     fn inner_paddings(&self, size: Size) -> Edges<Pixels> {
         let mut padding_x = match size {
             Size::XSmall => px(8.),

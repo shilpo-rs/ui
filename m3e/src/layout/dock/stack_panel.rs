@@ -10,9 +10,9 @@ use smallvec::SmallVec;
 use super::{DockArea, Panel, PanelEvent, PanelState, PanelView, TabPanel};
 use crate::{
     ActiveTheme, AxisExt as _, Placement,
-    dock::PanelInfo,
+    layout::dock::PanelInfo,
     h_flex,
-    resizable::{
+    layout::resizable::{
         PANEL_MIN_SIZE, ResizablePanelEvent, ResizablePanelGroup, ResizablePanelState,
         ResizableState, resizable_panel,
     },

@@ -8,7 +8,7 @@ use gpui::{
 };
 
 use crate::StyledExt;
-use crate::scroll::ScrollableElement;
+use crate::layout::scroll::ScrollableElement;
 use crate::foundation::text::TextViewFormat;
 use crate::foundation::text::markdown_ext::{MarkdownExtensions, MarkdownNode, MarkdownPlugin};
 use crate::foundation::text::node::CodeBlock;

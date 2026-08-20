@@ -15,7 +15,7 @@ use crate::{
     foundation::animation::cubic_bezier,
     controls::button::{Button, ButtonVariant, ButtonVariants as _},
     dialog::{DialogContent, DialogTitle},
-    scroll::ScrollableElement as _,
+    layout::scroll::ScrollableElement as _,
     foundation::text::{SelectionScope, SelectionScopeElement as _},
     v_flex,
 };
