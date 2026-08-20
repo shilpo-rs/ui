@@ -11,7 +11,7 @@ use crate::{
     ActiveTheme, Icon, IconName, Sizable, StyledExt,
     controls::button::{Button, ButtonVariants},
     h_flex,
-    label::Label,
+    data::label::Label,
     layout::scroll::ScrollableElement,
     layout::setting::{RenderOptions, SettingGroup, settings::SettingsState},
     v_flex,

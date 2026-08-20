@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext as _, ClickEvent, Context, Entity, InteractiveElement, IntoElement,
     ParentElement as _, Render, Role, Styled, Subscription, Window, div,
 };
-use shilpo_m3e::{controls::button::*, controls::input::*, label::Label, *};
+use shilpo_m3e::{controls::button::*, controls::input::*, data::label::Label, *};
 
 use crate::section;
 

@@ -6,7 +6,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme, Colorize, Icon, IconName, Sizable, Size, StyledExt,
-    avatar::{AvatarSized as _, avatar_size},
+    data::avatar::{AvatarSized as _, avatar_size},
 };
 
 /// User avatar element.

@@ -17,7 +17,7 @@ use crate::{
         Enter, Escape, IndentInline, Input, InputEvent, InputState, RopeExt as _, Search,
         movement::MoveDirection,
     },
-    label::Label,
+    data::label::Label,
     v_flex,
 };
 

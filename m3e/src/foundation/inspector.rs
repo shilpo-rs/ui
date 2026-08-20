@@ -18,7 +18,7 @@ use crate::{
     feedback::alert::Alert,
     controls::button::{Button, ButtonVariants},
     foundation::clipboard::Clipboard,
-    description_list::DescriptionList,
+    data::description_list::DescriptionList,
     h_flex,
     controls::input::{CompletionProvider, Input, InputEvent, InputState, RopeExt, TabSize},
     navigation::link::Link,

@@ -14,7 +14,7 @@ use rust_i18n::t;
 
 use crate::foundation::actions::{Cancel, Confirm, SelectDown, SelectUp};
 use crate::controls::input::InputState;
-use crate::list::cache::{MeasuredEntrySize, RowEntry, RowsCache};
+use crate::data::list::cache::{MeasuredEntrySize, RowEntry, RowsCache};
 use crate::{
     ActiveTheme, IconName, Size,
     controls::input::{Input, InputEvent},
@@ -22,7 +22,7 @@ use crate::{
     v_flex,
 };
 use crate::{Icon, IndexPath, Selectable, Sizable, StyledExt};
-use crate::{VirtualListScrollHandle, list::ListDelegate, v_virtual_list};
+use crate::{VirtualListScrollHandle, data::list::ListDelegate, v_virtual_list};
 
 pub(crate) fn init(cx: &mut App) {
     let context: Option<&str> = Some("List");

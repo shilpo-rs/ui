@@ -14,8 +14,8 @@ use crate::{
     foundation::global_state::GlobalState,
     h_flex,
     controls::input::{clear_button, input_style},
-    list::{List, ListState},
-    searchable_list::{
+    data::list::{List, ListState},
+    data::searchable_list::{
         SearchableListAdapter, SearchableListChange, SearchableListDelegate, SearchableListItem,
         SearchableListState,
     },
@@ -1023,7 +1023,7 @@ mod tests {
     use crate::{
         IndexPath,
         controls::combobox::{Combobox, ComboboxState},
-        searchable_list::{
+        data::searchable_list::{
             SearchableListChange, SearchableListDelegate, SearchableListItem, SearchableListState,
             SearchableVec,
         },

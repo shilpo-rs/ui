@@ -8,7 +8,7 @@ use shilpo_m3e::{
     controls::checkbox::Checkbox,
     green_500, h_flex,
     controls::input::{Input, InputEvent, InputState},
-    label::{HighlightsMatch, Label},
+    data::label::{HighlightsMatch, Label},
     v_flex,
 };
 

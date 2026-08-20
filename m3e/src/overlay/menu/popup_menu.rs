@@ -13,7 +13,7 @@ use crate::foundation::actions::{SelectLeft, SelectRight};
 use crate::overlay::menu::menu_item::MenuItemElement;
 use crate::layout::scroll::ScrollableElement;
 use crate::{ActiveTheme, ElementExt, Icon, IconName, Sizable as _, h_flex, v_flex};
-use crate::{Side, Size, StyledExt, kbd::Kbd};
+use crate::{Side, Size, StyledExt, data::kbd::Kbd};
 
 const CONTEXT: &str = "PopupMenu";
 

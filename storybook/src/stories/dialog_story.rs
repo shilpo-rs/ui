@@ -14,7 +14,7 @@ use shilpo_m3e::{
     h_flex,
     controls::input::{Input, InputState},
     controls::select::{Select, SelectState},
-    table::{Column, DataTable, TableDelegate, TableState},
+    data::table::{Column, DataTable, TableDelegate, TableState},
     foundation::text::{TextView, markdown},
     v_flex,
 };

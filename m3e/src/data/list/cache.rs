@@ -226,7 +226,7 @@ mod tests {
 
     use crate::{
         IndexPath,
-        list::cache::{RowEntry, RowsCache},
+        data::list::cache::{RowEntry, RowsCache},
     };
 
     fn build_entities(sections: &[usize]) -> Vec<RowEntry> {

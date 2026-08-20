@@ -8,15 +8,15 @@ use rust_i18n::t;
 
 // MARK: Public re-exports for back-compat
 /// Re-exported for backward compatibility. New code should prefer [`SearchableGroup`].
-pub use crate::searchable_list::SearchableGroup as SelectGroup;
+pub use crate::data::searchable_list::SearchableGroup as SelectGroup;
 /// Re-exported for backward compatibility. New code should prefer [`SearchableListDelegate`].
-pub use crate::searchable_list::SearchableListDelegate as SelectDelegate;
+pub use crate::data::searchable_list::SearchableListDelegate as SelectDelegate;
 /// Re-exported for backward compatibility. New code should prefer [`SearchableListItem`].
-pub use crate::searchable_list::SearchableListItem as SelectItem;
+pub use crate::data::searchable_list::SearchableListItem as SelectItem;
 /// Re-exported for backward compatibility. New code should prefer [`SearchableListItemElement`].
-pub use crate::searchable_list::SearchableListItemElement as SelectListItem;
+pub use crate::data::searchable_list::SearchableListItemElement as SelectListItem;
 /// Re-exported for backward compatibility.
-pub use crate::searchable_list::SearchableVec;
+pub use crate::data::searchable_list::SearchableVec;
 use crate::{
     ActiveTheme, Disableable, ElementExt as _, Icon, IconName, IndexPath, Sizable, Size,
     StyleSized, StyledExt,
@@ -24,8 +24,8 @@ use crate::{
     foundation::global_state::GlobalState,
     h_flex,
     controls::input::{clear_button, input_style},
-    list::List,
-    searchable_list::{
+    data::list::List,
+    data::searchable_list::{
         SearchableListChange, SearchableListDelegate, SearchableListItem, SearchableListState,
     },
     v_flex,
@@ -768,7 +768,7 @@ mod tests {
 
     use crate::{
         IndexPath,
-        searchable_list::SearchableVec,
+        data::searchable_list::SearchableVec,
         controls::select::{SelectGroup, SelectState},
     };
 

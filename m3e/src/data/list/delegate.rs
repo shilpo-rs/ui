@@ -2,7 +2,7 @@ use gpui::{AnyElement, App, Context, IntoElement, ParentElement as _, Styled as 
 
 use crate::{
     ActiveTheme as _, Icon, IconName, IndexPath, Selectable, h_flex,
-    list::{ListState, loading::Loading},
+    data::list::{ListState, loading::Loading},
 };
 
 /// A delegate for the List.

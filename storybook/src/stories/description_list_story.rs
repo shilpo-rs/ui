@@ -9,7 +9,7 @@ use shilpo_m3e::{
     Sizable as _, Size,
     controls::button::Button,
     controls::checkbox::Checkbox,
-    description_list::{DescriptionItem, DescriptionList},
+    data::description_list::{DescriptionItem, DescriptionList},
     layout::dock::PanelControl,
     foundation::text::TextView,
     v_flex,

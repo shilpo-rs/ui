@@ -7,7 +7,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme as _, AxisExt, StyledExt as _,
-    label::Label,
+    data::label::Label,
     layout::setting::{
         AnySettingField, ElementField, RenderOptions,
         fields::{

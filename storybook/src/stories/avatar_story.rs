@@ -4,7 +4,7 @@ use gpui::{
 };
 use shilpo_m3e::{
     ActiveTheme, IconName, Sizable as _, StyledExt,
-    avatar::{Avatar, AvatarGroup},
+    data::avatar::{Avatar, AvatarGroup},
     layout::dock::PanelControl,
     v_flex,
 };

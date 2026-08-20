@@ -6,7 +6,7 @@ use gpui::{
 use crate::{
     ActiveTheme, StyledExt,
     layout::group_box::{GroupBox, GroupBoxVariants},
-    label::Label,
+    data::label::Label,
     layout::setting::{RenderOptions, SettingItem},
     v_flex,
 };

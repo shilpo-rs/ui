@@ -7,7 +7,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     layout::group_box::GroupBoxVariant,
     h_flex,
-    label::Label,
+    data::label::Label,
     layout::setting::{
         NumberFieldOptions, RenderOptions, SettingField, SettingFieldElement, SettingGroup,
         SettingItem, SettingPage, Settings,

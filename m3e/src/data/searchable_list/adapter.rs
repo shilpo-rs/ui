@@ -6,7 +6,7 @@ use super::{
 };
 use crate::{
     ActiveTheme, Disableable as _, Icon, IconName, IndexPath, Sizable as _, Size, StyleSized as _,
-    list::{ListDelegate, ListState},
+    data::list::{ListDelegate, ListState},
 };
 
 /// Bridges a [`SearchableListDelegate`] into the [`ListDelegate`] protocol.

@@ -2,7 +2,7 @@ use gpui::{
     App, AppContext, Context, Entity, Focusable, IntoElement, Keystroke, ParentElement, Render,
     Styled, Window,
 };
-use shilpo_m3e::{h_flex, kbd::Kbd, v_flex};
+use shilpo_m3e::{h_flex, data::kbd::Kbd, v_flex};
 
 use crate::section;
 

@@ -3,23 +3,15 @@ use std::ops::Deref;
 use gpui::{App, SharedString};
 
 pub mod controls;
+pub mod data;
 pub mod feedback;
 pub mod foundation;
 pub mod layout;
 pub mod navigation;
 pub mod overlay;
 
-pub mod avatar;
 pub mod chart;
-pub mod description_list;
-pub mod kbd;
-pub mod label;
-pub mod list;
 pub mod plot;
-pub mod searchable_list;
-pub mod table;
-pub mod tag;
-pub mod tree;
 
 pub use foundation::element_ext::*;
 pub use foundation::event::InteractiveElementExt;
@@ -72,13 +64,13 @@ pub fn init(cx: &mut App) {
     controls::combobox::init(cx);
     controls::select::init(cx);
     controls::input::init(cx);
-    list::init(cx);
+    data::list::init(cx);
     overlay::dialog::init(cx);
     overlay::popover::init(cx);
     overlay::menu::init(cx);
-    table::init(cx);
+    data::table::init(cx);
     foundation::text::init(cx);
-    tree::init(cx);
+    data::tree::init(cx);
     overlay::tooltip::init(cx);
 }
 

@@ -11,7 +11,7 @@ use crate::{
     ActiveTheme, StyledExt,
     foundation::animation::{Transition, ease_in_out_cubic, ease_out_cubic},
     h_flex,
-    kbd::Kbd,
+    data::kbd::Kbd,
     foundation::root::Root,
     foundation::text::Text,
 };

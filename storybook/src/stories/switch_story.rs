@@ -3,7 +3,7 @@ use gpui::{
     Render, SharedString, Styled, Window, px,
 };
 use shilpo_m3e::{
-    ActiveTheme, Disableable as _, IconName, Sizable, h_flex, label::Label, controls::switch::Switch, v_flex,
+    ActiveTheme, Disableable as _, IconName, Sizable, h_flex, data::label::Label, controls::switch::Switch, v_flex,
 };
 
 use crate::section;

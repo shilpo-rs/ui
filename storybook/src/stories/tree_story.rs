@@ -14,9 +14,9 @@ use shilpo_m3e::{
     controls::button::Button,
     layout::dock::PanelControl,
     h_flex,
-    label::Label,
-    list::ListItem,
-    tree::{TreeItem, TreeState, tree},
+    data::label::Label,
+    data::list::ListItem,
+    data::tree::{TreeItem, TreeState, tree},
     v_flex,
 };
 

@@ -12,7 +12,7 @@ use lsp_types::{SemanticToken, SemanticTokenType, SemanticTokens, SemanticTokens
 use regex::{Captures, Regex};
 use shilpo_m3e::{
     ActiveTheme as _, Icon, IconName, Sizable as _,
-    avatar::Avatar,
+    data::avatar::Avatar,
     controls::button::{Button, ButtonVariants as _},
     foundation::clipboard::Clipboard,
     h_flex,

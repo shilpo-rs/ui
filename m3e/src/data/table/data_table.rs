@@ -9,7 +9,7 @@ use crate::{
         Cancel, SelectDown, SelectFirst, SelectLast, SelectNextColumn, SelectPageDown,
         SelectPageUp, SelectPrevColumn, SelectUp,
     },
-    table::{TableDelegate, TableState},
+    data::table::{TableDelegate, TableState},
 };
 
 const CONTEXT: &'static str = "DataTable";

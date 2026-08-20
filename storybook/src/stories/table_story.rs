@@ -6,10 +6,10 @@ use shilpo_m3e::{
     ActiveTheme, Selectable as _, Sizable, Size,
     controls::button::{Button, ButtonGroup},
     h_flex,
-    table::{
+    data::table::{
         Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow,
     },
-    tag::Tag,
+    data::tag::Tag,
     v_flex,
 };
 

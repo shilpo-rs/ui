@@ -18,10 +18,10 @@ use shilpo_m3e::{
     controls::checkbox::Checkbox,
     h_flex,
     controls::input::{Input, InputEvent, InputState},
-    label::Label,
+    data::label::Label,
     overlay::menu::{DropdownMenu, PopupMenu},
     feedback::progress::ProgressCircle,
-    table::{
+    data::table::{
         Column, ColumnFixed, ColumnGroup, ColumnSort, DataTable, TableDelegate, TableEvent,
         TableState,
     },

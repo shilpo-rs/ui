@@ -18,8 +18,8 @@ use crate::{
         self, InputState, RopeExt,
         popovers::{editor_popover, render_markdown},
     },
-    label::Label,
-    list::{List, ListDelegate, ListEvent, ListState},
+    data::label::Label,
+    data::list::{List, ListDelegate, ListEvent, ListState},
 };
 
 struct ContextMenuDelegate {

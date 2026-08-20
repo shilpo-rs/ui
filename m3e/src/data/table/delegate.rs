@@ -8,7 +8,7 @@ use gpui::{
 use crate::{
     ActiveTheme as _, Icon, IconName, Size, h_flex,
     overlay::menu::PopupMenu,
-    table::{Column, ColumnGroup, ColumnSort, TableState, loading::Loading},
+    data::table::{Column, ColumnGroup, ColumnSort, TableState, loading::Loading},
 };
 
 /// A delegate trait for providing data and rendering for a table.

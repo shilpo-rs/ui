@@ -7,7 +7,7 @@ use shilpo_m3e::{
     foundation::clipboard::Clipboard,
     h_flex,
     controls::input::{Input, InputState},
-    label::Label,
+    data::label::Label,
     v_flex,
 };
 

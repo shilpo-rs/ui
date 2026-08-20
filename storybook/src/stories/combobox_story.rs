@@ -4,7 +4,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     controls::combobox::*,
     h_flex,
-    searchable_list::{
+    data::searchable_list::{
         SearchableGroup, SearchableListChange, SearchableListDelegate, SearchableListItem,
         SearchableVec,
     },

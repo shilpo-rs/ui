@@ -3,7 +3,7 @@ use gpui::{
     StyleRefinement, Styled, div, prelude::FluentBuilder as _,
 };
 
-use crate::{ActiveTheme, Sizable, Size, StyledExt as _, avatar::Avatar};
+use crate::{ActiveTheme, Sizable, Size, StyledExt as _, data::avatar::Avatar};
 
 /// A grouped avatars to display in a compact layout.
 #[derive(IntoElement)]

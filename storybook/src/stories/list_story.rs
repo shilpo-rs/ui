@@ -11,8 +11,8 @@ use shilpo_m3e::{
     controls::button::Button,
     controls::checkbox::Checkbox,
     h_flex,
-    label::Label,
-    list::{List, ListDelegate, ListEvent, ListItem, ListState},
+    data::label::Label,
+    data::list::{List, ListDelegate, ListEvent, ListItem, ListState},
     v_flex,
 };
 
