@@ -77,8 +77,8 @@ icon_named!(MyIcon, "assets/icons");
 ```rust,no_run
 use gpui::{App, WindowOptions, px, size};
 use shilpo_m3e::{
-    button::Button,
-    switch::Switch,
+    controls::button::Button,
+    controls::switch::Switch,
     Icon, ActiveTheme, Root,
     v_flex, h_flex,
 };
