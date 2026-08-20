@@ -18,7 +18,7 @@ use crate::{
     dock::PanelInfo,
     h_flex,
     menu::{DropdownMenu, PopupMenu},
-    tab::{Tab, TabBar},
+    navigation::tab::{Tab, TabBar},
     v_flex,
 };
 

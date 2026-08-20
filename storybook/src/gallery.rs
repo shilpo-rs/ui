@@ -6,8 +6,8 @@ use shilpo_m3e::{
     controls::input::{Input, InputEvent, InputState},
     resizable::{h_resizable, resizable_panel},
     separator::Separator,
-    sidebar::{Sidebar, SidebarGroup, SidebarMenu, SidebarMenuItem},
-    status_bar::StatusBar,
+    navigation::sidebar::{Sidebar, SidebarGroup, SidebarMenu, SidebarMenuItem},
+    navigation::status_bar::StatusBar,
     v_flex,
 };
 

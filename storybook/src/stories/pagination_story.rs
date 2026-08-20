@@ -5,7 +5,7 @@ use gpui::{
 use shilpo_m3e::{
     Disableable, Selectable as _, Sizable, Size,
     controls::button::{Button, ButtonGroup},
-    pagination::Pagination,
+    navigation::pagination::Pagination,
     v_flex,
 };
 

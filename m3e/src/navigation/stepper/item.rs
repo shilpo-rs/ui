@@ -6,7 +6,7 @@ use gpui::{
 
 use crate::{
     ActiveTheme as _, AxisExt, Icon, Sizable, Size, StyledExt as _,
-    stepper::trigger::StepperTrigger,
+    navigation::stepper::trigger::StepperTrigger,
 };
 
 /// A step item within a [`Stepper`].

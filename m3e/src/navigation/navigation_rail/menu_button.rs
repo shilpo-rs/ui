@@ -7,7 +7,7 @@ use gpui::{
 
 use crate::{
     Icon, IconName, StyledExt as _, controls::button::IconButton, foundation::motion::SpringSpec,
-    navigation_rail::motion::spring_progress,
+    navigation::navigation_rail::motion::spring_progress,
 };
 
 const ICON_MORPH_DURATION: Duration = Duration::from_millis(400);

@@ -21,7 +21,7 @@ use shilpo_m3e::{
         DocumentRangeSemanticTokensProvider, Input, InputEvent, InputState, Rope, RopeExt, TabSize,
     },
     resizable::{h_resizable, resizable_panel},
-    status_bar::StatusBar,
+    navigation::status_bar::StatusBar,
     foundation::text::{
         MarkdownNode, MarkdownParseContext, MarkdownPlugin, TextViewStyle, markdown, markdown_ast,
     },

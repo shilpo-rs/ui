@@ -7,7 +7,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonGroup},
     controls::checkbox::Checkbox,
     h_flex,
-    stepper::{Stepper, StepperItem},
+    navigation::stepper::{Stepper, StepperItem},
     v_flex,
 };
 

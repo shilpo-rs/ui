@@ -18,7 +18,7 @@ use crate::{
     h_flex,
     scroll::ScrollableElement as _,
     foundation::text::{SelectionScope, SelectionScopeElement as _},
-    title_bar::TITLE_BAR_HEIGHT,
+    navigation::title_bar::TITLE_BAR_HEIGHT,
     v_flex,
 };
 

@@ -25,7 +25,7 @@ use shilpo_m3e::{
     },
     list::ListItem,
     resizable::{h_resizable, resizable_panel},
-    status_bar::StatusBar,
+    navigation::status_bar::StatusBar,
     tree::{TreeItem, TreeState, tree},
     v_flex,
 };

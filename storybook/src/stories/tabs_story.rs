@@ -7,7 +7,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonGroup, ButtonVariants as _, IconButton, IconButtonVariants as _},
     controls::checkbox::Checkbox,
     h_flex,
-    tab::{Tab, TabBar},
+    navigation::tab::{Tab, TabBar},
     v_flex,
 };
 

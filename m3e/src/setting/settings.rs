@@ -13,7 +13,7 @@ use crate::{
     controls::input::{Input, InputState},
     resizable::{h_resizable, resizable_panel},
     setting::{SettingGroup, SettingPage},
-    sidebar::{Sidebar, SidebarMenu, SidebarMenuItem},
+    navigation::sidebar::{Sidebar, SidebarMenu, SidebarMenuItem},
 };
 
 const STACKED_LAYOUT_MAX_WIDTH: Pixels = px(480.);

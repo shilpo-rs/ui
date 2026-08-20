@@ -3,7 +3,7 @@ use gpui::{
     prelude::FluentBuilder as _,
 };
 
-use crate::{ActiveTheme, Collapsible, h_flex, sidebar::SidebarItem, v_flex};
+use crate::{ActiveTheme, Collapsible, h_flex, navigation::sidebar::SidebarItem, v_flex};
 
 /// A group of items in the [`super::Sidebar`].
 #[derive(Clone)]

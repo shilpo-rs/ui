@@ -8,7 +8,7 @@ use shilpo_m3e::{
     controls::button::{Button, ButtonVariants as _},
     dock::{ClosePanel, DockArea, DockAreaState, DockEvent, DockItem, DockPlacement, ToggleZoom},
     menu::DropdownMenu,
-    status_bar::StatusBar,
+    navigation::status_bar::StatusBar,
 };
 use storybook::Assets;
 use storybook::{

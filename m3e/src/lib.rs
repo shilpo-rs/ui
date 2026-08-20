@@ -4,13 +4,12 @@ use gpui::{App, SharedString};
 
 pub mod controls;
 pub mod foundation;
-mod title_bar;
+pub mod navigation;
 
 pub mod accordion;
 pub mod alert;
 pub mod avatar;
 pub mod badge;
-pub mod breadcrumb;
 pub mod card;
 pub mod carousel;
 pub mod chart;
@@ -24,13 +23,10 @@ pub mod group_box;
 pub mod hover_card;
 pub mod kbd;
 pub mod label;
-pub mod link;
 pub mod list;
 pub mod menu;
 pub mod native_menu;
-pub mod navigation_rail;
 pub mod notification;
-pub mod pagination;
 pub mod plot;
 pub mod popover;
 pub mod progress;
@@ -42,11 +38,7 @@ pub mod separator;
 pub mod setting;
 pub mod sheet;
 pub mod side_panel;
-pub mod sidebar;
 pub mod skeleton;
-pub mod status_bar;
-pub mod stepper;
-pub mod tab;
 pub mod table;
 pub mod tag;
 pub mod tooltip;
@@ -60,7 +52,7 @@ pub use foundation::global_state::GlobalState;
 pub use foundation::icon::*;
 pub use foundation::index_path::IndexPath;
 pub use controls::input::{Rope, RopeExt, RopeLines};
-pub use navigation_rail::{
+pub use navigation::navigation_rail::{
     NavigationRail, NavigationRailArrangement, NavigationRailFooter, NavigationRailHeader,
     NavigationRailItem, NavigationRailMenuButton,
 };
@@ -78,7 +70,7 @@ pub use shilpo_macros::icon_named;
 pub use foundation::styled::*;
 pub use foundation::theme::*;
 pub use controls::time::{calendar, date_picker};
-pub use title_bar::*;
+pub use navigation::title_bar::*;
 pub use foundation::virtual_list::{VirtualList, VirtualListScrollHandle, h_virtual_list, v_virtual_list};
 pub use foundation::window_border::{WindowBorder, window_border, window_paddings};
 pub use foundation::window_ext::WindowExt;

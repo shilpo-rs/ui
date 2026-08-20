@@ -5,7 +5,7 @@ use gpui::{
     StyleRefinement, Styled, Window, div, prelude::FluentBuilder as _,
 };
 
-use crate::{AxisExt, Sizable, Size, StyledExt as _, stepper::StepperItem};
+use crate::{AxisExt, Sizable, Size, StyledExt as _, navigation::stepper::StepperItem};
 
 /// A step-by-step progress for users to navigate through a series of steps or stages.
 #[derive(IntoElement)]

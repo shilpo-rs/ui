@@ -9,7 +9,7 @@ use shilpo_m3e::{
     h_flex,
     progress::ProgressCircle,
     separator::Separator,
-    status_bar::StatusBar,
+    navigation::status_bar::StatusBar,
     v_flex,
 };
 

@@ -11,7 +11,7 @@ use crate::{
     controls::button::{Button, ButtonVariants as _},
     h_flex,
     menu::{ContextMenuExt, PopupMenu},
-    sidebar::SidebarItem,
+    navigation::sidebar::SidebarItem,
     v_flex,
 };
 

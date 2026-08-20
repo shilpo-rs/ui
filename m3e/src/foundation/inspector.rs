@@ -21,7 +21,7 @@ use crate::{
     description_list::DescriptionList,
     h_flex,
     controls::input::{CompletionProvider, Input, InputEvent, InputState, RopeExt, TabSize},
-    link::Link,
+    navigation::link::Link,
     v_flex,
 };
 

@@ -14,7 +14,7 @@ use crate::{
     popover::Popover,
     separator::Separator,
     controls::slider::{Slider, SliderEvent, SliderState},
-    tab::{Tab, TabBar},
+    navigation::tab::{Tab, TabBar},
     tooltip::{ManagedTooltipExt as _, Tooltip},
     v_flex,
 };

@@ -8,12 +8,12 @@ use serde::Deserialize;
 use shilpo_m3e::{
     ActiveTheme, Icon, IconName, Selectable as _, Side, Sizable,
     badge::Badge,
-    breadcrumb::{Breadcrumb, BreadcrumbItem},
+    navigation::breadcrumb::{Breadcrumb, BreadcrumbItem},
     controls::button::{Button, ButtonGroup},
     h_flex,
     menu::DropdownMenu,
     separator::Separator,
-    sidebar::{
+    navigation::sidebar::{
         Sidebar, SidebarCollapsible, SidebarFooter, SidebarGroup, SidebarHeader, SidebarMenu,
         SidebarMenuItem, SidebarToggleButton,
     },
