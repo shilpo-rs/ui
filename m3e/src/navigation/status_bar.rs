@@ -23,7 +23,7 @@ use crate::{ActiveTheme, StyledExt, h_flex};
 /// otherwise (only `right`, or neither — like a plain container).
 ///
 /// ```
-/// use shilpo_m3e::status_bar::StatusBar;
+/// use shilpo_m3e::navigation::status_bar::StatusBar;
 ///
 /// let _ = StatusBar::new().left("Ln 1, Col 1").right("UTF-8");
 /// ```

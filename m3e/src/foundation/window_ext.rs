@@ -41,7 +41,7 @@ pub trait WindowExt: Sized {
     /// # Examples
     ///
     /// ```ignore
-    /// use shilpo_m3e::{AlertDialog, alert::AlertVariant};
+    /// use shilpo_m3e::{overlay::dialog::AlertDialog, feedback::alert::AlertVariant};
     ///
     /// window.open_alert_dialog(cx, |alert, _, _| {
     ///     alert.warning()

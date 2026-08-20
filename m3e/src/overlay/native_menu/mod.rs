@@ -12,7 +12,7 @@
 //! [`From<gpui::Menu>`]).
 //!
 //! ```ignore
-//! use shilpo_m3e::native_menu::NativeMenu;
+//! use shilpo_m3e::overlay::native_menu::NativeMenu;
 //!
 //! NativeMenu::new()
 //!     .menu("Copy", Box::new(Copy))
