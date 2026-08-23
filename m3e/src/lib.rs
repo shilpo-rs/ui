@@ -11,6 +11,16 @@ pub mod navigation;
 pub mod overlay;
 pub mod visualization;
 
+/// Theme state and palette math shared with non-UI processes.
+///
+/// Kept as a compatibility module for consumers that historically imported
+/// these types through `shilpo_m3e::theme`; new code may depend on
+/// `shilpo-theme` directly.
+pub mod theme {
+    pub use shilpo_theme::state;
+    pub use shilpo_theme::*;
+}
+
 pub use controls::input::{Rope, RopeExt, RopeLines};
 pub use foundation::element_ext::*;
 pub use foundation::event::InteractiveElementExt;
