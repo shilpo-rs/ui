@@ -229,6 +229,15 @@ impl SensitiveInputState {
         cx.notify();
     }
 
+    pub fn set_placeholder(
+        &mut self,
+        placeholder: impl Into<SharedString>,
+        cx: &mut Context<Self>,
+    ) {
+        self.placeholder = placeholder.into();
+        cx.notify();
+    }
+
     pub fn is_empty(&self) -> bool {
         self.value.is_empty()
     }
