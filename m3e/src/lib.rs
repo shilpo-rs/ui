@@ -17,9 +17,17 @@ pub mod visualization;
 /// these types through `shilpo_m3e::theme`; new code may depend on
 /// `shilpo-theme` directly.
 pub mod theme {
+    pub use crate::foundation::theme::*;
     pub use shilpo_theme::state;
-    pub use shilpo_theme::*;
 }
+
+// Compatibility module paths retained for exact-revision consumers while the
+// public hierarchy transitions to controls/foundation/layout/overlay.
+pub use controls::{button, input, slider};
+pub use feedback::progress;
+pub use foundation::animation;
+pub use layout::scroll;
+pub use overlay::tooltip;
 
 pub use controls::input::{Rope, RopeExt, RopeLines};
 pub use foundation::element_ext::*;
