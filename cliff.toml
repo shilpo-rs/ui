@@ -1,0 +1,37 @@
+[changelog]
+header = "# Changelog\n\nAll notable changes to the Shilpo UI trio are documented here.\n\n"
+body = """
+{% if version %}\
+## {{ version | trim_start_matches(pat="ui-v") }}
+{% else %}\
+## Unreleased
+{% endif %}\
+{% for group, commits in commits | group_by(attribute="group") %}
+
+### {{ group | striptags | trim | upper_first }}
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{% endfor %}\
+{% endfor %}
+"""
+footer = ""
+trim = true
+
+[git]
+conventional_commits = true
+filter_unconventional = false
+tag_pattern = "^ui-v[0-9]+\\.[0-9]+\\.[0-9]+(?:[-+][0-9A-Za-z.-]+)?$"
+sort_commits = "oldest"
+commit_parsers = [
+  { message = "^feat", group = "Features" },
+  { message = "^fix", group = "Bug fixes" },
+  { message = "^perf", group = "Performance" },
+  { message = "^refactor", group = "Refactoring" },
+  { message = "^docs", group = "Documentation" },
+  { message = "^test", group = "Testing" },
+  { message = "^(build|ci)", group = "Build and CI" },
+  { message = "^(chore|style)", group = "Maintenance" },
+  { message = "^revert", group = "Reverts" },
+  { message = ".*", group = "Other changes" },
+]
+
