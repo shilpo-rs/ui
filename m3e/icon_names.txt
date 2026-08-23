@@ -157,6 +157,7 @@ more_horiz.svg
 more_vert.svg
 mountain_steam.svg
 music_note.svg
+near_me.svg
 nest_cam_floodlight.svg
 nest_farsight_cool.svg
 nest_farsight_heat.svg
