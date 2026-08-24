@@ -7459,6 +7459,7 @@ dependencies = [
  "windows 0.62.2",
  "zed-reqwest",
  "zed-sum-tree",
+ "zeroize",
 ]
 
 [[package]]

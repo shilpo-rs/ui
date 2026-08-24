@@ -122,6 +122,7 @@ paste = "1"
 regex = "1"
 unicode-segmentation = "1"
 uuid = "1"
+zeroize = "1"
 
 # Async primitives (cross-platform, including WASM)
 async-channel = "2"
